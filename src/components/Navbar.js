@@ -18,6 +18,15 @@ function Navbar({setIsActive, isActive}){
         setIsActive(false);
     };
 
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("progressbar").value = scrolled;
+      }
+
   return (
     <div className={isActive ? 'navContainer opened' : 'navContainer'}>
         <div className='nav'>
@@ -43,6 +52,7 @@ function Navbar({setIsActive, isActive}){
                     <NavLink to='/todo' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>TODO</NavLink>
                 </li>
             </ul>
+            <progress className="progressBar" id="progressbar" max="100" value="0"></progress>
         </div>
     </div>
   );
