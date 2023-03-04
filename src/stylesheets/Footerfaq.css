@@ -1,0 +1,11 @@
+.footerfaqContainer{
+    max-width: 400px;
+}
+
+.footerinfoText a{
+    text-decoration: none;
+}
+
+.footerinfoText p{
+    text-align: left;
+}

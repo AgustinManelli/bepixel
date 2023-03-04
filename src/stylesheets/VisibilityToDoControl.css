@@ -1,0 +1,43 @@
+.ToDoVisibilitycontainer{
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.showTaskCkeckbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ToDoVisibilitytext{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.ToDoVisibilitybutton{
+
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: none;
+    border: none;
+}
+
+.VisibilityEyeControl{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    display: flex;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.VisibilityEyeControl:hover{
+    color: rgb(195 0 255);
+}

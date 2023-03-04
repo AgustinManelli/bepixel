@@ -1,0 +1,9 @@
+.homeContainer{
+    width: 100vw;
+    background: rgb(255,255,255);
+    position: relative;
+}
+
+.homeimg{
+    width: 95%;
+}

@@ -1,0 +1,7 @@
+.homedataContainer{
+}
+
+.homedata{
+    height: 60vh;
+    background-color: var(--secondaryColor);
+}
