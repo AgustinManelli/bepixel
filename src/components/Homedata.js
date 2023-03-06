@@ -17,8 +17,10 @@ function Homedata (){
     return(
         <div className='homedataContainer'>
             <div className='homedata'>
-                <h2>FOTOS PRUEBA SLIDER</h2>
-                <div className="grid">
+                <div className='sectorTitleContainer'>
+                    <h2 className='sectorTitlewhite'>Alguno de nuestros servicios</h2>
+                </div>
+                <div className="grid" data-aos="zoom-in" data-aos-once="true">
                     <div className="slider">
                         <div className="slider-items">
                             <div className="item">

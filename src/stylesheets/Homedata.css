@@ -6,9 +6,23 @@
 }
 
 .homedata{
-    height: 60vh;
+    height: 70vh;
     background-color: var(--secondaryColor);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sectorTitleContainer{
+  position: relative;
+}
+
+.sectorTitlewhite{
+  position: relative;
+  color: #fff;
+  font-style: italic;
+  font-size: 40px;
 }
 
 .grid {

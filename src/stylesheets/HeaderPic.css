@@ -1,0 +1,191 @@
+.HeaderPicContainer{
+    position: relative;
+    width: 35vw;
+    max-width: 700px;
+    min-width: 300px;
+}
+.firstcomponentheaderpic{
+    position: relative;
+    width: 100%;
+
+}
+.secondarycomponentheaderpic{
+    position:absolute;
+    width: 100%;
+    left: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.cloud1{
+    animation: cloud 30s ease-in-out infinite;
+}
+
+.cloud2{
+    animation: cloud 20s ease-in-out infinite;
+}
+
+.human1{
+    animation: human 20s ease-in-out infinite;
+}
+
+@-webkit-keyframes cloud {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    10% {
+      -webkit-transform: translate(-4px, -4px);
+              transform: translate(-4px, -4px);
+    }
+    20% {
+      -webkit-transform: translate(4px, -4px);
+              transform: translate(4px, -4px);
+    }
+    30% {
+      -webkit-transform: translate(-4px, 4px);
+              transform: translate(-4px, 4px);
+    }
+    40% {
+      -webkit-transform: translate(4px, 4px);
+              transform: translate(4px, 4px);
+    }
+    50% {
+      -webkit-transform: translate(-4px, -4px);
+              transform: translate(-4px, -4px);
+    }
+    60% {
+      -webkit-transform: translate(4px, -4px);
+              transform: translate(4px, -4px);
+    }
+    70% {
+      -webkit-transform: translate(-4px, 4px);
+              transform: translate(-4px, 4px);
+    }
+    80% {
+      -webkit-transform: translate(-4px, -4px);
+              transform: translate(-4px, -4px);
+    }
+    90% {
+      -webkit-transform: translate(4px, -4px);
+              transform: translate(4px, -4px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+}
+
+@keyframes cloud {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    10% {
+      -webkit-transform: translate(-4px, -4px);
+              transform: translate(-4px, -4px);
+    }
+    20% {
+      -webkit-transform: translate(4px, -4px);
+              transform: translate(4px, -4px);
+    }
+    30% {
+      -webkit-transform: translate(-4px, 4px);
+              transform: translate(-4px, 4px);
+    }
+    40% {
+      -webkit-transform: translate(4px, 4px);
+              transform: translate(4px, 4px);
+    }
+    50% {
+      -webkit-transform: translate(-4px, -4px);
+              transform: translate(-4px, -4px);
+    }
+    60% {
+      -webkit-transform: translate(4px, -4px);
+              transform: translate(4px, -4px);
+    }
+    70% {
+      -webkit-transform: translate(-4px, 4px);
+              transform: translate(-4px, 4px);
+    }
+    80% {
+      -webkit-transform: translate(-4px, -4px);
+              transform: translate(-4px, -4px);
+    }
+    90% {
+      -webkit-transform: translate(4px, -4px);
+              transform: translate(4px, -4px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+}
+
+  @-webkit-keyframes human {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+    }
+    80% {
+      -webkit-transform: translateY(6.4px);
+              transform: translateY(6.4px);
+    }
+    90% {
+      -webkit-transform: translateY(-6.4px);
+              transform: translateY(-6.4px);
+    }
+  }
+  @keyframes human {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+    }
+    80% {
+      -webkit-transform: translateY(6.4px);
+              transform: translateY(6.4px);
+    }
+    90% {
+      -webkit-transform: translateY(-6.4px);
+              transform: translateY(-6.4px);
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+
+    .HeaderPicContainer{
+        width: 100vw;
+    }
+}

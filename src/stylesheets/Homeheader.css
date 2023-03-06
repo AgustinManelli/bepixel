@@ -174,7 +174,8 @@
         font-size: calc(40px + 1.5vw);
     }
     .homeheaderElements{
-        flex-direction: column-reverse;
+        margin-top: 80px;
+        flex-direction: column;
     }
     .headerimg{
         width: 50vh;
@@ -183,5 +184,10 @@
     }
     .textelement{
         width: 90%;
+    }
+    .waveHeader{
+        width: 1000px;
+        bottom: 0;
+        left: -250px;
     }
 }
