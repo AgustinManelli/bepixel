@@ -1,27 +1,28 @@
 body{
---mainColor: rgb(49, 39, 130);
---secondaryColor: rgb(193, 0, 233);
+--mainColor: rgb(225, 0, 152);
+--secondaryColor: rgb(68, 0, 153);
 }
 
 .navContainer{
-    margin-top: 5px;
     width: 95vw;
     height: 70px;
-    background: linear-gradient(to right, rgba(243, 243, 243, 90%), rgb(193, 0, 233, 50%));
     position: fixed;
-    top:0%;
+    top:calc(0% + 5px);
     z-index: 100;
-    backdrop-filter: blur(10px) saturate(200%);
-    box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 10%);
-    transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
     border-radius: 15px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
-    overflow: hidden;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+}
+
+.navShadow{
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 10%);
+    backdrop-filter: blur(10px) saturate(200%);
 }
 
 .nav{
@@ -32,12 +33,12 @@ body{
 
 .progressBar{
     position:absolute;
-    left: 0;
-    bottom: 0;
+    left: 15px;
+    bottom: -5px;
     -webkit-appearance: none;
     appearance: none;
-    width: 100%;
-    height: 2px;
+    width: calc(100% - 30px);
+    height: 3px;
     border: none;
     background: transparent;
 }
@@ -47,37 +48,27 @@ body{
 }
 
 .progressBar::-webkit-progress-value {
-    background: linear-gradient(to right, var(--secondaryColor), var(--mainColor));
+    background: var(--mainColor);
     background-attachment: fixed;
 }
 
 .progressBar::-moz-progress-bar {
-    background: linear-gradient(to right, var(--secondaryColor), var(--mainColor));
+    background: var(--mainColor);
     background-attachment: fixed;
-}
-
-.navSeparator{
-
-    width: 3px;
-    height: 50%;
-    background-color: var(--secondaryColor);
-    margin-right: 10px;
-    transform: rotate(10deg);
 }
 
 .navAnchor{
     text-decoration: none;
     font-size: 25px;
-    font-weight: 500;
-    font-style: italic;
-    color: rgb(68, 68, 68);
+    font-weight: 600;
+    color: var(--mainColor);
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
 }
 
 .navAnchor:hover{
-    color:var(--mainColor);
+    color:var(--secondaryColor);
 }
 
 .navAnchor::after{
@@ -89,7 +80,7 @@ body{
     width: 100%;
     height: 3px;
     background-color: var(--secondaryColor);
-    transition: all .2s;
+    transition: all .1s;
 }
 
 .navAnchor:hover::after{
@@ -110,29 +101,12 @@ body{
     flex-direction: row;
     align-items: center;
 }
+
 .navLi{
     position: relative;
     transition: all .3s;
-    margin-right: 10px;
+    margin-right: 20px;
 }
-
-/*
-.navLi::before{
-    content: '';
-    bottom: -2px;
-    position: absolute;
-    background-color: var(--mainColor);
-    width: 0%;
-    height: 3px;
-    transition: all .3s;
-}
-.navLi:hover::before{
-    content: '';
-    width: 100%;
-    height: 3px;
-}
-
-*/
 
 .anchorlogoNav{
     margin-right: 20px;
@@ -141,7 +115,7 @@ body{
 
 .logoNav{
     height: 100%;
-    width: 80%;
+    width: 70%;
     margin: 0%;
     padding: 0%;
     transition: all .2s;
@@ -151,15 +125,9 @@ body{
     transform: scale(110%);
 }
 
-.navArrrow{
-    display: none;
-}
-
 .icon{
     display: none;
 }
-
-
 
 @media screen and (max-width: 600px) {
 
@@ -169,14 +137,13 @@ body{
     }
 
     .opened{
-        height: 80vh;
-        background: linear-gradient(to bottom, rgb(201, 201, 201, 70%), rgb(193, 0, 233, 70%));
+        height: 50vh;
     }
 
     .nav{
         height: 100px;
         width: 100vw;
-        justify-content: space-between;
+        justify-content:space-between;
         align-items: center;
         display: flex;
     }
@@ -212,28 +179,15 @@ body{
         display: none;
     }
 
-    .navSeparator{
-        width: 50%;
-        height: 5px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        transform: rotate(0deg);
-    }
-
-    .logoNav{
+    .logoNav2{
         height: 100%;
         width: 50px;
         margin: 0;
         transition: all .2s;
     }
-    .anchorlogoNav{
-        margin-right: 30px;
-    }
 
-    .navArrrow{
-        display: initial;
-        height: 100%;
-        width: 50px;
+    .anchorlogoNav{
+        margin-right: 0px;
     }
 
     .nav-icon-5 {
@@ -246,7 +200,7 @@ body{
         display: inline-block;
       }
       .nav-icon-5 span {
-        background-color: #fff;
+        background-color: var(--mainColor);
         position: absolute;
         border-radius: 2px;
         transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);

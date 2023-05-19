@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '../stylesheets/Homedata.css'
+import '../../stylesheets/Homedata.css'
 
 function Homedata (){
 
@@ -18,7 +18,7 @@ function Homedata (){
         <div className='homedataContainer'>
             <div className='homedata'>
                 <div className='sectorTitleContainer'>
-                    <h2 className='sectorTitlewhite'>Alguno de nuestros servicios</h2>
+                    <h2 className='sectorTitlewhite'>alguno de nuestros servicios</h2>
                 </div>
                 <div className="grid" data-aos="zoom-in" data-aos-once="true">
                     <div className="slider">
@@ -26,22 +26,22 @@ function Homedata (){
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
                                 <img src="https://source.unsplash.com/random/300x450/?earth,1" alt=""/>
-                                <h4>Title</h4>
+                                <h4>Logotipos</h4>
                             </div>
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
                                 <img src="https://source.unsplash.com/random/300x450/?earth,2" alt=""/>
-                                <h4>Title</h4>
+                                <h4>Publicaciones</h4>
                             </div>
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
                                 <img src="https://source.unsplash.com/random/300x450/?earth,3" alt=""/>
-                                <h4>Title</h4>
+                                <h4>Diseños</h4>
                             </div>
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
                                 <img src="https://source.unsplash.com/random/300x450/?earth,4" alt=""/>
-                                <h4>Title</h4>
+                                <h4>Papelería</h4>
                             </div>
                         </div>
                     </div>
@@ -49,23 +49,23 @@ function Homedata (){
                         <div className="slider-items">
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
-                                <img src="https://source.unsplash.com/random/300x450/?fire,1" alt=""/>
-                                <h4>Title</h4>
+                                <img src="https://source.unsplash.com/random/300x450/?earth,1" alt=""/>
+                                <h4>Logotipos</h4>
                             </div>
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
-                                <img src="https://source.unsplash.com/random/300x450/?fire,2" alt=""/>
-                                <h4>Title</h4>
+                                <img src="https://source.unsplash.com/random/300x450/?earth,2" alt=""/>
+                                <h4>Publicaciones</h4>
                             </div>
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
-                                <img src="https://source.unsplash.com/random/300x450/?fire,3" alt=""/>
-                                <h4>Title</h4>
+                                <img src="https://source.unsplash.com/random/300x450/?earth,3" alt=""/>
+                                <h4>Diseños</h4>
                             </div>
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
-                                <img src="https://source.unsplash.com/random/300x450/?fire,4" alt=""/>
-                                <h4>Title</h4>
+                                <img src="https://source.unsplash.com/random/300x450/?earth,4" alt=""/>
+                                <h4>Papelería</h4>
                             </div>
                         </div>
                     </div>
@@ -73,23 +73,23 @@ function Homedata (){
                         <div className="slider-items">
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
-                                <img src="https://source.unsplash.com/random/300x450/?water,1" alt=""/>
-                                <h4>Title</h4>
+                                <img src="https://source.unsplash.com/random/300x450/?earth,1" alt=""/>
+                                <h4>Logotipos</h4>
                             </div>
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
-                                <img src="https://source.unsplash.com/random/300x450/?water,2" alt=""/>
-                                <h4>Title</h4>
+                                <img src="https://source.unsplash.com/random/300x450/?earth,2" alt=""/>
+                                <h4>Publicaciones</h4>
                             </div>
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
-                                <img src="https://source.unsplash.com/random/300x450/?water,3" alt=""/>
-                                <h4>Title</h4>
+                                <img src="https://source.unsplash.com/random/300x450/?earth,3" alt=""/>
+                                <h4>Diseños</h4>
                             </div>
                             <div className="item">
                                 <a href="https://tomjacobs.co.uk/" target="_blank"></a>
-                                <img src="https://source.unsplash.com/random/300x450/?water,4" alt=""/>
-                                <h4>Title</h4>
+                                <img src="https://source.unsplash.com/random/300x450/?earth,4" alt=""/>
+                                <h4>Papelería</h4>
                             </div>
                         </div>
                     </div>

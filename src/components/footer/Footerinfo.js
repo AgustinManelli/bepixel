@@ -1,15 +1,11 @@
 import React from 'react';
-import logo from '../image/OPENLOGO.svg'
-import logoh from '../image/OPENLOGOH.svg'
 import { FaInstagram, FaFacebook, FaRegEnvelope, FaPhoneSquareAlt, FaMapMarkerAlt  } from "react-icons/fa";
-import '../stylesheets/Footerinfo.css'
+import '../../stylesheets/Footerinfo.css'
 
 function Footerinfo(){
 
     return(
         <div className='footerinfoContainer'>
-            {/*<img src={logoh} />*/}
-
             <div className='footerinfoSeparatorContainer'>
                 <div className='footerinfoSeparator'></div>
                 <p>CONTACTO</p>
@@ -27,15 +23,15 @@ function Footerinfo(){
                 </li >
                 <li className='footerinfoLi'>
                     <FaRegEnvelope className='footerinfoIcon'/>
-                    <p>open.design@gmail.com</p>
+                    <p>bepixelarg@gmail.com</p>
                 </li>
                 <li className='footerinfoLi'>
                     <FaInstagram className='footerinfoIcon'/>
-                    <p>/open.design</p>
+                    <p>/bepixelarg</p>
                 </li>
                 <li className='footerinfoLi'>
                     <FaFacebook className='footerinfoIcon'/>
-                    <p>/open.design</p>
+                    <p>/bepixelarg</p>
                 </li>
             </ul>
         </div>

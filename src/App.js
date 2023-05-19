@@ -2,7 +2,7 @@ import './App.css';
 import React from "react";
 import TestimonioPage from './Pages/Testimonios-page';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 import Home from './Pages/Home';
 import RightContext from './components/RightContext';
 import {
@@ -14,6 +14,8 @@ import TodoPage from './Pages/TodoPage';
 
 function App() {
   const [isActive, setIsActive] = React.useState(false);
+  const [isPhone, setIsPhone] = React.useState(false);
+  const [shadowScroll, setShadowScroll] = React.useState(true);
   const [context, setContext] = React.useState(false);
   const [xYPosistion, setXyPosistion] = React.useState({ x: 0, y: 0 });
   const showNav = (event) => {
@@ -47,7 +49,7 @@ function App() {
     >
       <RightContext showNav={showNav} hideContext={hideContext} context={context} xYPosistion={xYPosistion} initMenu={initMenu}/>
       <Router>
-        <Navbar setIsActive={setIsActive} isActive={isActive}/>
+        <Navbar setIsActive={setIsActive} isActive={isActive} isPhone={isPhone} setIsPhone={setIsPhone} shadowScroll = {shadowScroll} setShadowScroll={setShadowScroll}/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/trabajos" element={<TestimonioPage />} />

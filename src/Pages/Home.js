@@ -1,10 +1,10 @@
 import React from 'react';
 import '../stylesheets/Home.css'
-import Homeheader from '../components/Homeheader';
-import Homedata from '../components/Homedata';
-import separator2 from '../image/separator2.svg'
+import Homeheader from '../components/home/Homeheader';
+import Homedata from '../components/home/Homedata';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import HomeSecondary from '../components/home/HomeSecondary';
 
 function Home(){
 
@@ -13,8 +13,8 @@ function Home(){
     return(
         <div className='homeContainer'>
             <Homeheader />
-            {/*<img src={separator2} className='homeimg'/>*/}
             <Homedata />
+            <HomeSecondary />
         </div>
     )
 }
