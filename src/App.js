@@ -1,7 +1,6 @@
 import './App.css';
 import React from "react";
-import TestimonioPage from './Pages/Testimonios-page';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Home from './Pages/Home';
 import RightContext from './components/RightContext';
@@ -10,7 +9,6 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import TodoPage from './Pages/TodoPage';
 
 function App() {
   const [isActive, setIsActive] = React.useState(false);
@@ -18,7 +16,7 @@ function App() {
   const [shadowScroll, setShadowScroll] = React.useState(true);
   const [context, setContext] = React.useState(false);
   const [xYPosistion, setXyPosistion] = React.useState({ x: 0, y: 0 });
-  const showNav = (event) => {
+  /*const showNav = (event) => {
     event.preventDefault();
     setContext(false);
     const positionChange = {
@@ -40,20 +38,22 @@ function App() {
   const [chosen, setChosen] = React.useState();
   const initMenu = (chosen) => {
     setChosen(chosen);
-  };
+  };*/
+
+  /* <RightContext showNav={showNav} hideContext={hideContext} context={context} xYPosistion={xYPosistion} initMenu={initMenu}/>
+  ESTO ES EL MENU DEL CLICK DERECHO, VA DENTRO DE ROUTER */
 
   return (
     <div className="App" 
-    onContextMenu={showNav}
-    onClick={hideContext}
+    /*onContextMenu={showNav}
+  onClick={hideContext}*/
     >
-      <RightContext showNav={showNav} hideContext={hideContext} context={context} xYPosistion={xYPosistion} initMenu={initMenu}/>
       <Router>
         <Navbar setIsActive={setIsActive} isActive={isActive} isPhone={isPhone} setIsPhone={setIsPhone} shadowScroll = {shadowScroll} setShadowScroll={setShadowScroll}/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/trabajos" element={<TestimonioPage />} />
-          <Route path="/todo" element={<TodoPage />} />
+          <Route path="/trabajos" element={<Home />} />
+          <Route path="/todo" element={<Home />} />
         </Routes>
         <Footer />
       </Router>

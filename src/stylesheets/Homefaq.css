@@ -1,0 +1,62 @@
+.homefaqContainer{
+    position: relative;
+    width: 100vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 163, 224, 15%);
+}
+
+.homefaqContainer div{
+    width: 500px;
+}
+
+.homefaqtext{
+    display: flex;
+    flex-direction: column;
+}
+
+.homefaqLogo{
+    width: 200px;
+}
+
+.homefaqContainer p{
+    text-align:justify;
+}
+
+.homefaqLogo{
+    stroke: var(--mainColor);
+    stroke-width: 5;
+    animation: textAnimatelogo 10s infinite alternate;
+}
+
+@keyframes textAnimatelogo {
+
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:var(--mainColor)
+  
+    }
+
+    10% {
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset:  20%;
+        fill:var(--mainColor)
+    }
+    
+    50% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffstet: -20%;
+        fill: hsla(189, 68%, 75%,0%)
+    }
+    
+}

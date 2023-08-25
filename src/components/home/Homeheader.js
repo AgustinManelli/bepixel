@@ -1,5 +1,7 @@
 import {React} from 'react';
 import '../../stylesheets/Homeheader.css'
+import homeheaderpic from '../../image/14.png'
+import ButtonCTA from '../ButtonCTA';
 
 
 function Homeheader(){
@@ -8,12 +10,15 @@ function Homeheader(){
         <div className='homeheaderContainer'>
             <div className='homeheaderElements'>
                 <div className='homeheaderElement textelement'>
-                    <h1>impulsá tu marca</h1>
-                    <p>Creamos los elementos gráficos necesarios para tu marca. <br/> Empezá tu emprendimiento como se debe</p>
-                    <a href='https://youtube.com' target='_blank'><button className="custom-btn btn-5">empezá ahora</button></a>
+                    <div> 
+                        <h2>branding</h2>
+                        <h2>sin</h2>
+                        <h2>límites</h2>
+                    </div>
+                    <ButtonCTA name="contáctanos" link="https://youtube.com"/>
                 </div>
-                <h1>aca va algo</h1>
-                <div className='homeheaderElement'>
+                <div className='homeheaderElement homeheaderimg'>
+                    <img src={homeheaderpic} />
                 </div>
             </div>
         </div>

@@ -1,0 +1,25 @@
+.serviceItem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 100px;
+  }
+
+.serviceItem img{
+    width: 100px;
+    opacity: 80%;
+    transition: all .3s;
+}
+
+.serviceItem img:hover{
+  opacity: 100%;
+  transform: scale(102%);
+}
+  
+.serviceItem div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+  }

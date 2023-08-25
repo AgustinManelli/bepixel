@@ -1,0 +1,45 @@
+.titlElement{
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titlElement svg{
+  width: 400px;
+}
+.titlElement svg text {
+    position: relative;
+    letter-spacing: 5px;
+    stroke: var(--mainColor);
+    font-size: 40px;
+    font-weight: 900;
+    stroke-width: 1;
+    animation: textAnimate 5s infinite alternate;
+    
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:var(--secondaryColor)
+  
+    }
+
+    20% {
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset:  20%;
+        fill:var(--secondaryColor)
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+    
+  }
+  
+  
+  
