@@ -9,6 +9,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Laespumita from './Pages/Laespumita';
 
 function App() {
   const [isActive, setIsActive] = React.useState(false);
@@ -47,6 +48,7 @@ function App() {
     <div className="App" 
     /*onContextMenu={showNav}
   onClick={hideContext}*/
+  
     >
       <Router basename={process.env.PUBLIC_URL}>
         <Navbar setIsActive={setIsActive} isActive={isActive} isPhone={isPhone} setIsPhone={setIsPhone} shadowScroll = {shadowScroll} setShadowScroll={setShadowScroll}/>
@@ -54,6 +56,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/trabajos" element={<Home />} />
           <Route path="/todo" element={<Home />} />
+          <Route path="/laespumita" element={<Laespumita />} />
         </Routes>
         <Footer />
       </Router>

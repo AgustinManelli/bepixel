@@ -12,7 +12,7 @@ export default function Homefaq() {
             <Logo className='homefaqLogo'/>
         </div>
         <div className='homefaqtext'>
-            <Tittles nombre="sobre nosotros"/>
+            <Tittles nombre="sobre nosotros" color='var(--secondaryColor)'/>
             <p>Somos bepixel, una agencia de diseño gráfico de Córdoba, Argentina dedicada a transformar conceptos en piezas visuales extraordinarias. Nuestra pasión es plasmar la creatividad en cada proyecto, creando identidades visuales impactantes.</p>
         </div>
     </div>

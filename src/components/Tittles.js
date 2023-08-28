@@ -6,10 +6,10 @@ function Tittles (props) {
   return(
     <div className='titlElement'>
 
-            <svg>
-                <text x="50%" y="60%"  text-anchor="middle"  >
+            <svg fill={props.color}>
+                <text x="50%" y="60%"  textAnchor="middle">
                 {props.nombre}
-                </text>
+                </text >
             </svg>
 
     </div>

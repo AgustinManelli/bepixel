@@ -1,0 +1,18 @@
+.laespumitaHeaderContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--secondaryColor);
+    gap: 50px;
+}
+.laespumitaLogo img{
+    height: 150px;
+}
+.laespumitaTextContainer{
+    max-width: 400px;
+    color: #fff;
+}

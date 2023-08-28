@@ -83,7 +83,7 @@ body{
     background-color: #fff;
 }
 
-.navDropdown a div{
+.navDropdownLink{
     height: 100%;
     min-width: fit-content;
     white-space: nowrap;
@@ -94,20 +94,12 @@ body{
     font-weight: 500;
 }
 
-.navDropdown a div:hover{
+.navDropdownLink:hover{
     background-color: rgb(0, 0, 0, 5%);
 }
 
-.separator{
-    height: 1px;
-    width: 100%;
-    margin-top: 9px;
-    margin-bottom: 9px;
-    background-color: #eceef3;
-}
-
 .navLi:hover .navDropdown{
-    display: block;
+    display: flex;
 }
 
 .navLi svg{
@@ -127,8 +119,7 @@ body{
 }
 
 .active{
-    color:var(--terciaryColor);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .active.navAnchor::after{
@@ -229,7 +220,7 @@ body{
         padding: 20px;
         background-color:rgb(0, 0, 0, 10%);
     }
-    .responsivenavDropdown a{
+    .navDropdownLinkResponsive{
         white-space: nowrap;
         margin: 0px;
         text-decoration: none;

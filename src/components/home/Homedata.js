@@ -9,7 +9,7 @@ function Homedata (){
         <div className='homedataContainer'>
             <div className='homedata'>
                 <div className='homedataElement'>
-                    <Tittles nombre="servicios"/>
+                    <Tittles nombre="servicios" color='var(--secondaryColor)'/>
                     <p>la mejor calidad en servicio para tu empresa o emprendimiento en Argentina</p>
                 </div>
                 <div className='homedataElement services'>

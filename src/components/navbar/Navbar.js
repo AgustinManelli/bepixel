@@ -10,12 +10,12 @@ import $ from 'jquery';
 
 function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setShadowScroll}){
 
-    $(document).ready(function(){
-		$('.navLiResponsive').click(function(){
-			$('.responsivenavDropdown').toggleClass('responsivenavDropdownOpened');
-            $('.responsiveArrow').toggleClass('responsiveArrowinverted');
-		});
-	});
+    
+
+    const openDropdown = event => {
+        $('.responsivenavDropdown').toggleClass('responsivenavDropdownOpened');
+        $('.responsiveArrow').toggleClass('responsiveArrowinverted');
+    };
 
     const handleClick = event => {
         setIsActive(current => !current);
@@ -67,17 +67,10 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
             </div>
             <ul className={isActive ? 'navUl activated' : 'navUl'}>
                 <li className='navLi navLiArrow' id='navLi'>
-                    <NavLink to='/trabajos' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>trabajos<IoIosArrowDown/></NavLink>
+                    <div className='navAnchor' activeclassname='navAnchor active'>trabajos<IoIosArrowDown/></div>
                     <div className={shadowScroll ? "navDropdown" : "navDropdown dropdownShadow"}>
-                        <a href='/laespumita'>
-                            <div>la espumita</div>
-                        </a>
-                        <a href='/laespumita'>
-                            <div>agn</div>
-                        </a>
-                        <a href='/laespumita'>
-                            <div>context</div>
-                        </a>
+                            <NavLink to='/laespumita' className='navDropdownLink'>la espumita</NavLink>
+                            <NavLink to='/agn' className='navDropdownLink'>agn</NavLink>
                     </div>
                 </li>
 
@@ -94,19 +87,12 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
 
 
         <ul className={isActive ? "responsiveMenu responsiveOpened navshadow" : "responsiveMenu"}>
-            <li className='navLi navLiResponsive'>
+            <li className='navLi navLiResponsive' onClick={openDropdown}>
                 <div className='navAnchor' activeclassname='navAnchor active'>trabajos<IoIosArrowDown className='responsiveArrow'/>
                 </div>
                 <div className="responsivenavDropdown">
-                    <a href='#'>
-                        <div>la espumita</div>
-                    </a>
-                    <a href='#'>
-                        <div>agn</div>
-                    </a>
-                    <a href='#'>
-                        <div>context</div>
-                    </a>
+                    <NavLink to='/laespumita' className='navDropdownLinkResponsive' onClick={closeNav}>la espumita</NavLink>
+                    <NavLink to='/agn' className='navDropdownLinkResponsive' onClick={closeNav}>agn</NavLink>
                 </div>
             </li>
             <li className='navLi'>
