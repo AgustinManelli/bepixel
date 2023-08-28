@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/Open/static/css/main.7d2f5151.css",
-    "main.js": "/Open/static/js/main.a6311764.js",
-    "static/media/14.png": "/Open/static/media/14.745bffee9ffcc479b4ae.png",
-    "static/media/serv2.png": "/Open/static/media/serv2.0f118199cd33636f9bb5.png",
-    "static/media/serv3.png": "/Open/static/media/serv3.1ca69efe26a476d14a25.png",
-    "static/media/LOGOVERTICALSTROKE.svg": "/Open/static/media/LOGOVERTICALSTROKE.4440ed749add19c8eaf81c3c17d66ea2.svg",
-    "static/media/LOGOVERTICAL.svg": "/Open/static/media/LOGOVERTICAL.d07b1092a9fcdb3f84e5575aebfb873c.svg",
-    "static/media/LOGOHORIZONTAL.svg": "/Open/static/media/LOGOHORIZONTAL.fa98590d4b827f4b8778.svg",
-    "static/media/LOGOTIPO.svg": "/Open/static/media/LOGOTIPO.339b9eb95ef277b26e685a91f572fc5b.svg",
-    "static/media/serv1.svg": "/Open/static/media/serv1.a5f33af37e39a9c00c7c.svg",
-    "index.html": "/Open/index.html",
-    "static/media/ISOTIPO.svg": "/Open/static/media/ISOTIPO.9d79e1c3b4db3d8b7defbb6154c25fd2.svg",
-    "main.7d2f5151.css.map": "/Open/static/css/main.7d2f5151.css.map",
-    "main.a6311764.js.map": "/Open/static/js/main.a6311764.js.map"
+    "main.css": "/bepixel/static/css/main.62f79a67.css",
+    "main.js": "/bepixel/static/js/main.c9ff2f0c.js",
+    "static/media/14.png": "/bepixel/static/media/14.745bffee9ffcc479b4ae.png",
+    "static/media/serv2.png": "/bepixel/static/media/serv2.0f118199cd33636f9bb5.png",
+    "static/media/serv3.png": "/bepixel/static/media/serv3.1ca69efe26a476d14a25.png",
+    "static/media/laespumita.svg": "/bepixel/static/media/laespumita.d7c08cce6d1c99a89f98.svg",
+    "static/media/LOGOVERTICALSTROKE.svg": "/bepixel/static/media/LOGOVERTICALSTROKE.4440ed749add19c8eaf81c3c17d66ea2.svg",
+    "static/media/LOGOVERTICAL.svg": "/bepixel/static/media/LOGOVERTICAL.d07b1092a9fcdb3f84e5575aebfb873c.svg",
+    "static/media/LOGOHORIZONTAL.svg": "/bepixel/static/media/LOGOHORIZONTAL.fa98590d4b827f4b8778.svg",
+    "static/media/LOGOTIPO.svg": "/bepixel/static/media/LOGOTIPO.339b9eb95ef277b26e685a91f572fc5b.svg",
+    "static/media/serv1.svg": "/bepixel/static/media/serv1.a5f33af37e39a9c00c7c.svg",
+    "index.html": "/bepixel/index.html",
+    "static/media/ISOTIPO.svg": "/bepixel/static/media/ISOTIPO.9d79e1c3b4db3d8b7defbb6154c25fd2.svg",
+    "main.62f79a67.css.map": "/bepixel/static/css/main.62f79a67.css.map",
+    "main.c9ff2f0c.js.map": "/bepixel/static/js/main.c9ff2f0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d2f5151.css",
-    "static/js/main.a6311764.js"
+    "static/css/main.62f79a67.css",
+    "static/js/main.c9ff2f0c.js"
   ]
 }
