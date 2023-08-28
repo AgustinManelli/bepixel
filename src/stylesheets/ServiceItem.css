@@ -23,3 +23,12 @@
     width: 100%;
     text-align: left;
   }
+
+@media screen and (max-width: 600px) {
+  .serviceItem{
+    gap: 10px;
+  }
+  .serviceItem div{
+    font-size: 15px;
+  }
+}

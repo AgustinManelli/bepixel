@@ -1,11 +1,19 @@
 .footerfaqContainer{
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footerinfoText a{
     text-decoration: none;
 }
 
-.footerinfoText p{
+.footerinfoText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     text-align: left;
 }

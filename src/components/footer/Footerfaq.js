@@ -9,13 +9,13 @@ function Footerfaq(){
 
             <div className='footerinfoSeparatorContainer'>
                 <div className='footerinfoSeparator'></div>
-                <p>FAQ</p>
+                <p>faq</p>
                 <div className='footerinfoSeparator'></div>
             </div>
             <div className='footerinfoText'>
-                <h3>¿Qué es bepixel?</h3>
+                <h4>¿Qué es bepixel?</h4>
                 <p>En bepixel nos dedicamos a crear las piezas gráficas que tu marca necesita, tanto para tus redes, hasta papelería corporativa</p>
-                <h3>¿De dónde somos?</h3>
+                <h4>¿De dónde somos?</h4>
                 <p>Somos de Córdoba, Argentina, Pero trabajamos para toda Argentina y... el mundo 👀</p>
                 <a href='/faq'>Conocé más aquí</a>
             </div>

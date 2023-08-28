@@ -8,18 +8,18 @@ function Footerinfo(){
         <div className='footerinfoContainer'>
             <div className='footerinfoSeparatorContainer'>
                 <div className='footerinfoSeparator'></div>
-                <p>CONTACTO</p>
+                <p>contacto</p>
                 <div className='footerinfoSeparator'></div>
             </div>
             
             <ul className='footerinfoUl'>
                 <li className='footerinfoLi'>
                     <FaMapMarkerAlt className='footerinfoIcon'/>
-                    <p>Río Tercero</p>
+                    <p>río tercero</p>
                 </li>
                 <li className='footerinfoLi'>
                     <FaPhoneSquareAlt className='footerinfoIcon'/>
-                    <p>+54 (3571) 123456</p>
+                    <p>+54(3571)534631</p>
                 </li >
                 <li className='footerinfoLi'>
                     <FaRegEnvelope className='footerinfoIcon'/>

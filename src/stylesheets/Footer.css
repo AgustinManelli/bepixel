@@ -9,12 +9,8 @@
 }
 
 .footerlogo{
-    width: 200px;
-}
-
-.footerimg{
-    width: 95%;
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+    width: 100px;
+    margin: 40px 40px
 }
 
 .footerElements{
@@ -29,9 +25,9 @@
 @media screen and (max-width: 600px) {
 
     .footerElements{
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 50px;
     }
 
     .footerimg{

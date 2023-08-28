@@ -48,7 +48,7 @@ function App() {
     /*onContextMenu={showNav}
   onClick={hideContext}*/
     >
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navbar setIsActive={setIsActive} isActive={isActive} isPhone={isPhone} setIsPhone={setIsPhone} shadowScroll = {shadowScroll} setShadowScroll={setShadowScroll}/>
         <Routes>
           <Route path="/" element={<Home />} />

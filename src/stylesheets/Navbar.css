@@ -10,26 +10,28 @@ body{
     position: fixed;
     top:calc(0% + 5px);
     z-index: 100;
-    border-radius: 0px 30px 0px 30px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /*border-radius: 10px 30px 10px 30px;*/
+    border-radius: 10px;
     transition: background-color .2s, box-shadow 1s;
     -webkit-transition: background-color .2s, box-shadow 1s;
     -moz-transition: background-color .2s, box-shadow 1s;
 }
 
-.navShadow{
+.navshadow{
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 5%);
     backdrop-filter: blur(10px) saturate(200%);
-}
-
-.nav{
-    display: flex;
-    width: 100%;
-    height: 100%;
 }
 
 .navUl{
@@ -38,16 +40,16 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
 }
 
 .navLi{
     position: relative;
     transition: all .3s;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
 }
 
 .navAnchor{
@@ -58,6 +60,70 @@ body{
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navDropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    height: fit-content;
+    min-width: fit-content;
+    background-color: var(--secondaryColor);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.dropdownShadow{
+    background-color: #fff;
+}
+
+.navDropdown a div{
+    height: 100%;
+    min-width: fit-content;
+    white-space: nowrap;
+    padding: 1rem;
+    margin: 0px;
+    text-decoration: none;
+    color: var(--mainColor);
+    font-weight: 500;
+}
+
+.navDropdown a div:hover{
+    background-color: rgb(0, 0, 0, 5%);
+}
+
+.separator{
+    height: 1px;
+    width: 100%;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    background-color: #eceef3;
+}
+
+.navLi:hover .navDropdown{
+    display: block;
+}
+
+.navLi svg{
+    transition: .3s ease-in-out;
+}
+
+.navLiArrow.navLi:hover svg{
+    transform: rotate(180deg);
+}
+
+.navAnchorSec{
+    display: block;
+}
+
+.navLiArrow:hover .navAnchorSec{
+    display:block;
 }
 
 .active{
@@ -69,18 +135,13 @@ body{
     transform: scaleX(100%);
 }
 
-.navarrow{
-    color: var(--mainColor);
-}
-
 .anchorlogoNav{
     margin-right: 20px;
     margin-left: 20px;
 }
 
 .logoNav{
-    height: 100%;
-    width: 70%;
+    height: 50px;
     margin: 0%;
     padding: 0%;
     transition: all .2s;
@@ -121,6 +182,10 @@ body{
     background-attachment: fixed;
 }
 
+.responsiveMenu{
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
 
     .navContainer{
@@ -128,47 +193,82 @@ body{
         transition: all .2s;
     }
 
-    .opened{
-        height: 50vh;
+    .responsiveMenu{
+        display: none;
+        list-style: none;
+        flex-direction: column;
+        gap: 1.5rem;
+        height: fit-content;
+        align-items: center;
+        padding: 1rem 0px 2.5rem;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        margin: 0px;
+        right: 0px;
+        z-index: 100;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 5%);
+        backdrop-filter: blur(10px) saturate(200%);
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+    .responsiveOpened{
+        display: flex;
+    }
+
+    .responsivenavDropdown{
+        display: none;
+        width: 100%;
+        top: 100%;
+        z-index: 99999;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+        padding: 20px;
+        background-color:rgb(0, 0, 0, 10%);
+    }
+    .responsivenavDropdown a{
+        white-space: nowrap;
+        margin: 0px;
+        text-decoration: none;
+        color: var(--mainColor);
+        font-size: 30px;
+    }
+
+    .responsivenavDropdownOpened{
+        display: flex;
+    }
+
+    .navLiResponsive{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+
+    .responsiveArrow{
+        transition: .3s;
+    }
+
+    .responsiveArrowinverted{
+        transform: rotate(180deg);
     }
 
     .nav{
         height: 100px;
-        width: 100vw;
+        width: 100%;
         justify-content:space-between;
         align-items: center;
         display: flex;
     }
 
     .navUl{
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        transition: all .05s;
-        left: 0;
-        top: 150px;
-        opacity: 0;
-        z-index: -1;
-        visibility: hidden;
-    }
-
-    .navUl.activated{
-        display: flex;
-        top: 150px;
-        left: 0;
-        z-index: 50;
-        visibility: visible;
-        opacity: 1;
+        display: none;
     }
 
     .navAnchor{
         font-size: 40px;
-    }
-
-    .navAnchor::after{
-        display: none;
     }
 
     .logoNav2{

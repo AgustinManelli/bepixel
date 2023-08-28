@@ -23,7 +23,7 @@
 }
 
 .homefaqContainer p{
-    text-align:justify;
+    text-align:center;
 }
 
 .homefaqLogo{
@@ -59,4 +59,18 @@
         fill: hsla(189, 68%, 75%,0%)
     }
     
+}
+
+@media screen and (max-width: 600px) {
+    .homefaqContainer{
+        position: relative;
+        width: 100vw;
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .homefaqContainer div{
+        width: 350px;
+    }
 }
