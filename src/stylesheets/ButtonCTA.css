@@ -1,39 +1,26 @@
-.titlElement button{
-    border: 0;
-    max-width: 300px;
-    background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
-    border-radius: 0 12px 0 12px;
-    color: #fff;
+.wrap {
+    height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .button {
+    width: 150px;
+    height: 50px;
     font-size: 20px;
-    padding: 4px;
-    cursor: pointer;
-    transition: .3s;
-    margin-top: 60px;
-}
-
-.titlElement button span{
-    background-color: var(--secondaryColor);
-    width: 100%;
-    padding: 16px 24px;
-    border-radius: 10px;
-    transition: .3s;
-    font-weight: 700;
-}
-
-.titlElement button span a{
-    text-decoration: none;
+    font-weight: 500;
     color: #fff;
-}
+    background-color: transparent;
+    border: none;
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: solid 2px #fff;
 
-.titlElement button:hover span{
-    background: none;
-}
-
-.titlElement button:hover{
-    transform:scale(1.1);
-}
-
-.titlElement button:active{
-    transform:scale(0.9);
-}
+    }
+  
+  .button:hover {
+    transform: scale(110%);
+  }

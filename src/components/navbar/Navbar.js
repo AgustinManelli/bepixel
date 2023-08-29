@@ -23,6 +23,7 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
 
     const closeNav = event => {
         setIsActive(false);
+        $('body,html').animate({ scrollTop:'0px' },500);
     };
 
     const handleResize = () => {
@@ -69,8 +70,8 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
                 <li className='navLi navLiArrow' id='navLi'>
                     <div className='navAnchor' activeclassname='navAnchor active'>trabajos<IoIosArrowDown/></div>
                     <div className={shadowScroll ? "navDropdown" : "navDropdown dropdownShadow"}>
-                            <NavLink to='/laespumita' className='navDropdownLink'>la espumita</NavLink>
-                            <NavLink to='/agn' className='navDropdownLink'>agn</NavLink>
+                            <NavLink to='/laespumita' className='navDropdownLink' onClick={closeNav}>la espumita</NavLink>
+                            <NavLink to='/agn' className='navDropdownLink' onClick={closeNav}>agn</NavLink>
                     </div>
                 </li>
 
