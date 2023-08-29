@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.css": "/bepixel/static/css/main.700e6c41.css",
-    "main.js": "/bepixel/static/js/main.fab56ec4.js",
+    "main.css": "/bepixel/static/css/main.1b2e1c04.css",
+    "main.js": "/bepixel/static/js/main.92a0adda.js",
     "static/media/14.png": "/bepixel/static/media/14.745bffee9ffcc479b4ae.png",
+    "static/media/laespumitashirt.png": "/bepixel/static/media/laespumitashirt.018d333bc08c179d4d18.png",
+    "static/media/laespumitabag.png": "/bepixel/static/media/laespumitabag.2faa50bc7375411a5679.png",
+    "static/media/laespumitasticker.png": "/bepixel/static/media/laespumitasticker.11c90c0bf798429af2fd.png",
+    "static/media/laespumitabefore.png": "/bepixel/static/media/laespumitabefore.bdc7dc00604ae5846545.png",
     "static/media/serv2.png": "/bepixel/static/media/serv2.0f118199cd33636f9bb5.png",
     "static/media/serv3.png": "/bepixel/static/media/serv3.1ca69efe26a476d14a25.png",
+    "static/media/laespumitavariations.svg": "/bepixel/static/media/laespumitavariations.b68f69131a96df0ddfdac39d862da602.svg",
+    "static/media/laespumitaafter.svg": "/bepixel/static/media/laespumitaafter.fa5755c0d26b1ab29aa5030beeed0b2c.svg",
     "static/media/laespumita.svg": "/bepixel/static/media/laespumita.d7c08cce6d1c99a89f98.svg",
     "static/media/LOGOVERTICALSTROKE.svg": "/bepixel/static/media/LOGOVERTICALSTROKE.4440ed749add19c8eaf81c3c17d66ea2.svg",
     "static/media/LOGOVERTICAL.svg": "/bepixel/static/media/LOGOVERTICAL.d07b1092a9fcdb3f84e5575aebfb873c.svg",
@@ -13,11 +19,11 @@
     "static/media/serv1.svg": "/bepixel/static/media/serv1.a5f33af37e39a9c00c7c.svg",
     "index.html": "/bepixel/index.html",
     "static/media/ISOTIPO.svg": "/bepixel/static/media/ISOTIPO.9d79e1c3b4db3d8b7defbb6154c25fd2.svg",
-    "main.700e6c41.css.map": "/bepixel/static/css/main.700e6c41.css.map",
-    "main.fab56ec4.js.map": "/bepixel/static/js/main.fab56ec4.js.map"
+    "main.1b2e1c04.css.map": "/bepixel/static/css/main.1b2e1c04.css.map",
+    "main.92a0adda.js.map": "/bepixel/static/js/main.92a0adda.js.map"
   },
   "entrypoints": [
-    "static/css/main.700e6c41.css",
-    "static/js/main.fab56ec4.js"
+    "static/css/main.1b2e1c04.css",
+    "static/js/main.92a0adda.js"
   ]
 }
