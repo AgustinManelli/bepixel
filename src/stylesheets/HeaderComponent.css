@@ -16,3 +16,14 @@
     max-width: 400px;
     color: #fff;
 }
+
+@media screen and (max-width: 600px) {
+    .laespumitaHeaderContainer{
+        height: 70vh;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .laespumitaTextContainer{
+        max-width: 300px;
+    }
+}

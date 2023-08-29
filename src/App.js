@@ -10,6 +10,7 @@ import {
   Route,
 } from "react-router-dom";
 import Laespumita from './Pages/Laespumita';
+import FloatingWSP from './components/FloatingWSP';
 
 function App() {
   const [isActive, setIsActive] = React.useState(false);
@@ -52,6 +53,7 @@ function App() {
     >
       <Router basename={process.env.PUBLIC_URL}>
         <Navbar setIsActive={setIsActive} isActive={isActive} isPhone={isPhone} setIsPhone={setIsPhone} shadowScroll = {shadowScroll} setShadowScroll={setShadowScroll}/>
+      <FloatingWSP />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/trabajos" element={<Home />} />
