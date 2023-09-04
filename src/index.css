@@ -3,11 +3,36 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --mainColor: rgb(225, 0, 152);
+  --secondaryColor: rgb(0, 42, 90);
+  --terciaryColor: rgb(68, 0, 153);
+  --cornersRadius: 10px;
 }
 
-/**-apple-system, BlinkMacSystemFont,**/
+*::selection {
+  background: rgb(190, 190, 190);
+  color: rgb(0, 0, 0);
+}
+
+html::-webkit-scrollbar {
+  width: 15px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--secondaryColor);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(225, 0, 152); 
+  border-radius: 20px;
+  border: 3px solid rgb(0, 42, 90);
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Container{
+  width: 95vw;
 }

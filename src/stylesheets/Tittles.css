@@ -1,12 +1,13 @@
 .titlElement{
-    height: 60px;
+    height: fit-content;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .titlElement svg{
-  width: 400px;
+  width: 330px;
+  height: 50px;
 }
 .titlElement svg text {
     position: relative;
@@ -16,7 +17,6 @@
     font-weight: 900;
     stroke-width: 1;
     animation: textAnimate 5s infinite alternate;
-    
   }
   
   @keyframes textAnimate {

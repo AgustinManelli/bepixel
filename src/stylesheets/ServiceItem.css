@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 20px;
     height: 100px;
   }
 
@@ -22,13 +22,24 @@
     flex-direction: column;
     width: 100%;
     text-align: left;
-  }
+}
 
-@media screen and (max-width: 600px) {
+.serviceItem div h3{
+  color: var(--secondaryColor);
+}
+
+.serviceItem div p{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 815px) {
   .serviceItem{
     gap: 10px;
   }
-  .serviceItem div{
-    font-size: 15px;
+  .serviceItem div h3{
+    font-size: 20px;
   }
+  .serviceItem img{
+    width: 70px;
+}
 }

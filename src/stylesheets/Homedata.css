@@ -3,7 +3,7 @@
 }
 
 .homedataContainer{
-  height: 80vh;
+  height: fit-content;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -11,39 +11,45 @@
 }
 
 .homedata{
+    margin: 50px 0 50px 0;
+    max-width: 1020px;
     position: relative;
     display: flex;
     align-items: center;
     gap: 3vw;
 }
 
+.homedataElement:first-child{
+  width: 40%;
+}
+
 .homedataElement{
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 500px;
 }
 
 .homedataElement p{
   margin-top: 10px;
+  text-align: left;
 }
 
 .services{
-  gap:3vw;
-  max-width: 700px;
+  gap:50px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 815px) {
   .homedata{
     flex-direction: column;
     gap: 5vw;
+    width: 90%;
+  }
+
+  .homedataElement:first-child{
+    width: initial;
   }
   
   .homedataElement{
-    max-width: 350px; 
-  }
-
-  .services{
-    gap:10vw;
+    max-width: 90%; 
   }
 }

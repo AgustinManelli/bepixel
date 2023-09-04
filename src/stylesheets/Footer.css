@@ -1,11 +1,20 @@
 .footerContainer{
-    margin-top: 20px;
-    width: 90vw;
-    margin-bottom: 30px;
+    width: 100vw;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
+}
+
+.footer_mw{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1020px;
+    margin: 20px 20px; 
 }
 
 .footerlogo{
@@ -22,7 +31,39 @@
     gap: 50px;
 }
 
-@media screen and (max-width: 600px) {
+.footer_mw span{
+    margin-top: 30px;
+    color: #666;
+    font-size: 12px;
+    bottom: 10px;
+    width: 90%;
+    left: 50%;
+    top: 45%;
+    bottom: auto;
+    right: auto;
+    text-align: center;
+}
+
+.footerheart{
+    color: #E90606;
+    margin: 0 3px;
+    font-size: 10px;
+    animation: pound 0.35s infinite alternate;
+    -webkit-animation: pound 0.35s infinite alternate;
+}
+
+@-webkit-keyframes pound {
+    to {
+      transform: scale(1.1);
+    }
+}
+@keyframes pound {
+    to {
+      transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 815px) {
 
     .footerElements{
         flex-direction: column;

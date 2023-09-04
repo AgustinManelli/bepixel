@@ -1,10 +1,12 @@
 .homeheaderContainer{
     position: relative;
-    width: 100vw;
     height: 100vh;
-    background: var(--secondaryColor);
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondaryColor);
 }
 
 .homeheaderElements{
@@ -39,6 +41,7 @@
     flex-direction: column;
     align-items: center;
     overflow: visible;
+    gap: 30px;
 }
 
 .textelement h2{
@@ -48,7 +51,7 @@
     font-weight: 700;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 815px) {
     .homeheaderElements h2{
         font-size: calc(50px + 1.5vw);
     }
@@ -57,11 +60,5 @@
     }
     .homeheaderimg{
         display: none;
-    }
-
-    .textelement button{
-        width: 300px;
-        font-size: 40px;
-        padding: 4px;
     }
 }

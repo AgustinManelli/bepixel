@@ -27,7 +27,7 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
     };
 
     const handleResize = () => {
-        if (window.innerWidth <= 600) {
+        if (window.innerWidth <= 815) {
             setIsPhone(true);
         }else{
             setIsPhone(false);
@@ -50,7 +50,7 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
     useEffect(() => {
         window.addEventListener("resize", handleResize)
         window.addEventListener("scroll", scrollnavigate)
-        if (window.innerWidth <= 600) {
+        if (window.innerWidth <= 815) {
             setIsPhone(true);
         }else{
             setIsPhone(false);
@@ -71,16 +71,11 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
                     <div className='navAnchor' activeclassname='navAnchor active'>trabajos<IoIosArrowDown/></div>
                     <div className={shadowScroll ? "navDropdown" : "navDropdown dropdownShadow"}>
                             <NavLink to='/laespumita' className='navDropdownLink' onClick={closeNav}>la espumita</NavLink>
-                            <NavLink to='/agn' className='navDropdownLink' onClick={closeNav}>agn</NavLink>
                     </div>
                 </li>
 
                 <li className='navLi'>
-                    <NavLink to='/faq' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>faq</NavLink>
-                </li>
-
-                <li className='navLi'>
-                    <NavLink to='/todo' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>todo</NavLink>
+                    <NavLink to='/ourbrand' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>nuestra marca</NavLink>
                 </li>
             </ul>
             <progress className="progressBar" id="progressbar" max="100" value="0"></progress>
@@ -93,14 +88,10 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
                 </div>
                 <div className="responsivenavDropdown">
                     <NavLink to='/laespumita' className='navDropdownLinkResponsive' onClick={closeNav}>la espumita</NavLink>
-                    <NavLink to='/agn' className='navDropdownLinkResponsive' onClick={closeNav}>agn</NavLink>
                 </div>
             </li>
             <li className='navLi'>
-                <NavLink to='/faq' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>faq</NavLink>
-            </li>
-            <li className='navLi'>
-                <NavLink to='/todo' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>todo</NavLink>
+                <NavLink to='/ourbrand' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>nuestra marca</NavLink>
             </li>
         </ul>
 

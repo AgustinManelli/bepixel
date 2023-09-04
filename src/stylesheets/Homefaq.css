@@ -1,7 +1,7 @@
 .homefaqContainer{
     position: relative;
     width: 100vw;
-    height: 55vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,8 +9,18 @@
     background-color: rgb(0, 163, 224, 15%);
 }
 
-.homefaqContainer div{
-    width: 500px;
+.homefaq_mw{
+    margin: 50px 0 50px 0;
+    max-width: 1020px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.homefaqtext{
+    width: 60%;
 }
 
 .homefaqtext{
@@ -19,11 +29,11 @@
 }
 
 .homefaqLogo{
-    width: 200px;
+    min-width: 200px;
 }
 
 .homefaqContainer p{
-    text-align:center;
+    text-align:left;
 }
 
 .homefaqLogo{
@@ -61,16 +71,16 @@
     
 }
 
-@media screen and (max-width: 600px) {
-    .homefaqContainer{
+@media screen and (max-width: 815px) {
+    .homefaq_mw{
         position: relative;
-        width: 100vw;
-        height: 80vh;
+        width: 90%;
+        height: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .homefaqContainer div{
-        width: 350px;
+    .homefaqtext{
+        width: 90%;
     }
 }

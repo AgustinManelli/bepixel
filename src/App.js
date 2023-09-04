@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Laespumita from './Pages/Laespumita';
 import FloatingWSP from './components/FloatingWSP';
+import Ourbrand from './Pages/Ourbrand';
 
 function App() {
   const [isActive, setIsActive] = React.useState(false);
@@ -56,9 +57,8 @@ function App() {
       <FloatingWSP />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/trabajos" element={<Home />} />
-          <Route path="/todo" element={<Home />} />
           <Route path="/laespumita" element={<Laespumita />} />
+          <Route path="/ourbrand" element={<Ourbrand />} />
         </Routes>
         <Footer />
       </Router>
