@@ -1,6 +1,5 @@
 import {React} from 'react';
 import '../../stylesheets/Homeheader.css'
-import homeheaderpic from '../../image/14.png'
 import ButtonCTA from '../ButtonCTA';
 
 
@@ -18,7 +17,6 @@ function Homeheader(){
                     <ButtonCTA name="contáctanos" link="https://youtube.com"/>
                 </div>
                 <div className='homeheaderElement homeheaderimg'>
-                    <img src={homeheaderpic} />
                 </div>
             </div>
         </div>

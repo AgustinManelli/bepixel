@@ -16,7 +16,7 @@ function Footer(){
                     <Footerfaq />
                 </div>
                 <span>
-                    Made with <BsFillHeartFill className='footerheart'/> by bepixel
+                    made with <BsFillHeartFill className='footerheart'/> by bepixel
                 </span>
             </div>
         </div>
