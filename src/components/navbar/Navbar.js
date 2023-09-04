@@ -19,6 +19,8 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
 
     const handleClick = event => {
         setIsActive(current => !current);
+        $('.responsivenavDropdown').removeClass('responsivenavDropdownOpened');
+        $('.responsiveArrow').removeClass('responsiveArrowinverted');
     };
 
     const closeNav = event => {
@@ -83,6 +85,9 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
 
 
         <ul className={isActive ? "responsiveMenu responsiveOpened navshadow" : "responsiveMenu"}>
+            <li className='navLi'>
+                <NavLink to='/' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>home</NavLink>
+            </li>
             <li className='navLi navLiResponsive' onClick={openDropdown}>
                 <div className='navAnchor' activeclassname='navAnchor active'>trabajos<IoIosArrowDown className='responsiveArrow'/>
                 </div>

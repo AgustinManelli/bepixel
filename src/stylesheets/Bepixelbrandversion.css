@@ -1,6 +1,6 @@
 .bepixelbrandversionContainer{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 100px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -10,9 +10,11 @@
     width: 50%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 815px) {
     .bepixelbrandversionContainer{
-        margin-top: 20%;
-        margin-bottom: 20%;
+        flex-direction: column;
+    }
+    .bepixelbrandversionContainer img {
+        width: 100%;
     }
 }

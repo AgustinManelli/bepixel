@@ -7,7 +7,7 @@ function Laespumita(){
     return(
         
         <div className='laespumitaContainer'>
-            <HeaderComponent title="la espumita" paraph="rediseño de marca para tienda de artículos de limpieza del hogar y automotor" logo="laespumita.svg"/>
+            <HeaderComponent title="la espumita" paraph="rediseño de marca para pyme de artículos de limpieza del hogar y automotor" logo="laespumita.svg"/>
             <LaespumitaGuidelines />
         </div>
     )

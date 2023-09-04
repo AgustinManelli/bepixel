@@ -27,21 +27,25 @@ function LaespumitaGuidelines(){
             </div>
 
             <div className='laespumitaGuidelinesVariationContainer'>
-                <img src={Laespumitavariations} />
+                <div className='laespumitaGuidelinesVariation_mw'>
+                    <img src={Laespumitavariations} />
+                </div>
             </div>
 
             <img className='laespumitaShirt' src={Laespumitashirt} />
 
             <div className='laespumitaGuidelinesAplicationsContainer'>
-                <div className='laespumitaGuidelinesAplications'>
-                    <p>
-                        Se realizaron stickers nomencladores para colocar
-                        sobre productos sueltos donde el envase no
-                        permita diferenciar que contenido lleva.
-                    </p>
-                    <img src={Laespumitasticker} />
+                <div className='laespumitaGuidelinesAplications_mw'>
+                    <div className='laespumitaGuidelinesAplications'>
+                        <p>
+                            Se realizaron stickers nomencladores para colocar
+                            sobre productos sueltos donde el envase no
+                            permita diferenciar que contenido lleva.
+                        </p>
+                        <img src={Laespumitasticker} />
+                    </div>
+                    <img src={Laespumitabag} className='laespumitaBagIMG'/>
                 </div>
-                <img src={Laespumitabag} className='laespumitaBagIMG'/>
             </div>
         </div>
     )

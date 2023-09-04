@@ -3,11 +3,12 @@ import '../stylesheets/Ourbrand.css'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import bepixelbrand from '../image/ISOTIPO.svg';
-import bepixelbrand_phone from '../image/bepixelguideline/bpg1.png'
 import Bepixelsections from '../components/bepixel/Bepixelsections';
 import Bepixelmeaning from '../components/bepixel/Bepixelmeaning';
 import Bepixelstruct from '../components/bepixel/Bepixelstruct';
 import Bepixelbrandversion from '../components/bepixel/Bepixelbrandversion';
+import Bepixelconstruction from '../components/bepixel/Bepixelconstruction';
+import Bepixelcolors from '../components/bepixel/Bepixelcolors';
 
 function Ourbrand(){
 
@@ -16,24 +17,19 @@ function Ourbrand(){
     return(
         
         <div className='ourbrandContainer'>
-            <section className='ourbrandSection1'>
+            <section className='ourbrandSection_mw'>
                 <div className='ourbrandSection1_1'>
                     <img src={bepixelbrand} />
-                    <p>La marca "bepixel" es una combinación de dos palabras: "be", que viene del inglés "ser", y "pixel", que es una referencia al diseño gráfico y la tecnología. Juntos, estos términos crean una marca moderna y relevante que refleja la especialidad de la empresa en diseño y marketing digital.</p>
+                    <p>"bepixel" es una combinación de dos palabras: "be", que viene del inglés "ser", y "pixel", que es una referencia al diseño gráfico y la tecnología. Juntos, estos términos crean una marca moderna y relevante que refleja la especialidad de la empresa en diseño y marketing digital.<br></br><br></br>
+                    Esta presentación tiene como objetivo mostrar parte de nuestro trabajo y la calidad de nuestros proyectos.
+                    </p>
                 </div>
-                <div className='ourbrandSection1_2'>
-                    <img src={bepixelbrand_phone} />
-                </div>
             </section>
-            <section>
-                <Bepixelsections section='significados' page={<Bepixelmeaning />}/>
-            </section>
-            <section>
-                <Bepixelsections section='estructura' page={<Bepixelstruct />}/>
-            </section>
-            <section>
-                <Bepixelsections section='versiones de marca' page={<Bepixelbrandversion />}/>
-            </section>
+            <Bepixelsections section='significados' page={<Bepixelmeaning />}/>
+            <Bepixelsections section='construcción' page={<Bepixelconstruction />}/>
+            <Bepixelsections section='estructura' page={<Bepixelstruct />}/>
+            <Bepixelsections section='versiones de marca' page={<Bepixelbrandversion />}/>
+            <Bepixelsections section='colores' page={<Bepixelcolors />}/>
         </div>
     )
 }

@@ -4,9 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .bepixelmeaningContainer img{
@@ -38,11 +38,10 @@
     width: 70px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 815px) {
     .bepixelmeaningContainer{
         flex-direction: column;
-        margin-top: 20%;
-        margin-bottom: 20%;
+        gap: 20px;
     }
     .bepixelmeaning_elementsContainer{
         max-width: 100%;
