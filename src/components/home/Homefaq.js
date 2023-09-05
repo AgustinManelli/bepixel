@@ -3,6 +3,7 @@ import '../../stylesheets/Homefaq.css'
 import { ReactComponent as Logo } from '../../image/LOGOVERTICALSTROKE.svg';
 import Tittles from '../Tittles';
 
+
 export default function Homefaq() {
   return (
     <div className='homefaqContainer'>
