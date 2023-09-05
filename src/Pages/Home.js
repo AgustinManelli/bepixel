@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Homefaq from '../components/home/Homefaq';
 import Homecontact from '../components/home/Homecontact';
+import AccordionHome from '../components/AccordionHome.js';
 
 function Home(){
 
@@ -18,6 +19,7 @@ function Home(){
             <Homefaq />
             <Homedata />
             <Homecontact />
+            <AccordionHome />
         </div>
     )
 }

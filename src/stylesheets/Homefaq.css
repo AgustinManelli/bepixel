@@ -13,6 +13,7 @@
     margin: 50px 0 50px 0;
     max-width: 1020px;
     width: 100%;
+    gap: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -33,7 +34,7 @@
 }
 
 .homefaqContainer p{
-    text-align:left;
+    text-align:center;
 }
 
 .homefaqLogo{
