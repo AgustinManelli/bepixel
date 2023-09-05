@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bepixel/static/css/main.271ba110.css",
-    "main.js": "/bepixel/static/js/main.19935ad2.js",
+    "main.css": "/bepixel/static/css/main.f601e209.css",
+    "main.js": "/bepixel/static/js/main.bd608b69.js",
     "static/media/14.png": "/bepixel/static/media/14.8f6c7ba41d158ca77148.png",
     "static/media/brandversion2.png": "/bepixel/static/media/brandversion2.7572989e0895afdc1d23.png",
     "static/media/laespumitashirt.png": "/bepixel/static/media/laespumitashirt.2591729522ec47bd8151.png",
@@ -28,11 +28,11 @@
     "static/media/bpg4.svg": "/bepixel/static/media/bpg4.6ef5357abdffe3f23960743bf0a8973f.svg",
     "static/media/bpg3.svg": "/bepixel/static/media/bpg3.d67eff92ac11e44461c2befc880d4e9e.svg",
     "static/media/bpg5.svg": "/bepixel/static/media/bpg5.9d395d635db110192384ecf4a7bae69f.svg",
-    "main.271ba110.css.map": "/bepixel/static/css/main.271ba110.css.map",
-    "main.19935ad2.js.map": "/bepixel/static/js/main.19935ad2.js.map"
+    "main.f601e209.css.map": "/bepixel/static/css/main.f601e209.css.map",
+    "main.bd608b69.js.map": "/bepixel/static/js/main.bd608b69.js.map"
   },
   "entrypoints": [
-    "static/css/main.271ba110.css",
-    "static/js/main.19935ad2.js"
+    "static/css/main.f601e209.css",
+    "static/js/main.bd608b69.js"
   ]
 }
