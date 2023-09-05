@@ -12,10 +12,14 @@
 .titlElement svg text {
     position: relative;
     letter-spacing: 5px;
-    stroke: var(--mainColor);
     font-size: 30px;
     font-weight: 900;
+    stroke: var(--mainColor);
     stroke-width: 1;
+    paint-order: stroke fill;
+    stroke-linejoin: round;
+    font-family: 'Poppins';
+    font-weight: 700;
     animation: textAnimate 5s infinite alternate;
   }
   
@@ -34,7 +38,7 @@
     100% {
       stroke-dasharray: 50% 0;
       stroke-dashoffstet: -20%;
-      fill: hsla(189, 68%, 75%,0%)
+      fill: hsla(189, 68%, 75%,0%);
     }
     
   }
