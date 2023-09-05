@@ -7,6 +7,7 @@ import AOS from 'aos';
 import Homefaq from '../components/home/Homefaq';
 import Homecontact from '../components/home/Homecontact';
 import AccordionHome from '../components/AccordionHome.js';
+import Homeprice from '../components/home/Homeprice';
 
 function Home(){
 
@@ -18,6 +19,7 @@ function Home(){
             <Homeheader />
             <Homefaq />
             <Homedata />
+            <Homeprice />
             <Homecontact />
             <AccordionHome />
         </div>
