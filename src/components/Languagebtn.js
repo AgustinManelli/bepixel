@@ -11,7 +11,7 @@ function Languagebtn(){
         const [t, i18n] = useTranslation("global");
 
         useEffect(() => {
-            if(window.localStorage.getItem("lng") != "es"){
+            if(window.localStorage.getItem("lng") != "es" && window.localStorage.getItem("lng") != null){
                 document.querySelector('.check-toggle').checked = 'true';
             };
         }, [])
