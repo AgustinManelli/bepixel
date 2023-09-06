@@ -37,11 +37,11 @@ function Languagebtn(){
             
     return(
 
-        <div class="neumorphism-toggle">
+        <div className="neumorphism-toggle">
             <input id="language-toggle" className="check-toggle check-toggle-round-flat" type="checkbox" onChange={lenguagecheck}/>
             <label htmlFor="language-toggle">
-                <div class="switch">
-                    <div class="dot"></div>
+                <div className="switch">
+                    <div className="dot"></div>
                 </div>
                 <span>english version</span>
             </label>

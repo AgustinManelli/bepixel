@@ -1,0 +1,61 @@
+.notificationsContainer{
+    width: 20rem;
+    height: 4.5rem;
+    background-color: aqua;
+    position:fixed;
+    bottom:20px;
+    z-index:100;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 5%);
+    backdrop-filter: blur(10px) saturate(200%);
+    border-radius: 17px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transform: translateY(200px);
+    opacity: 0%;
+    transition: all 0.4s;
+}
+
+.activateNotifications{
+    transform: translateY(0px);
+    opacity: 100%;
+}
+
+.notificationsCross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.notifications_1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.notificationsbell{
+    height: 40px;
+    width: 40px;
+}
+
+.notifications_1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: left;
+}
+
+.notifications_1 div p:first-child{
+    font-weight: 700;
+}
+.notifications_1 div p:nth-child(2) {
+    font-size: 15px;
+}

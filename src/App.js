@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Laespumita from './Pages/Laespumita';
 import FloatingWSP from './components/FloatingWSP';
+import Notifications from './components/Notifications';
 import Ourbrand from './Pages/Ourbrand';
 
 function App() {
@@ -54,7 +55,8 @@ function App() {
     >
       <Router basename={process.env.PUBLIC_URL}>
         <Navbar setIsActive={setIsActive} isActive={isActive} isPhone={isPhone} setIsPhone={setIsPhone} shadowScroll = {shadowScroll} setShadowScroll={setShadowScroll}/>
-      <FloatingWSP />
+        <FloatingWSP />
+        <Notifications />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/laespumita" element={<Laespumita />} />

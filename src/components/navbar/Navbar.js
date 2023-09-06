@@ -89,14 +89,14 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
                 <NavLink to='/' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>home</NavLink>
             </li>
             <li className='navLi navLiResponsive' onClick={openDropdown}>
-                <div className='navAnchor' activeclassname='navAnchor active'>trabajos<IoIosArrowDown className='responsiveArrow'/>
+                <div className='navAnchor' activeclassname='navAnchor active'>{t("navbar.navelement1")}<IoIosArrowDown className='responsiveArrow'/>
                 </div>
                 <div className="responsivenavDropdown">
                     <NavLink to='/laespumita' className='navDropdownLinkResponsive' onClick={closeNav}>la espumita</NavLink>
                 </div>
             </li>
             <li className='navLi'>
-                <NavLink to='/ourbrand' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>nuestra marca</NavLink>
+                <NavLink to='/ourbrand' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>{t("navbar.navelement2")}</NavLink>
             </li>
         </ul>
 

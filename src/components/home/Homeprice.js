@@ -6,47 +6,47 @@ function Homeprice(){
 
     return(
         <div className='homepriceContainer'>
-            <div class="plan-options">
-                <div class="plan-card">
+            <div className="plan-options">
+                <div className="plan-card">
                 <h3>Emprendimientos</h3>
-                <div class="price">
-                    <span class="price-dollar">$</span>
-                    <h2 class="price-anually">00.00</h2>
+                <div className="price">
+                    <span className="price-dollar">$</span>
+                    <h2 className="price-anually">00.00</h2>
                 </div>
-                <ul class="plan-features">
+                <ul className="plan-features">
                     <li>prueba</li>
                     <li>prueba</li>
                     <li>prueba</li>
                 </ul>
-                <button class="action-button">consultanos</button>
+                <button className="action-button">consultanos</button>
                 </div>
 
-                <div class="plan-card card-highlight">
+                <div className="plan-card card-highlight">
                 <h3>Pymes</h3>
-                <div class="price">
-                    <span class="price-dollar">$</span>
-                    <h2 class="price-anually">00.00</h2>
+                <div className="price">
+                    <span className="price-dollar">$</span>
+                    <h2 className="price-anually">00.00</h2>
                 </div>
-                <ul class="plan-features">
+                <ul className="plan-features">
                     <li>prueba</li>
                     <li>prueba</li>
                     <li>prueba</li>
                 </ul>
-                <button class="action-button">consultanos</button>
+                <button className="action-button">consultanos</button>
                 </div>
 
-                <div class="plan-card">
+                <div className="plan-card">
                 <h3>Empresas</h3>
-                <div class="price">
-                    <span class="price-dollar">$</span>
-                    <h2 class="price-anually">00.00</h2>
+                <div className="price">
+                    <span className="price-dollar">$</span>
+                    <h2 className="price-anually">00.00</h2>
                 </div>
-                <ul class="plan-features">
+                <ul className="plan-features">
                     <li>prueba</li>
                     <li>prueba</li>
                     <li>prueba</li>
                 </ul>
-                <button class="action-button">consultanos</button>
+                <button className="action-button">consultanos</button>
                 </div>
             </div>
         </div>
