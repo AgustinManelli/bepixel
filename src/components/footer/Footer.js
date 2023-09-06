@@ -4,6 +4,7 @@ import Footerinfo from './Footerinfo';
 import '../../stylesheets/Footer.css'
 import logoh from '../../image/LOGOTIPO.svg'
 import { BsFillHeartFill } from 'react-icons/bs';
+import Languagebtn from '../Languagebtn';
 
 function Footer(){
 
@@ -15,10 +16,11 @@ function Footer(){
                     <Footerinfo />
                     <Footerfaq />
                 </div>
-                <span>
+            </div>
+                <Languagebtn />
+                <span className='footerspan'>
                     made with <BsFillHeartFill className='footerheart'/> by bepixel
                 </span>
-            </div>
         </div>
     );
 }

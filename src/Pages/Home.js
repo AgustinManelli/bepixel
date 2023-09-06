@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 
 function Home(){
+    document.title = "bepixel | home";
 
     AOS.init();
 

@@ -6,11 +6,11 @@ import '../../stylesheets/Navbar.css'
 import logof from '../../image/ISOTIPO.svg'
 import logof2 from '../../image/LOGOVERTICAL.svg'
 import $ from 'jquery'; 
+import { useTranslation } from 'react-i18next';
 
 
 function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setShadowScroll}){
-
-    
+    const [t, i18n] = useTranslation("global");
 
     const openDropdown = event => {
         $('.responsivenavDropdown').toggleClass('responsivenavDropdownOpened');
@@ -70,14 +70,14 @@ function Navbar({setIsActive, isActive, isPhone, setIsPhone, shadowScroll, setSh
             </div>
             <ul className={isActive ? 'navUl activated' : 'navUl'}>
                 <li className='navLi navLiArrow' id='navLi'>
-                    <div className='navAnchor' activeclassname='navAnchor active'>trabajos<IoIosArrowDown/></div>
+                    <div className='navAnchor' activeclassname='navAnchor active'>{t("navbar.navelement1")}<IoIosArrowDown/></div>
                     <div className={shadowScroll ? "navDropdown" : "navDropdown dropdownShadow"}>
                             <NavLink to='/laespumita' className='navDropdownLink' onClick={closeNav}>la espumita</NavLink>
                     </div>
                 </li>
 
                 <li className='navLi'>
-                    <NavLink to='/ourbrand' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>nuestra marca</NavLink>
+                    <NavLink to='/ourbrand' className='navAnchor' activeclassname='navAnchor active' onClick={closeNav}>{t("navbar.navelement2")}</NavLink>
                 </li>
             </ul>
             <progress className="progressBar" id="progressbar" max="100" value="0"></progress>

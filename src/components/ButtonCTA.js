@@ -4,7 +4,7 @@ import '../stylesheets/ButtonCTA.css'
 function ButtonCTA (props) {
 
   return(
-    <div class="wrap">
+    <div className="wrap">
       <button className="button">{props.name}</button>
     </div>
   )

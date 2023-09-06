@@ -11,6 +11,7 @@ import Bepixelconstruction from '../components/bepixel/Bepixelconstruction';
 import Bepixelcolors from '../components/bepixel/Bepixelcolors';
 
 function Ourbrand(){
+    document.title = "bepixel | nuestra marca";
 
     AOS.init();
 
