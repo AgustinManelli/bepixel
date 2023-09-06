@@ -12,9 +12,11 @@ function Notifications () {
         if (window.localStorage.getItem("npopup") == null){
             window.localStorage.setItem("npopup", true);
         };
-        if (window.localStorage.getItem("npopup") == 'true'){
-            $('.notificationsContainer').addClass('activateNotifications');
-        };
+        setTimeout(()=>{
+            if (window.localStorage.getItem("npopup") == 'true'){
+                $('.notificationsContainer').addClass('activateNotifications');
+            };
+        }, 3000)
     }, [])
 
     const closenotification = event => {
