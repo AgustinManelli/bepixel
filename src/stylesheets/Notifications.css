@@ -29,6 +29,12 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
+    transition: all .1s;
+}
+
+.notificationsCross:hover{
+    transform: scale(120%);
+    color: rgb(255, 96, 96);
 }
 
 .notifications_1{
