@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react';
 import '../stylesheets/Notifications.css';
 import { IoClose } from 'react-icons/io5';
-import { BiWorld } from 'react-icons/bi';
+import { IoNotifications } from 'react-icons/io5';
 import $ from 'jquery';
-import Languagebtn from './Languagebtn';
 
 function Notifications() {
 	useEffect(() => {
-		const notifications = document.querySelector('.notificationsContainer');
 		if (window.localStorage.getItem('npopup') == null) {
 			window.localStorage.setItem('npopup', true);
 		}
@@ -16,6 +14,11 @@ function Notifications() {
 				$('.notificationsContainer').addClass('activateNotifications');
 			}
 		}, 3000);
+		setTimeout(() => {
+			if (window.localStorage.getItem('npopup') == 'true') {
+				$('.notificationsContainer').removeClass('activateNotifications');
+			}
+		}, 20000);
 	}, []);
 
 	const closenotification = event => {
@@ -27,9 +30,10 @@ function Notifications() {
 		<div className='notificationsContainer'>
 			<IoClose className='notificationsCross' onClick={closenotification} />
 			<div className='notifications_1'>
-				<BiWorld className='notificationsbell' />
+				<IoNotifications className='notificationsbell' />
+				{/* <BiWorld className='notificationsbell' /> */}
 				<div>
-					<p>Alert</p>
+					<p>Notification</p>
 					<p>English version available</p>
 				</div>
 			</div>

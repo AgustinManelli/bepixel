@@ -7,5 +7,20 @@
 	"navbar": {
 		"navelement1": "trabajos",
 		"navelement2": "nuestra marca"
+	},
+	"home-faq": {
+		"title": "sobre nosotros",
+		"text": "Somos bepixel, una agencia de diseño gráfico de Córdoba, Argentina dedicada a transformar conceptos en piezas visuales extraordinarias. Nuestra pasión es plasmar la creatividad en cada proyecto, creando identidades visuales impactantes."
+	},
+	"home-services": {
+		"title": "servicios",
+		"text": "la mejor calidad en servicios para tu empresa o emprendimiento.",
+		"titleservice1": "branding",
+		"textservice1": "identificación gráfica, logotipos, recursos gráficos.",
+		"titleservice2": "papelería y cartelería",
+		"textservice2": "tarjetas personales, folletos, manuales de marca, etiquetas, carteles y vidrieras.",
+		"titleservice3": "diseño web/digital",
+		"textservice3": "creación de páginas web, wordpress, recursos y elementos para RRSS."
 	}
+
 }

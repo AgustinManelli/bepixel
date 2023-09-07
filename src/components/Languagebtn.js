@@ -6,6 +6,15 @@ import $ from 'jquery';
 function Languagebtn(props) {
 	const [t, i18n] = useTranslation('global');
 
+	useEffect(() => {
+		if (
+			window.localStorage.getItem('lng') != 'es' &&
+			window.localStorage.getItem('lng') != null
+		) {
+			document.querySelector('.check-toggle').checked = 'true';
+		}
+	}, []);
+
 	const lenguagecheck = event => {
 		const checkboxlenguage = document.querySelector(`#${props.id}`);
 
@@ -17,7 +26,7 @@ function Languagebtn(props) {
 			window.localStorage.setItem('lng', 'es');
 		}
 
-		/* $('body,html').animate({ scrollTop:'0px' },500); */
+		$('body,html').animate({ scrollTop: '0px' }, 500);
 	};
 
 	return (

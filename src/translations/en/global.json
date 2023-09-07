@@ -7,5 +7,19 @@
 	"navbar": {
 		"navelement1": "projects",
 		"navelement2": "our brand"
+	},
+	"home-faq": {
+		"title": "about us",
+		"text": "We are bepixel, a graphic design agency from Córdoba, Argentina, dedicated to transforming concepts into extraordinary visual pieces. Our passion is to put creativity in each project, creating impressive visual identities."
+	},
+	"home-services": {
+		"title": "services",
+		"text": "the best quality services for your company or startup.",
+		"titleservice1": "branding",
+		"textservice1": "graphic identification, logos, graphic resources.",
+		"titleservice2": "stationery and posters",
+		"textservice2": "business cards, brochures, brand manuals, labels, posters and shop windows.",
+		"titleservice3": "web/digital design",
+		"textservice3": "creation of web pages, wordpress, resources and elements for social networks."
 	}
 }

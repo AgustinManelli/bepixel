@@ -5,6 +5,11 @@ import { useTranslation } from 'react-i18next';
 
 function Homeheader() {
 	const [t, i18n] = useTranslation('global');
+
+	/*const removelocalstorage = event => {
+		window.localStorage.setItem('npopup', true);
+	};*/
+
 	return (
 		<div className='homeheaderContainer'>
 			<div className='homeheaderElements'>
@@ -21,6 +26,7 @@ function Homeheader() {
 				</div>
 				<div className='homeheaderElement homeheaderimg'></div>
 			</div>
+			{/* <button onClick={removelocalstorage} >holas</button > */}
 		</div>
 	);
 }
