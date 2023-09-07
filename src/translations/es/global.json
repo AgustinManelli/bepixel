@@ -1,11 +1,11 @@
 {
-    "home-header": {
-        "textelement1": "sin",
-        "textelement2": "límites",
-        "buttoncta": "contáctanos"
-    },
-    "navbar": {
-        "navelement1": "trabajos",
-        "navelement2": "nuestra marca"
-    }
+	"home-header": {
+		"textelement1": "sin",
+		"textelement2": "límites",
+		"buttoncta": "contáctanos"
+	},
+	"navbar": {
+		"navelement1": "trabajos",
+		"navelement2": "nuestra marca"
+	}
 }

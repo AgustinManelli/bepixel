@@ -1,11 +1,11 @@
 {
-    "home-header": {
-        "textelement1": "without",
-        "textelement2": "limits",
-        "buttoncta": "contact us"
-    },
-    "navbar": {
-        "navelement1": "projects",
-        "navelement2": "our brand"
-    }
+	"home-header": {
+		"textelement1": "without",
+		"textelement2": "limits",
+		"buttoncta": "contact us"
+	},
+	"navbar": {
+		"navelement1": "projects",
+		"navelement2": "our brand"
+	}
 }

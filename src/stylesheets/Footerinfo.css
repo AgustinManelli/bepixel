@@ -1,73 +1,67 @@
-.footerinfoContainer{
-
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    gap:10px;
-
+.footerinfoContainer {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	gap: 10px;
 }
 
-.footerinfoContainer img{
-    width: 50%;
+.footerinfoContainer img {
+	width: 50%;
 }
 
-.footerinfoUl{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    font-weight: 300;
-    margin-left: 20px;
-    margin-right: 20px;
+.footerinfoUl {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	font-weight: 300;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
-.footerinfoLi{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    padding: 5px;
+.footerinfoLi {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	padding: 5px;
 }
 
-.footerinfoLi p{
-    margin-left: 5px;
+.footerinfoLi p {
+	margin-left: 5px;
 }
 
-.footerinfoIcon{
-    color: var(--mainColor);
+.footerinfoIcon {
+	color: var(--mainColor);
 }
 
-.footerinfoSeparatorContainer{
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
+.footerinfoSeparatorContainer {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-.footerinfoSeparatorContainer p{
-    color: var(--secondaryColor);
-    font-weight: 700;
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+.footerinfoSeparatorContainer p {
+	color: var(--secondaryColor);
+	font-weight: 700;
+	font-size: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-
-.footerinfoSeparator{
-    background-color: var(--mainColor);
-    width: 100%;
-    height: 3px;
-    margin-left: 5px;
-    margin-right: 5px;
+.footerinfoSeparator {
+	background-color: var(--mainColor);
+	width: 100%;
+	height: 3px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 @media screen and (max-width: 815px) {
-
-    .footerinfoContainer{
-        width: 100%;    
-        align-items: center;
-        justify-content: center;
-    }
-
+	.footerinfoContainer {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
 }

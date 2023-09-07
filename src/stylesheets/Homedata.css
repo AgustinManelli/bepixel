@@ -1,54 +1,54 @@
 :root {
-    --slow: 0s;
+	--slow: 0s;
 }
 
-.homedataContainer{
-  height: fit-content;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.homedataContainer {
+	height: fit-content;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.homedata{
-    margin: 50px 0 50px 0;
-    max-width: 1020px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 3vw;
+.homedata {
+	margin: 50px 0 50px 0;
+	max-width: 1020px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 3vw;
 }
 
-.homedataElement:first-child{
-  width: 40%;
+.homedataElement:first-child {
+	width: 40%;
 }
 
-.homedataElement{
-  display: flex;
-  flex-direction: column;
-  position: relative;
+.homedataElement {
+	display: flex;
+	flex-direction: column;
+	position: relative;
 }
 
-.homedataElement p{
-  margin-top: 10px;
+.homedataElement p {
+	margin-top: 10px;
 }
 
-.services{
-  gap:50px;
+.services {
+	gap: 50px;
 }
 
 @media screen and (max-width: 815px) {
-  .homedata{
-    flex-direction: column;
-    gap: 5vw;
-    width: 90%;
-  }
+	.homedata {
+		flex-direction: column;
+		gap: 5vw;
+		width: 90%;
+	}
 
-  .homedataElement:first-child{
-    width: initial;
-  }
-  
-  .homedataElement{
-    max-width: 90%; 
-  }
+	.homedataElement:first-child {
+		width: initial;
+	}
+
+	.homedataElement {
+		max-width: 90%;
+	}
 }

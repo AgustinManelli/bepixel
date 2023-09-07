@@ -1,62 +1,61 @@
-.homeheaderContainer{
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--secondaryColor);
+.homeheaderContainer {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--secondaryColor);
 }
 
-.homeheaderElements{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.homeheaderElements {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
-.homeheaderElement{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+.homeheaderElement {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
 }
 
-.homeheaderimg{
-    height: 100%;
-    background-image: url('../image/14.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.homeheaderimg {
+	height: 100%;
+	background-image: url('../image/14.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.textelement{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: visible;
-    gap: 30px;
+.textelement {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: visible;
+	gap: 30px;
 }
 
-.textelement h2{
-    text-align: left;
-    font-size: 50px;
-    color: #fff;
-    font-weight: 700;
+.textelement h2 {
+	text-align: left;
+	font-size: 50px;
+	color: #fff;
+	font-weight: 700;
 }
 
 @media screen and (max-width: 815px) {
-    .homeheaderElements h2{
-        font-size: calc(50px + 1.5vw);
-    }
-    .homeheaderElements{
-        flex-direction: column-reverse;
-    }
-    .homeheaderimg{
-        display: none;
-    }
+	.homeheaderElements h2 {
+		font-size: calc(50px + 1.5vw);
+	}
+	.homeheaderElements {
+		flex-direction: column-reverse;
+	}
+	.homeheaderimg {
+		display: none;
+	}
 }

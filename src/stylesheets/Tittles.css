@@ -1,47 +1,42 @@
-.titlElement{
-    height: fit-content;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.titlElement {
+	height: fit-content;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.titlElement svg{
-  width: 330px;
-  height: 50px;
+.titlElement svg {
+	width: 330px;
+	height: 50px;
 }
 .titlElement svg text {
-    position: relative;
-    letter-spacing: 5px;
-    font-size: 30px;
-    font-weight: 900;
-    stroke: var(--mainColor);
-    stroke-width: 1;
-    paint-order: stroke fill;
-    stroke-linejoin: round;
-    font-family: 'Poppins';
-    font-weight: 700;
-    animation: textAnimate 5s infinite alternate;
-  }
-  
-  @keyframes textAnimate {
-    0% {
-      stroke-dasharray: 0 50%;
-      stroke-dashoffset:  20%;
-  
-    }
+	position: relative;
+	letter-spacing: 5px;
+	font-size: 30px;
+	font-weight: 900;
+	stroke: var(--mainColor);
+	stroke-width: 1;
+	paint-order: stroke fill;
+	stroke-linejoin: round;
+	font-family: 'Poppins';
+	font-weight: 700;
+	animation: textAnimate 5s infinite alternate;
+}
 
-    20% {
-        stroke-dasharray: 0 50%;
-        stroke-dashoffset:  20%;
-    }
-    
-    100% {
-      stroke-dasharray: 50% 0;
-      stroke-dashoffstet: -20%;
-      fill: hsla(189, 68%, 75%,0%);
-    }
-    
-  }
-  
-  
-  
+@keyframes textAnimate {
+	0% {
+		stroke-dasharray: 0 50%;
+		stroke-dashoffset: 20%;
+	}
+
+	20% {
+		stroke-dasharray: 0 50%;
+		stroke-dashoffset: 20%;
+	}
+
+	100% {
+		stroke-dasharray: 50% 0;
+		stroke-dashoffstet: -20%;
+		fill: hsla(189, 68%, 75%, 0%);
+	}
+}

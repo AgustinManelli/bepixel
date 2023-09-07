@@ -1,20 +1,20 @@
-.bepixelbrandversionContainer{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    position: relative;
+.bepixelbrandversionContainer {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	position: relative;
 }
 .bepixelbrandversionContainer img {
-    width: 50%;
+	width: 50%;
 }
 
 @media screen and (max-width: 815px) {
-    .bepixelbrandversionContainer{
-        flex-direction: column;
-    }
-    .bepixelbrandversionContainer img {
-        width: 100%;
-    }
+	.bepixelbrandversionContainer {
+		flex-direction: column;
+	}
+	.bepixelbrandversionContainer img {
+		width: 100%;
+	}
 }

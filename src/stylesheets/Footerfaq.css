@@ -1,21 +1,21 @@
-.footerfaqContainer{
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+.footerfaqContainer {
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
 }
 
-.footerinfoText a{
-    text-decoration: none;
+.footerinfoText a {
+	text-decoration: none;
 }
 
-.footerinfoText{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
+.footerinfoText {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	text-align: left;
+	margin-left: 20px;
+	margin-right: 20px;
 }

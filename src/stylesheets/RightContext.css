@@ -1,35 +1,43 @@
 .contextContainer {
-    z-index: 1;
-    width: 100vw;
-    height: 100%;
-    background-color: transparent;
-    position: absolute;
-  }
-  .contextSelection{
-    z-index: 3;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-  }
-  .rightClick {
-    z-index: 12;
-    position: fixed;
-    background: linear-gradient(to right, rgba(243, 243, 243, 90%), rgb(193, 0, 233, 50%));
-    backdrop-filter: blur(10px) saturate(200%);
-    border-radius: 10px;
-    overflow: hidden;
-    font-weight: 500;
-    font-style: italic;
-  }
-  .menuElement {
-    color: #222222;
-    cursor: pointer;
-    padding: 17px 36px;
-  }
-  .menuElement:hover {
-    color: #fff;
-    background: linear-gradient(to right, rgba(243, 243, 243, 90%), rgb(193, 0, 233, 80%));
-    transition: all .1s;
-    -webkit-transition: all .1s;
-    -moz-transition: all .1s;
-  }
+	z-index: 1;
+	width: 100vw;
+	height: 100%;
+	background-color: transparent;
+	position: absolute;
+}
+.contextSelection {
+	z-index: 3;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+}
+.rightClick {
+	z-index: 12;
+	position: fixed;
+	background: linear-gradient(
+		to right,
+		rgba(243, 243, 243, 90%),
+		rgb(193, 0, 233, 50%)
+	);
+	backdrop-filter: blur(10px) saturate(200%);
+	border-radius: 10px;
+	overflow: hidden;
+	font-weight: 500;
+	font-style: italic;
+}
+.menuElement {
+	color: #222222;
+	cursor: pointer;
+	padding: 17px 36px;
+}
+.menuElement:hover {
+	color: #fff;
+	background: linear-gradient(
+		to right,
+		rgba(243, 243, 243, 90%),
+		rgb(193, 0, 233, 80%)
+	);
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+}

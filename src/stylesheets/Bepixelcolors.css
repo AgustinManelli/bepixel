@@ -1,148 +1,143 @@
-.BepixelcolorsContainer{
-    width: 100%;
-    height: fit-content;
-    max-height: 800px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    gap: 10px;
-    
+.BepixelcolorsContainer {
+	width: 100%;
+	height: fit-content;
+	max-height: 800px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	gap: 10px;
 }
 
-.Bepixelcolors_1{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.Bepixelcolors_1 {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
 
-.Bepixelcolors_11{
-    display: flex;
-    gap: 10px;
+.Bepixelcolors_11 {
+	display: flex;
+	gap: 10px;
 }
 
-.Bepixelcolors_12{
-    display: flex;
-    gap: 10px;
+.Bepixelcolors_12 {
+	display: flex;
+	gap: 10px;
 }
 
-.Bepixelcolors_1 svg{
-    width: 100%;
-    min-width: 50px;
-    padding: 25px;
+.Bepixelcolors_1 svg {
+	width: 100%;
+	min-width: 50px;
+	padding: 25px;
 }
 
-.Bepixelcolors_11 svg:nth-child(1){
-    background-color: #e10098;
-    fill: #fff;
+.Bepixelcolors_11 svg:nth-child(1) {
+	background-color: #e10098;
+	fill: #fff;
 }
-.Bepixelcolors_11 svg:nth-child(2){
-    background-color: #002a5a;
-    fill: #e10098;
+.Bepixelcolors_11 svg:nth-child(2) {
+	background-color: #002a5a;
+	fill: #e10098;
 }
-.Bepixelcolors_11 svg:nth-child(3){
-    background-color: #002a5a;
-    fill: #fff;
-}
-
-
-.Bepixelcolors_12 svg:nth-child(1){
-    background-color: #440099;
-    fill: #fff;
-}
-.Bepixelcolors_12 svg:nth-child(2){
-    background-color: #440099;
-    fill: #e10098;
-}
-.Bepixelcolors_12 svg:nth-child(3){
-    background-color: #000;
-    fill: #fff;
+.Bepixelcolors_11 svg:nth-child(3) {
+	background-color: #002a5a;
+	fill: #fff;
 }
 
-.Bepixelcolors_2{
-    font-size: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 500px;
+.Bepixelcolors_12 svg:nth-child(1) {
+	background-color: #440099;
+	fill: #fff;
+}
+.Bepixelcolors_12 svg:nth-child(2) {
+	background-color: #440099;
+	fill: #e10098;
+}
+.Bepixelcolors_12 svg:nth-child(3) {
+	background-color: #000;
+	fill: #fff;
 }
 
-.Bepixelcolors_21{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+.Bepixelcolors_2 {
+	font-size: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 500px;
 }
 
-.Bepixelcolors_22{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+.Bepixelcolors_21 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
 }
 
-.Bepixelcolors_21_1{
-    background-color: #002A5A;
-    height: 100%;
-    position: relative;
+.Bepixelcolors_22 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
 }
 
-.Bepixelcolors_21_2{
-    background-color: #E10098;
-    height: 100%;
-    position: relative;
+.Bepixelcolors_21_1 {
+	background-color: #002a5a;
+	height: 100%;
+	position: relative;
 }
 
-.Bepixelcolorsp p{
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    text-align: left;
-    color: #fff;
+.Bepixelcolors_21_2 {
+	background-color: #e10098;
+	height: 100%;
+	position: relative;
 }
 
-.Bepixelcolors_22_1{
-    background-color: #00A3E0;
-    height: 100%;
-    position: relative;
-}
-.Bepixelcolors_22_2{
-    background-color: #440099;
-    height: 100%;
-    position: relative;
-}
-.Bepixelcolors_22_3{
-    background-color: #FFFFFF;
-    height: 100%;
-    position: relative;
-}
-.Bepixelcolors_22_3 p{
-    color: var(--terciaryColor);
-}
-.Bepixelcolors_22_4{
-    background-color: #000000;
-    height: 100%;
-    position: relative;
+.Bepixelcolorsp p {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	text-align: left;
+	color: #fff;
 }
 
+.Bepixelcolors_22_1 {
+	background-color: #00a3e0;
+	height: 100%;
+	position: relative;
+}
+.Bepixelcolors_22_2 {
+	background-color: #440099;
+	height: 100%;
+	position: relative;
+}
+.Bepixelcolors_22_3 {
+	background-color: #ffffff;
+	height: 100%;
+	position: relative;
+}
+.Bepixelcolors_22_3 p {
+	color: var(--terciaryColor);
+}
+.Bepixelcolors_22_4 {
+	background-color: #000000;
+	height: 100%;
+	position: relative;
+}
 
 @media screen and (max-width: 815px) {
-
-    .BepixelcolorsContainer{
-        flex-direction: column;
-    }
-    .Bepixelcolors_1{
-        width: 70%;
-    }
-    .Bepixelcolors_2{
-        width: 100%;
-    }
-
+	.BepixelcolorsContainer {
+		flex-direction: column;
+	}
+	.Bepixelcolors_1 {
+		width: 70%;
+	}
+	.Bepixelcolors_2 {
+		width: 100%;
+	}
 }

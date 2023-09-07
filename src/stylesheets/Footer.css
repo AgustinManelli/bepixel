@@ -1,79 +1,78 @@
-.footerContainer{
-    width: 100vw;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
+.footerContainer {
+	width: 100vw;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
 }
 
-.footer_mw{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1020px;
-    margin: 20px 20px; 
+.footer_mw {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 1020px;
+	margin: 20px 20px;
 }
 
-.footerlogo{
-    width: 100px;
-    margin: 40px 40px
+.footerlogo {
+	width: 100px;
+	margin: 40px 40px;
 }
 
-.footerElements{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: top;
-    justify-content: center;
-    gap: 50px;
+.footerElements {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: top;
+	justify-content: center;
+	gap: 50px;
 }
 
-.footerspan{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: #666;
-    font-size: 12px;
-    bottom: 10px;
-    width: 90%;
-    left: 50%;
-    top: 45%;
-    bottom: auto;
-    right: auto;
-    text-align: center;
+.footerspan {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: #666;
+	font-size: 12px;
+	bottom: 10px;
+	width: 90%;
+	left: 50%;
+	top: 45%;
+	bottom: auto;
+	right: auto;
+	text-align: center;
 }
 
-.footerheart{
-    color: #E90606;
-    margin: 0 3px;
-    font-size: 10px;
-    animation: pound 0.35s infinite alternate;
-    -webkit-animation: pound 0.35s infinite alternate;
+.footerheart {
+	color: #e90606;
+	margin: 0 3px;
+	font-size: 10px;
+	animation: pound 0.35s infinite alternate;
+	-webkit-animation: pound 0.35s infinite alternate;
 }
 
 @-webkit-keyframes pound {
-    to {
-      transform: scale(1.1);
-    }
+	to {
+		transform: scale(1.1);
+	}
 }
 @keyframes pound {
-    to {
-      transform: scale(1.1);
-    }
+	to {
+		transform: scale(1.1);
+	}
 }
 
 @media screen and (max-width: 815px) {
+	.footerElements {
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
 
-    .footerElements{
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
-
-    .footerimg{
-        width: 200%;
-        filter: none;
-    }
+	.footerimg {
+		width: 200%;
+		filter: none;
+	}
 }

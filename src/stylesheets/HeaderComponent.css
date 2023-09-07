@@ -1,29 +1,29 @@
-.laespumitaHeaderContainer{
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--secondaryColor);
-    gap: 50px;
+.laespumitaHeaderContainer {
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--secondaryColor);
+	gap: 50px;
 }
-.laespumitaLogo img{
-    height: 150px;
+.laespumitaLogo img {
+	height: 150px;
 }
-.laespumitaTextContainer{
-    max-width: 400px;
-    color: #fff;
-    text-align: justify;
+.laespumitaTextContainer {
+	max-width: 400px;
+	color: #fff;
+	text-align: justify;
 }
 
 @media screen and (max-width: 815px) {
-    .laespumitaHeaderContainer{
-        flex-direction: column;
-        gap: 50px;
-    }
-    .laespumitaTextContainer{
-        max-width: 300px;
-    }
+	.laespumitaHeaderContainer {
+		flex-direction: column;
+		gap: 50px;
+	}
+	.laespumitaTextContainer {
+		max-width: 300px;
+	}
 }
