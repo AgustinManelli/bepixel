@@ -14,7 +14,7 @@ export default function Homecontact() {
 	});
 
 	return (
-		<div className='HomecontactContainer'>
+		<section className='HomecontactContainer'>
 			<div className='Homecontact_mw ContainerGeneral'>
 				<form
 					id='form-home'
@@ -104,6 +104,6 @@ export default function Homecontact() {
 					</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

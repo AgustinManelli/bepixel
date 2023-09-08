@@ -11,7 +11,7 @@ function Homedata() {
 	const [t, i18n] = useTranslation('global');
 
 	return (
-		<div className='homedataContainer'>
+		<section className='homedataContainer'>
 			<div className='homedata ContainerGeneral'>
 				<div className='homedataElement'>
 					<Tittles nombre={t('home-services.title')} color='var(--secondaryColor)' />
@@ -43,7 +43,7 @@ function Homedata() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 

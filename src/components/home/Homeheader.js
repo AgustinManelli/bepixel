@@ -8,7 +8,7 @@ function Homeheader() {
 	const [t, i18n] = useTranslation('global');
 
 	return (
-			<div className='homeheaderElements'>
+			<header className='homeheaderElements'>
 				<ScrolldownArrow />
 				<div className='homeheaderElement'>
 					<div className='homeheaderElement_1 textelement'>
@@ -21,7 +21,7 @@ function Homeheader() {
 					</div>
 				</div>
 				<div className='homeheaderimg'></div>
-			</div>
+			</header>
 	);
 }
 

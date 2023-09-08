@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 export default function Homefaq() {
 	const [t, i18n] = useTranslation('global');
 	return (
-		<div className='homefaqContainer'>
+		<section className='homefaqContainer'>
 			<div className='homefaq_mw ContainerGeneral'>
 				<div>
 					<Logo className='homefaqLogo' />
@@ -17,6 +17,6 @@ export default function Homefaq() {
 					<p>{t('home-faq.text')}</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

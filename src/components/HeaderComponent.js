@@ -4,7 +4,7 @@ import Tittles from './Tittles';
 
 function HeaderComponent(props) {
 	return (
-		<div className='laespumitaHeaderContainer'>
+		<header className='laespumitaHeaderContainer'>
 			<div className='laespumitaLogo'>
 				<img src={require(`../image/${props.logo}`)}></img>
 			</div>
@@ -12,7 +12,7 @@ function HeaderComponent(props) {
 				<Tittles nombre={props.title} color='white' />
 				<p>{props.paraph}</p>
 			</div>
-		</div>
+		</header>
 	);
 }
 

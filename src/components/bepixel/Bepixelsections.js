@@ -4,7 +4,7 @@ import bepixel from '../../image/ISOTIPO.svg';
 
 function Bepixelsections(props) {
 	return (
-		<div className='bepixelsectionsContainer'>
+		<section className='bepixelsectionsContainer'>
 			<div className='bepixelsections_i'>
 				<div className='bepixelsections_nomenclator'>
 					<img src={bepixel} loading='lazy'/>
@@ -12,7 +12,7 @@ function Bepixelsections(props) {
 				</div>
 				{props.page}
 			</div>
-		</div>
+		</section>
 	);
 }
 

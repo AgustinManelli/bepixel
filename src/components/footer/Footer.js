@@ -8,19 +8,19 @@ import Languagebtn from '../Languagebtn';
 
 function Footer() {
 	return (
-		<div className='footerContainer'>
-			<div className='footer_mw'>
+		<footer className='footerContainer'>
+			<section className='footer_mw'>
 				<img src={logoh} className='footerlogo' loading='lazy'/>
 				<div className='footerElements'>
 					<Footerinfo />
 					<Footerfaq />
 				</div>
-			</div>
+			</section>
 			<Languagebtn id='buttonlanguage2' />
 			<span className='footerspan'>
 				made with <BsFillHeartFill className='footerheart' /> by bepixel
 			</span>
-		</div>
+		</footer>
 	);
 }
 

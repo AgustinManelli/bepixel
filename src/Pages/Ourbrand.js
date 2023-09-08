@@ -17,7 +17,7 @@ function Ourbrand() {
 
 	return (
 		<div className='ourbrandContainer'>
-			<section className='ourbrandSection_mw'>
+			<header className='ourbrandSection_mw'>
 				<div className='ourbrandSection1_1'>
 					<img src={bepixelbrand} />
 					<p>
@@ -31,7 +31,7 @@ function Ourbrand() {
 						trabajo y la calidad de nuestros proyectos.
 					</p>
 				</div>
-			</section>
+			</header>
 			<Bepixelsections section='significados' page={<Bepixelmeaning />} />
 			<Bepixelsections section='construcción' page={<Bepixelconstruction />} />
 			<Bepixelsections section='estructura' page={<Bepixelstruct />} />
