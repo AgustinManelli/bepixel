@@ -2,7 +2,16 @@
 	"home-header": {
 		"textelement1": "sin",
 		"textelement2": "límites",
+		"textelement3": "Creamos las piezas necesarias para tu empresa. Conocé nuestros servicios y contactanos.",
 		"buttoncta": "contáctanos"
+	},
+	"footer": {
+		"footer-contact": "contacto",
+		"footer-faq-title1": "¿Qué es bepixel?",
+		"footer-faq-text1": "En bepixel nos dedicamos a crear las piezas gráficas que tu marca necesita, tanto para tus redes, hasta papelería corporativa.",
+		"footer-faq-title2": "¿De dónde somos?",
+		"footer-faq-text2": "Somos de Córdoba, Argentina, Pero trabajamos para toda Argentina y... el mundo 👀",
+		"anchor": "Conocé nuestra marca aquí"
 	},
 	"navbar": {
 		"navelement1": "trabajos",
@@ -21,6 +30,27 @@
 		"textservice2": "tarjetas personales, folletos, manuales de marca, etiquetas, carteles y vidrieras.",
 		"titleservice3": "diseño web/digital",
 		"textservice3": "creación de páginas web, wordpress, recursos y elementos para RRSS."
+	},
+
+	"home-contact": {
+		"title": "contacto",
+		"text": "llená el formulario y contactanos, nos pondremos en contacto con usted lo antes posible",
+		"placeholder-name":"nombre",
+		"placeholder-number":"numero",
+		"placeholder-mensaje":"mensaje",
+		"btnsend":"enviar"
+	},
+	"home-faqs": {
+		"title": "preguntas frecuentes (FAQs)",
+		"text": "Aqui encontrará algunas preguntas sobre nosotros y nuestros servicios, para más información proporcionamos todos nuestros medios de contacto para que nos preguntes.",
+		"accordion1-title": "¿Dónde se encuentran?",
+		"accordion1-text": "Somos de Córdoba, Argentina, no tenemos casa central pero realizamos trabajos a pedido para toda la Argentina.",
+		"accordion2-title": "¿Cómo puedo contactarme?",
+		"accordion2-text": "Podes contactarte al +54(3571)534631, al mail bepixelarg@gmail.com, o en cualquiera de nuestras redes sociales.",
+		"accordion3-title": "¿Cuánto cuestan los servicios?",
+		"accordion3-text": "El valor de los servicios varían dependiendo del mismo y las horas que requiera, contamos con los mejores precios del mercado, lanzamos la plataforma hace poco y queremos mostrar nuestro esfuerzo y compromiso con cada uno de nuestros proyectos.",
+		"accordion4-title": "¿Tienen ofertas?",
+		"accordion4-text": "Contamos con algunos packs de inicio para pymes y emprendimientos, proximamente se presentaran en la web. De momento podés consultarlo por nuestros canales de comunicación."
 	}
 
 }

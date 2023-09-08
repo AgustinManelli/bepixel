@@ -3,8 +3,10 @@ import '../../stylesheets/home/Homecontact.css';
 import Tittles from '../Tittles';
 import { toast } from 'sonner'
 import $ from 'jquery';
+import { useTranslation } from 'react-i18next';
 
 export default function Homecontact() {
+	const [t, i18n] = useTranslation('global');
 
 	$("#form-home").on("submit" ,function()
 	{   
@@ -13,7 +15,7 @@ export default function Homecontact() {
 
 	return (
 		<div className='HomecontactContainer'>
-			<div className='Homecontact_mw'>
+			<div className='Homecontact_mw ContainerGeneral'>
 				<form
 					id='form-home'
 					className='formgroup'
@@ -30,7 +32,7 @@ export default function Homecontact() {
 							required
 						/>
 						<label htmlFor='nombre' className='form__label'>
-							nombre
+							{t('home-contact.placeholder-name')}
 						</label>
 					</div>
 
@@ -58,7 +60,7 @@ export default function Homecontact() {
 							required
 						/>
 						<label htmlFor='numero' className='form__label'>
-							numero
+							{t('home-contact.placeholder-number')}
 						</label>
 					</div>
 
@@ -72,12 +74,12 @@ export default function Homecontact() {
 							required
 						/>
 						<label htmlFor='mensaje' className='form__label'>
-							mensaje
+							{t('home-contact.placeholder-mensaje')}
 						</label>
 					</div>
 
 					<button type='submit'>
-						<span>enviar</span>
+						<span>{t('home-contact.btnsend')}</span>
 						<svg
 							viewBox='-5 -5 110 110'
 							preserveAspectRatio='none'
@@ -96,10 +98,9 @@ export default function Homecontact() {
 				</form>
 
 				<div className='contactgroup'>
-					<Tittles nombre='contacto' color='var(--secondaryColor)' />
+					<Tittles nombre={t('home-contact.title')} color='var(--secondaryColor)' />
 					<p>
-						llená el formulario y contactanos, nos pondremos en contacto con
-						usted lo antes posible
+						{t('home-contact.text')}
 					</p>
 				</div>
 			</div>

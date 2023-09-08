@@ -6,7 +6,14 @@ body {
 	--mainColor: rgb(225, 0, 152);
 	--secondaryColor: rgb(0, 42, 90);
 	--terciaryColor: rgb(68, 0, 153);
+	--cuaternaryColor: rgb(0, 163, 224);
 	--cornersRadius: 10px;
+}
+
+.ContainerGeneral{
+	margin: 50px 20px 50px 20px;
+	max-width: 1020px;
+	width: 100%;
 }
 
 *::selection {

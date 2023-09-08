@@ -2,30 +2,33 @@ import React from 'react';
 import '../stylesheets/AccordionHome.css';
 import Accordion from '../components/Accordion.js';
 import Tittles from './Tittles';
+import { useTranslation } from 'react-i18next';
 
 function AccordionHome() {
+	const [t, i18n] = useTranslation('global');
 	return (
 		<div className='accordionHomeContainer'>
-			<div className='accordionHome_mw'>
+			<div className='accordionHome_mw ContainerGeneral'>
 				<div className='accordionHome_0'>
-					<Tittles nombre='Preguntas Frecuentes (FAQs)' color='var(--secondaryColor)' />
+					<Tittles nombre={t('home-faqs.title')} color='var(--secondaryColor)' />
+					<p>{t('home-faqs.text')}</p>
 				</div>
 				<div className='accordionHome_1'>
 					<Accordion
-						title='¿Dónde nos encontramos?'
-						content='Somos de Córdoba, Argentina, no tenemos casa central pero realizamos trabajos a pedido para toda la Argentina.'
+						title={t('home-faqs.accordion1-title')}
+						content={t('home-faqs.accordion1-text')}
 					/>
 					<Accordion
-						title='¿Cómo puedo contactarme?'
-						content='Podes contactarte al +54(3571)534631, al mail bepixelarg@gmail.com, o en cualquiera de nuestras redes sociales.'
+						title={t('home-faqs.accordion2-title')}
+						content={t('home-faqs.accordion2-text')}
 					/>
 					<Accordion
-						title='¿Cuánto cuestan los servicios?'
-						content='El valor de los servicios varían dependiendo del mismo y las horas que requiera, contamos con los mejores precios del mercado, lanzamos la plataforma hace poco y queremos mostrar nuestro esfuerzo y compromiso con cada uno de nuestros proyectos.'
+						title={t('home-faqs.accordion3-title')}
+						content={t('home-faqs.accordion3-text')}
 					/>
 					<Accordion
-						title='¿Tienen ofertas?'
-						content='Contamos con algunos packs de inicio para pymes y emprendimientos, proximamente se presentaran en la web. De momento podés consultarlo por nuestros canales de comunicación.'
+						title={t('home-faqs.accordion4-title')}
+						content={t('home-faqs.accordion4-text')}
 					/>
 				</div>
 			</div>

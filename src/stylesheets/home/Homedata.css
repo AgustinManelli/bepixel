@@ -11,12 +11,10 @@
 }
 
 .homedata {
-	margin: 50px 0 50px 0;
-	max-width: 1020px;
 	position: relative;
 	display: flex;
 	align-items: center;
-	gap: 3vw;
+	gap: 40px;
 }
 
 .homedataElement:first-child {
@@ -29,8 +27,9 @@
 	position: relative;
 }
 
-.homedataElement p {
-	margin-top: 10px;
+.homedataElement_text{
+	margin-top: 20px;
+	text-align: left;
 }
 
 .services {

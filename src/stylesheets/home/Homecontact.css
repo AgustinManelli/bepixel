@@ -10,17 +10,16 @@
 }
 
 .Homecontact_mw {
-	max-width: 1020px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	gap: 80px;
-	margin: 50px 50px;
 }
 
 .contactgroup p {
 	text-align: left;
+	margin-top: 20px;
 }
 
 .formgroup {

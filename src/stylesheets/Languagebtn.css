@@ -118,7 +118,7 @@
 
 .btn-shine {
 	position: relative;
-	padding: 10px 45px 10px 45px;
+	padding: 10px 60px 10px 60px;
 	color: #fff;
 	background: linear-gradient(to right, #4d4d4d 0, #d4d4d4 10%, #4d4d4d 20%);
 	background-position: 0;
@@ -170,9 +170,9 @@
 	  background-position: 0;
 	}
 	40% {
-	  background-position: 300px;
+	  background-position: 400px;
 	}
 	100% {
-	  background-position: 300px;
+	  background-position: 400px;
 	}
   }

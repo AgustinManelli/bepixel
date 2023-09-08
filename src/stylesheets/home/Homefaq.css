@@ -10,24 +10,18 @@
 }
 
 .homefaq_mw {
-	margin: 50px 0 50px 0;
-	max-width: 1020px;
-	width: 100%;
 	gap: 20px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: center;
-}
-
-.homefaqtext {
-	width: 60%;
 }
 
 .homefaqtext {
 	display: flex;
 	gap: 20px;
 	flex-direction: column;
+	width: 100%;
 }
 
 .homefaqLogo {
@@ -35,7 +29,8 @@
 }
 
 .homefaqContainer p {
-	text-align: center;
+	text-align: left;
+	max-width: 700px;
 }
 
 .homefaqLogo {

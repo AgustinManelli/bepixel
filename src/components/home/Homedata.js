@@ -12,7 +12,7 @@ function Homedata() {
 
 	return (
 		<div className='homedataContainer'>
-			<div className='homedata'>
+			<div className='homedata ContainerGeneral'>
 				<div className='homedataElement'>
 					<Tittles nombre={t('home-services.title')} color='var(--secondaryColor)' />
 					<p className='homedataElement_text'>

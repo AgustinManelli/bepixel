@@ -8,7 +8,7 @@ export default function Homefaq() {
 	const [t, i18n] = useTranslation('global');
 	return (
 		<div className='homefaqContainer'>
-			<div className='homefaq_mw'>
+			<div className='homefaq_mw ContainerGeneral'>
 				<div>
 					<Logo className='homefaqLogo' />
 				</div>

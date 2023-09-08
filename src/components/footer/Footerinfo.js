@@ -7,20 +7,22 @@ import {
 	FaMapMarkerAlt,
 } from 'react-icons/fa';
 import '../../stylesheets/footer/Footerinfo.css';
+import { useTranslation } from 'react-i18next';
 
 function Footerinfo() {
+	const [t, i18n] = useTranslation('global');
 	return (
 		<div className='footerinfoContainer'>
 			<div className='footerinfoSeparatorContainer'>
 				<div className='footerinfoSeparator'></div>
-				<p>contacto</p>
+				<p>{t('footer.footer-contact')}</p>
 				<div className='footerinfoSeparator'></div>
 			</div>
 
 			<ul className='footerinfoUl'>
 				<li className='footerinfoLi'>
 					<FaMapMarkerAlt className='footerinfoIcon' />
-					<p>río tercero</p>
+					<p>Córdoba, Argentina</p>
 				</li>
 				<li className='footerinfoLi'>
 					<FaPhoneSquareAlt className='footerinfoIcon' />
