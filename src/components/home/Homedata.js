@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../stylesheets/Homedata.css';
+import '../../stylesheets/home/Homedata.css';
 import Tittles from '../Tittles';
 import ServiceItem from '../ServiceItem';
 import 'aos/dist/aos.css';

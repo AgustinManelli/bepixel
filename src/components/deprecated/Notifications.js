@@ -5,6 +5,7 @@ import { IoNotifications } from 'react-icons/io5';
 import $ from 'jquery';
 
 function Notifications() {
+	
 	useEffect(() => {
 		if (window.localStorage.getItem('npopup') == null) {
 			window.localStorage.setItem('npopup', true);
@@ -31,7 +32,6 @@ function Notifications() {
 			<IoClose className='notificationsCross' onClick={closenotification} />
 			<div className='notifications_1'>
 				<IoNotifications className='notificationsbell' />
-				{/* <BiWorld className='notificationsbell' /> */}
 				<div>
 					<p>Notification</p>
 					<p>English version available</p>

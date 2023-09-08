@@ -1,12 +1,21 @@
 import React from 'react';
-import '../../stylesheets/Homecontact.css';
+import '../../stylesheets/home/Homecontact.css';
 import Tittles from '../Tittles';
+import { toast } from 'sonner'
+import $ from 'jquery';
 
 export default function Homecontact() {
+
+	$("#form-home").on("submit" ,function()
+	{   
+		toast.success('Email enviado correctamente');
+	});
+
 	return (
 		<div className='HomecontactContainer'>
 			<div className='Homecontact_mw'>
 				<form
+					id='form-home'
 					className='formgroup'
 					action='https://formsubmit.co/bepixelarg@gmail.com'
 					method='POST'
@@ -81,7 +90,7 @@ export default function Homecontact() {
 					<input
 						type='hidden'
 						name='_next'
-						value='https://agustinmanelli.github.io/Open/'
+						value='http://bepixel.vercel.app/'
 					></input>
 					<input type='hidden' name='_captcha' value='false'></input>
 				</form>

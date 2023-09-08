@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../stylesheets/Homefaq.css';
+import '../../stylesheets/home/Homefaq.css';
 import { ReactComponent as Logo } from '../../image/LOGOVERTICALSTROKE.svg';
 import Tittles from '../Tittles';
 import { useTranslation } from 'react-i18next';

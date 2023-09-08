@@ -1,5 +1,5 @@
 import React from 'react';
-import '../stylesheets/Ourbrand.css';
+import '../stylesheets/pages/Ourbrand.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import bepixelbrand from '../image/ISOTIPO.svg';

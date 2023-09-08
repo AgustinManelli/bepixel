@@ -1,5 +1,5 @@
 import { React } from 'react';
-import '../../stylesheets/Homeprice.css';
+import '../../stylesheets/home/Homeprice.css';
 
 function Homeprice() {
 	return (

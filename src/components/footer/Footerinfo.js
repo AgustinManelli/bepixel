@@ -6,7 +6,7 @@ import {
 	FaPhoneSquareAlt,
 	FaMapMarkerAlt,
 } from 'react-icons/fa';
-import '../../stylesheets/Footerinfo.css';
+import '../../stylesheets/footer/Footerinfo.css';
 
 function Footerinfo() {
 	return (

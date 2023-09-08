@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { IoIosArrowDown } from 'react-icons/io';
-import '../../stylesheets/Navbar.css';
+import '../../stylesheets/navbar/Navbar.css';
 import logof from '../../image/ISOTIPO.svg';
 import logof2 from '../../image/LOGOVERTICAL.svg';
 import $ from 'jquery';
@@ -15,6 +15,15 @@ function Navbar({
 	shadowScroll,
 	setShadowScroll,
 }) {
+	
+	useEffect(() => {
+		if (window.scrollY > 0) {
+			setShadowScroll(false);
+		} else {
+			setShadowScroll(true);
+		}
+	}, []);
+
 	const [t, i18n] = useTranslation('global');
 
 	const openDropdown = event => {

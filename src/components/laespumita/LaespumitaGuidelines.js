@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../stylesheets/LaespumitaGuidelines.css';
+import '../../stylesheets/laespumita/LaespumitaGuidelines.css';
 import Laespumitabefore from '../../image/laespumitabefore.png';
 import Laespumitaafter from '../../image/laespumitaafter.svg';
 import Laespumitavariations from '../../image/laespumitavariations.svg';
@@ -34,14 +34,14 @@ function LaespumitaGuidelines() {
 					</p>
 				</div>
 				<div className='laespumitaGuideWhyimg'>
-					<img src={Laespumitabefore} />
-					<img src={Laespumitaafter} />
+					<img src={Laespumitabefore} loading='lazy'/>
+					<img src={Laespumitaafter} loading='lazy'/>
 				</div>
 			</div>
 
 			<div className='laespumitaGuidelinesVariationContainer'>
 				<div className='laespumitaGuidelinesVariation_mw'>
-					<img src={Laespumitavariations} />
+					<img src={Laespumitavariations} loading='lazy'/>
 				</div>
 			</div>
 
@@ -55,9 +55,9 @@ function LaespumitaGuidelines() {
 							sueltos donde el envase no permita diferenciar que contenido
 							lleva.
 						</p>
-						<img src={Laespumitasticker} />
+						<img src={Laespumitasticker} loading='lazy'/>
 					</div>
-					<img src={Laespumitabag} className='laespumitaBagIMG' />
+					<img src={Laespumitabag} className='laespumitaBagIMG' loading='lazy'/>
 				</div>
 			</div>
 		</div>
