@@ -84,12 +84,11 @@ function Navbar({
 				}
 			>
 				<NavLink className='anchorlogoNav' to='/' onClick={closeNav}>
-					{' '}
 					<img
 						src={isPhone ? logof2 : logof}
 						draggable='false'
 						className={isPhone ? 'logoNav2' : 'logoNav'}
-					/>{' '}
+					/>
 				</NavLink>
 				<div
 					className={isActive ? 'icon nav-icon-5 open' : 'icon nav-icon-5'}
@@ -101,7 +100,7 @@ function Navbar({
 				</div>
 				<ul className={isActive ? 'navUl activated' : 'navUl'}>
 					<li className='navLi navLiArrow' id='navLi'>
-						<div className='navAnchor' activeclassname='navAnchor active'>
+						<div className='navAnchorDropdown' activeclassname='navAnchor active'>
 							{t('navbar.navelement1')}
 							<IoIosArrowDown />
 						</div>
@@ -112,7 +111,7 @@ function Navbar({
 						>
 							<NavLink
 								to='/laespumita'
-								className='navDropdownLink'
+								className='navAnchor navDropdownLink '
 								onClick={closeNav}
 							>
 								la espumita
@@ -157,7 +156,7 @@ function Navbar({
 					</NavLink>
 				</li>
 				<li className='navLi navLiResponsive' onClick={openDropdown}>
-					<div className='navAnchor' activeclassname='navAnchor active'>
+					<div className='navAnchorDropdown' activeclassname='navAnchorDropdown active'>
 						{t('navbar.navelement1')}
 						<IoIosArrowDown className='responsiveArrow' />
 					</div>

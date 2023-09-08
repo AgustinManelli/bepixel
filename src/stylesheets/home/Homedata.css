@@ -13,7 +13,7 @@
 .homedata {
 	position: relative;
 	display: flex;
-	align-items: center;
+	align-items: left;
 	gap: 40px;
 }
 
@@ -39,15 +39,14 @@
 @media screen and (max-width: 815px) {
 	.homedata {
 		flex-direction: column;
-		gap: 5vw;
-		width: 90%;
+		gap: 20px;
 	}
 
 	.homedataElement:first-child {
 		width: initial;
 	}
 
-	.homedataElement {
-		max-width: 90%;
+	.services{
+		gap: 20px;
 	}
 }

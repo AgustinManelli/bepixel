@@ -64,7 +64,19 @@
 	color: var(--mainColor);
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+	transition: all 0.2s;
+}
+.navAnchor:hover{
+	color: rgb(255, 103, 207);
+}
+.navAnchorDropdown {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--mainColor);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.2s;
 	display: flex;
 	align-items: center;
 	gap: 5px;
@@ -94,9 +106,6 @@
 	white-space: nowrap;
 	padding: 1rem;
 	margin: 0px;
-	text-decoration: none;
-	color: var(--mainColor);
-	font-weight: 500;
 }
 
 .navDropdownLink:hover {
@@ -262,6 +271,10 @@
 	}
 
 	.navAnchor {
+		font-size: 30px;
+	}
+
+	.navAnchorDropdown{
 		font-size: 30px;
 	}
 

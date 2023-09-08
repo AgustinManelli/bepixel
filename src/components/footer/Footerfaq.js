@@ -22,7 +22,7 @@ function Footerfaq() {
 				<p>
 					{t('footer.footer-faq-text2')}
 				</p>
-				<a href='/faq'>{t('footer.anchor')}</a>
+				<a href='/ourbrand'>{t('footer.anchor')}</a>
 			</div>
 		</div>
 	);
