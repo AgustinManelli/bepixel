@@ -1,42 +1,26 @@
-.titlElement {
-	height: fit-content;
-	position: relative;
+.titleContainer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: fit-content;
 }
-.titlElement svg {
-	width: 330px;
-	height: 50px;
-}
-.titlElement svg text {
+.titlElement{
 	position: relative;
-	letter-spacing: 5px;
-	font-size: 30px;
-	font-weight: 900;
-	stroke: var(--mainColor);
-	stroke-width: 1;
-	paint-order: stroke fill;
-	stroke-linejoin: round;
-	font-family: 'Poppins';
-	font-weight: 700;
-	animation: textAnimate 5s infinite alternate;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	text-align: left;
 }
 
-@keyframes textAnimate {
-	0% {
-		stroke-dasharray: 0 50%;
-		stroke-dashoffset: 20%;
-	}
+.titlElement h2{
+	margin-left: 5px;
+	font-weight: 800;
+	font-size: 35px;
+	color: var(--secondaryColor);
+}
 
-	20% {
-		stroke-dasharray: 0 50%;
-		stroke-dashoffset: 20%;
-	}
-
-	100% {
-		stroke-dasharray: 50% 0;
-		stroke-dashoffstet: -20%;
-		fill: hsla(189, 68%, 75%, 0%);
-	}
+.titleUnderline{
+	width: 150px;
+	fill: var(--mainColor);
 }

@@ -2,6 +2,7 @@ import { React } from 'react';
 import '../../stylesheets/home/Homeheader.css';
 import ButtonCTA from '../ButtonCTA';
 import { useTranslation } from 'react-i18next';
+import ScrolldownArrow from '../ScrolldownArrow';
 
 function Homeheader() {
 	const [t, i18n] = useTranslation('global');
@@ -12,6 +13,7 @@ function Homeheader() {
 
 	return (
 		<div className='homeheaderContainer'>
+			<ScrolldownArrow />
 			<div className='homeheaderElements'>
 				<div className='homeheaderElement textelement'>
 					<div>

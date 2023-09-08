@@ -8,7 +8,7 @@ function Footerfaq() {
 
 			<div className='footerinfoSeparatorContainer'>
 				<div className='footerinfoSeparator'></div>
-				<p>faq</p>
+				<p>about</p>
 				<div className='footerinfoSeparator'></div>
 			</div>
 			<div className='footerinfoText'>

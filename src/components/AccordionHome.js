@@ -8,8 +8,7 @@ function AccordionHome() {
 		<div className='accordionHomeContainer'>
 			<div className='accordionHome_mw'>
 				<div className='accordionHome_0'>
-					<Tittles nombre='faq' color='var(--secondaryColor)' />
-					<h3>Preguntas Frecuentes (FAQs).</h3>
+					<Tittles nombre='Preguntas Frecuentes (FAQs)' color='var(--secondaryColor)' />
 				</div>
 				<div className='accordionHome_1'>
 					<Accordion

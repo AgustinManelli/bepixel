@@ -73,7 +73,8 @@ function Languagebtn(props) {
 				<div className='switch'>
 					<div className='dot'></div>
 				</div>
-				<span>english version</span>
+				{/* <span>english version</span> */}
+				<p  class="btn-shine">English version avalible</p>
 			</label>
 		</div>
 	);
