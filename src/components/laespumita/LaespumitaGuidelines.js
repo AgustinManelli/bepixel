@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../stylesheets/laespumita/LaespumitaGuidelines.css';
-import Laespumitabefore from '../../image/laespumitabefore.png';
+import Laespumitabefore from '../../image/laespumitabefore.webp';
 import Laespumitaafter from '../../image/laespumitaafter.svg';
 import Laespumitavariations from '../../image/laespumitavariations.svg';
-import Laespumitashirt from '../../image/laespumitashirt.png';
-import Laespumitabag from '../../image/laespumitabag.png';
-import Laespumitasticker from '../../image/laespumitasticker.png';
+import Laespumitashirt from '../../image/laespumitashirt.webp';
+import Laespumitabag from '../../image/laespumitabag.webp';
+import Laespumitasticker from '../../image/laespumitasticker.webp';
 
 function LaespumitaGuidelines() {
 	return (

@@ -31,14 +31,14 @@ function Homedata() {
 						<ServiceItem
 							title={t('home-services.titleservice2')}
 							paraph={t('home-services.textservice2')}
-							img='serv2.png'
+							img='serv2.webp'
 						/>
 					</div>
 					<div data-aos='zoom-in' data-aos-once='true'>
 						<ServiceItem
 							title={t('home-services.titleservice3')}
 							paraph={t('home-services.textservice3')}
-							img='serv3.png'
+							img='serv3.webp'
 						/>
 					</div>
 				</div>
