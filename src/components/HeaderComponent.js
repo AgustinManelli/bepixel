@@ -6,7 +6,7 @@ function HeaderComponent(props) {
 	return (
 		<header className='laespumitaHeaderContainer'>
 			<div className='laespumitaLogo'>
-				<img src={require(`../image/${props.logo}`)}></img>
+				<img src={require(`../image/${props.logo}`)} alt='logo bepixel proyects'></img>
 			</div>
 			<div className='laespumitaTextContainer'>
 				<Tittles nombre={props.title} color='white' />

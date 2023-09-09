@@ -10,7 +10,7 @@ function Footer() {
 	return (
 		<footer className='footerContainer'>
 			<section className='footer_mw'>
-				<img src={logoh} className='footerlogo' loading='lazy'/>
+				<img src={logoh} className='footerlogo' loading='lazy' />
 				<div className='footerElements'>
 					<Footerinfo />
 					<Footerfaq />

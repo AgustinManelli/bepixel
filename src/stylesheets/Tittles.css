@@ -1,11 +1,11 @@
-.titleContainer{
+.titleContainer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: fit-content;
 	width: fit-content;
 }
-.titlElement{
+.titlElement {
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -14,14 +14,14 @@
 	text-align: left;
 }
 
-.titlElement h2{
+.titlElement h2 {
 	margin-left: 5px;
 	font-weight: 800;
 	font-size: 35px;
 	color: var(--secondaryColor);
 }
 
-.titleUnderline{
+.titleUnderline {
 	width: 150px;
 	fill: var(--mainColor);
 }

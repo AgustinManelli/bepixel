@@ -1,15 +1,14 @@
 import React from 'react';
 import '../../stylesheets/home/Homecontact.css';
 import Tittles from '../Tittles';
-import { toast } from 'sonner'
+import { toast } from 'sonner';
 import $ from 'jquery';
 import { useTranslation } from 'react-i18next';
 
 export default function Homecontact() {
 	const [t, i18n] = useTranslation('global');
 
-	$("#form-home").on("submit" ,function()
-	{   
+	$('#form-home').on('submit', function () {
 		toast.success('Email enviado correctamente');
 	});
 
@@ -98,10 +97,11 @@ export default function Homecontact() {
 				</form>
 
 				<div className='contactgroup'>
-					<Tittles nombre={t('home-contact.title')} color='var(--secondaryColor)' />
-					<p>
-						{t('home-contact.text')}
-					</p>
+					<Tittles
+						nombre={t('home-contact.title')}
+						color='var(--secondaryColor)'
+					/>
+					<p>{t('home-contact.text')}</p>
 				</div>
 			</div>
 		</section>

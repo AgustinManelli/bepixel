@@ -12,7 +12,7 @@ function Accordion(props) {
 	}
 
 	return (
-		<div className='accordion__section'>
+		<section className='accordion__section'>
 			<div
 				className={`accordion ${activeAccordion ? 'activeAccordion' : ''}`}
 				onClick={toggleAccordion}
@@ -36,7 +36,7 @@ function Accordion(props) {
 					dangerouslySetInnerHTML={{ __html: props.content }}
 				/>
 			</div>
-		</div>
+		</section>
 	);
 }
 

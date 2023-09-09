@@ -5,12 +5,15 @@ import Tittles from './Tittles';
 import { useTranslation } from 'react-i18next';
 
 function AccordionHome() {
-	const [t, i18n] = useTranslation('global');
+	const [t] = useTranslation('global');
 	return (
 		<div className='accordionHomeContainer'>
 			<div className='accordionHome_mw ContainerGeneral'>
 				<div className='accordionHome_0'>
-					<Tittles nombre={t('home-faqs.title')} color='var(--secondaryColor)' />
+					<Tittles
+						nombre={t('home-faqs.title')}
+						color='var(--secondaryColor)'
+					/>
 					<p>{t('home-faqs.text')}</p>
 				</div>
 				<div className='accordionHome_1'>

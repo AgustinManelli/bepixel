@@ -1,54 +1,54 @@
 {
+	"footer": {
+		"anchor": "Get to know our brand here",
+		"footer-contact": "contact",
+		"footer-faq-text1": "At bepixel we are dedicated to creating the graphic pieces that your brand needs, both for your networks and even corporate stationery.",
+		"footer-faq-text2": "We are from Córdoba, Argentina, but we work for all of Argentina and... the world 👀",
+		"footer-faq-title1": "What is bepixel?",
+		"footer-faq-title2": "Where we are?"
+	},
+	"home-contact": {
+		"btnsend": "send",
+		"placeholder-mensaje": "message",
+		"placeholder-name": "name",
+		"placeholder-number": "phone number",
+		"text": "fill out the form and contact us, we will contact you as soon as possible.",
+		"title": "contact form"
+	},
+	"home-faq": {
+		"text": "We are bepixel, a graphic design agency from Córdoba, Argentina, dedicated to transforming concepts into extraordinary visual pieces. Our passion is to put creativity in each project, creating impressive visual identities.",
+		"title": "about us"
+	},
+	"home-faqs": {
+		"accordion1-text": "We are from Córdoba, Argentina, we do not have a head office but we carry out work on request for all of Argentina.",
+		"accordion1-title": "Where are they?",
+		"accordion2-text": "You can contact us at +54(3571)534631, at bepixelarg@gmail.com, or on any of our social networks.",
+		"accordion2-title": "How I can contact with you?",
+		"accordion3-text": "The value of the services varies depending on it and the hours required, we have the best prices on the market, we recently launched the platform and we want to show our effort and commitment to each of our projects.",
+		"accordion3-title": "How much do the services cost?",
+		"accordion4-text": "We have some starter packs for SMEs and start-ups, they will soon be presented on the web. At the moment you can consult it through our communication channels.",
+		"accordion4-title": "Do you have offers?",
+		"text": "Here you will find some questions about us and our services, for more information we provide all our means of contact so you can ask us.",
+		"title": "frequently asked questions (FAQs)"
+	},
 	"home-header": {
+		"buttoncta": "contact us",
 		"textelement1": "without",
 		"textelement2": "limits",
-		"textelement3": "We create the necessary parts for your company. Find out about our services and contact us.",
-		"buttoncta": "contact us"
+		"textelement3": "We create the necessary parts for your company. Find out about our services and contact us."
 	},
-	"footer": {
-		"footer-contact": "contact",
-		"footer-faq-title1": "What is bepixel?",
-		"footer-faq-text1": "At bepixel we are dedicated to creating the graphic pieces that your brand needs, both for your networks and even corporate stationery.",
-		"footer-faq-title2": "Where we are?",
-		"footer-faq-text2": "We are from Córdoba, Argentina, but we work for all of Argentina and... the world 👀",
-		"anchor": "Get to know our brand here"
+	"home-services": {
+		"text": "the best quality services for your company or startup.",
+		"textservice1": "graphic identification, logos, graphic resources.",
+		"textservice2": "business cards, brochures, brand manuals, labels, posters and shop windows.",
+		"textservice3": "creation of web pages, wordpress, resources and elements for social networks.",
+		"title": "services",
+		"titleservice1": "branding",
+		"titleservice2": "stationery and posters",
+		"titleservice3": "web/digital design"
 	},
 	"navbar": {
 		"navelement1": "projects",
 		"navelement2": "our brand"
-	},
-	"home-faq": {
-		"title": "about us",
-		"text": "We are bepixel, a graphic design agency from Córdoba, Argentina, dedicated to transforming concepts into extraordinary visual pieces. Our passion is to put creativity in each project, creating impressive visual identities."
-	},
-	"home-services": {
-		"title": "services",
-		"text": "the best quality services for your company or startup.",
-		"titleservice1": "branding",
-		"textservice1": "graphic identification, logos, graphic resources.",
-		"titleservice2": "stationery and posters",
-		"textservice2": "business cards, brochures, brand manuals, labels, posters and shop windows.",
-		"titleservice3": "web/digital design",
-		"textservice3": "creation of web pages, wordpress, resources and elements for social networks."
-	},
-	"home-contact": {
-		"title": "contact form",
-		"text": "fill out the form and contact us, we will contact you as soon as possible.",
-		"placeholder-name":"name",
-		"placeholder-number":"phone number",
-		"placeholder-mensaje":"message",
-		"btnsend":"send"
-	},
-	"home-faqs": {
-		"title": "frequently asked questions (FAQs)",
-		"text": "Here you will find some questions about us and our services, for more information we provide all our means of contact so you can ask us.",
-		"accordion1-title": "Where are they?",
-		"accordion1-text": "We are from Córdoba, Argentina, we do not have a head office but we carry out work on request for all of Argentina.",
-		"accordion2-title": "How I can contact with you?",
-		"accordion2-text": "You can contact us at +54(3571)534631, at bepixelarg@gmail.com, or on any of our social networks.",
-		"accordion3-title": "How much do the services cost?",
-		"accordion3-text": "The value of the services varies depending on it and the hours required, we have the best prices on the market, we recently launched the platform and we want to show our effort and commitment to each of our projects.",
-		"accordion4-title": "Do you have offers?",
-		"accordion4-text": "We have some starter packs for SMEs and start-ups, they will soon be presented on the web. At the moment you can consult it through our communication channels."
 	}
 }

@@ -15,16 +15,8 @@ function Navbar({
 	shadowScroll,
 	setShadowScroll,
 }) {
-	
-	useEffect(() => {
-		if (window.scrollY > 0) {
-			setShadowScroll(false);
-		} else {
-			setShadowScroll(true);
-		}
-	}, []);
 
-	const [t, i18n] = useTranslation('global');
+	const [t] = useTranslation('global');
 
 	const openDropdown = event => {
 		$('.responsivenavDropdown').toggleClass('responsivenavDropdownOpened');
@@ -68,6 +60,14 @@ function Navbar({
 	};
 
 	useEffect(() => {
+		if (window.scrollY > 0) {
+			setShadowScroll(false);
+		} else {
+			setShadowScroll(true);
+		}
+	}, []);
+
+	useEffect(() => {
 		window.addEventListener('resize', handleResize);
 		window.addEventListener('scroll', scrollnavigate);
 		if (window.innerWidth <= 815) {
@@ -89,6 +89,7 @@ function Navbar({
 						src={isPhone ? logof2 : logof}
 						draggable='false'
 						className={isPhone ? 'logoNav2' : 'logoNav'}
+						alt='logo bepixel'
 					/>
 				</NavLink>
 				<div
@@ -101,7 +102,10 @@ function Navbar({
 				</div>
 				<ul className={isActive ? 'navUl activated' : 'navUl'}>
 					<li className='navLi navLiArrow' id='navLi'>
-						<div className='navAnchorDropdown' activeclassname='navAnchor active'>
+						<div
+							className='navAnchorDropdown'
+							activeclassname='navAnchor active'
+						>
 							{t('navbar.navelement1')}
 							<IoIosArrowDown />
 						</div>
@@ -157,7 +161,10 @@ function Navbar({
 					</NavLink>
 				</li>
 				<li className='navLi navLiResponsive' onClick={openDropdown}>
-					<div className='navAnchorDropdown' activeclassname='navAnchorDropdown active'>
+					<div
+						className='navAnchorDropdown'
+						activeclassname='navAnchorDropdown active'
+					>
 						{t('navbar.navelement1')}
 						<IoIosArrowDown className='responsiveArrow' />
 					</div>

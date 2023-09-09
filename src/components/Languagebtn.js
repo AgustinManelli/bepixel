@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import '../stylesheets/Languagebtn.css';
 import { useTranslation } from 'react-i18next';
 import $ from 'jquery';
-import { GrCircleAlert } from 'react-icons/gr';
-import { Toaster, toast } from 'sonner'
+import { toast } from 'sonner';
 
 function Languagebtn(props) {
-	const [t, i18n] = useTranslation('global');
+	const [i18n] = useTranslation('global');
 
 	useEffect(() => {
 		if (
-			window.localStorage.getItem('lng') != 'es' &&
-			window.localStorage.getItem('lng') != null
+			window.localStorage.getItem('lng') !== 'es' &&
+			window.localStorage.getItem('lng') !== null
 		) {
 			document.querySelector('.check-toggle').checked = 'true';
 		}
@@ -30,35 +29,35 @@ function Languagebtn(props) {
 
 		$('body,html').animate({ scrollTop: '0px' }, 500);
 
-		if(window.localStorage.getItem('lng')=='es'){
-			toast.success("Lenguaje cambiado a español", {
+		if (window.localStorage.getItem('lng') === 'es') {
+			toast.success('Lenguaje cambiado a español', {
 				style: {
-				textAlign: 'left',
-				background: 'rgba(236, 253, 243, 0.8)',
-				backdropFilter: 'blur(10px) saturate(200%)',
-				WebkitBackdropFilter: 'blur(10px) saturate(200%)',
-				MozBackdropFilter: 'blur(10px) saturate(200%)',
-				MsBackdropFilter: 'blur(10px) saturate(200%)',
-				KhtmlBackdropFilter: 'blur(10px) saturate(200%)',
-				boxShadow: '0 10px 10px 0 rgb(0, 0, 0, 5%)',
-				border: 'none',
-			  }});
-			
-		}else{
-			toast.success("Language changed to english", {
+					textAlign: 'left',
+					background: 'rgba(236, 253, 243, 0.8)',
+					backdropFilter: 'blur(10px) saturate(200%)',
+					WebkitBackdropFilter: 'blur(10px) saturate(200%)',
+					MozBackdropFilter: 'blur(10px) saturate(200%)',
+					MsBackdropFilter: 'blur(10px) saturate(200%)',
+					KhtmlBackdropFilter: 'blur(10px) saturate(200%)',
+					boxShadow: '0 10px 10px 0 rgb(0, 0, 0, 5%)',
+					border: 'none',
+				},
+			});
+		} else {
+			toast.success('Language changed to english', {
 				style: {
-				textAlign: 'left',
-				background: 'rgba(236, 253, 243, 0.8)',
-				backdropFilter: 'blur(10px) saturate(200%)',
-				WebkitBackdropFilter: 'blur(10px) saturate(200%)',
-				MozBackdropFilter: 'blur(10px) saturate(200%)',
-				MsBackdropFilter: 'blur(10px) saturate(200%)',
-				KhtmlBackdropFilter: 'blur(10px) saturate(200%)',
-				boxShadow: '0 10px 10px 0 rgb(0, 0, 0, 5%)',
-				border: 'none',
-			}});
+					textAlign: 'left',
+					background: 'rgba(236, 253, 243, 0.8)',
+					backdropFilter: 'blur(10px) saturate(200%)',
+					WebkitBackdropFilter: 'blur(10px) saturate(200%)',
+					MozBackdropFilter: 'blur(10px) saturate(200%)',
+					MsBackdropFilter: 'blur(10px) saturate(200%)',
+					KhtmlBackdropFilter: 'blur(10px) saturate(200%)',
+					boxShadow: '0 10px 10px 0 rgb(0, 0, 0, 5%)',
+					border: 'none',
+				},
+			});
 		}
-
 	};
 
 	return (
@@ -73,8 +72,7 @@ function Languagebtn(props) {
 				<div className='switch'>
 					<div className='dot'></div>
 				</div>
-				{/* <span>english version</span> */}
-				<p  class="btn-shine">English version avalible (beta)</p>
+				<p className='btn-shine'>English version avalible (beta)</p>
 			</label>
 		</div>
 	);

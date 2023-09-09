@@ -8,16 +8,17 @@ import { useTranslation } from 'react-i18next';
 
 function Homedata() {
 	AOS.init();
-	const [t, i18n] = useTranslation('global');
+	const [t] = useTranslation('global');
 
 	return (
 		<section className='homedataContainer'>
 			<div className='homedata ContainerGeneral'>
 				<div className='homedataElement'>
-					<Tittles nombre={t('home-services.title')} color='var(--secondaryColor)' />
-					<p className='homedataElement_text'>
-						{t('home-services.text')}
-					</p>
+					<Tittles
+						nombre={t('home-services.title')}
+						color='var(--secondaryColor)'
+					/>
+					<p className='homedataElement_text'>{t('home-services.text')}</p>
 				</div>
 				<div className='homedataElement services'>
 					<div data-aos='zoom-in' data-aos-once='true'>

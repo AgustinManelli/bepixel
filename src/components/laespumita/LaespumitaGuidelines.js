@@ -34,14 +34,14 @@ function LaespumitaGuidelines() {
 					</p>
 				</div>
 				<div className='laespumitaGuideWhyimg'>
-					<img src={Laespumitabefore} loading='lazy'/>
-					<img src={Laespumitaafter} loading='lazy'/>
+					<img src={Laespumitabefore} loading='lazy' />
+					<img src={Laespumitaafter} loading='lazy' />
 				</div>
 			</div>
 
 			<div className='laespumitaGuidelinesVariationContainer'>
 				<div className='laespumitaGuidelinesVariation_mw'>
-					<img src={Laespumitavariations} loading='lazy'/>
+					<img src={Laespumitavariations} loading='lazy' />
 				</div>
 			</div>
 
@@ -55,9 +55,13 @@ function LaespumitaGuidelines() {
 							sueltos donde el envase no permita diferenciar que contenido
 							lleva.
 						</p>
-						<img src={Laespumitasticker} loading='lazy'/>
+						<img src={Laespumitasticker} loading='lazy' />
 					</div>
-					<img src={Laespumitabag} className='laespumitaBagIMG' loading='lazy'/>
+					<img
+						src={Laespumitabag}
+						className='laespumitaBagIMG'
+						loading='lazy'
+					/>
 				</div>
 			</div>
 		</div>

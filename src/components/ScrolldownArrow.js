@@ -3,8 +3,8 @@ import '../stylesheets/ScrolldownArrow.css';
 
 export default function ScrolldownArrow() {
 	return (
-        <div className='scrolldownArrowContainer'>
-            <div className="scroll-down"></div>
-        </div>
+		<div className='scrolldownArrowContainer'>
+			<a href='#homefaq' className='scroll-down'> </a>
+		</div>
 	);
 }

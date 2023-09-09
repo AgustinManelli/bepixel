@@ -7,22 +7,21 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Laespumita from './Pages/Laespumita';
 import FloatingWSP from './components/FloatingWSP';
 import Ourbrand from './Pages/Ourbrand';
-import { Toaster, toast } from 'sonner'
+import { Toaster, toast } from 'sonner';
 import { IoNotifications } from 'react-icons/io5';
 
 function App() {
-
 	useEffect(() => {
-		if (window.localStorage.getItem('npopup') == null) {
+		if (window.localStorage.getItem('npopup') === null) {
 			window.localStorage.setItem('npopup', true);
 		}
-		if (window.localStorage.getItem('npopup') == 'true') {
+		if (window.localStorage.getItem('npopup') === 'true') {
 			setTimeout(() => {
 				toast('Notification', {
 					description: 'English version avalible.',
 					icon: <IoNotifications />,
-					onDismiss: (t) => window.localStorage.setItem('npopup', false),
-					id: "initialtoast",
+					onDismiss: t => window.localStorage.setItem('npopup', false),
+					id: 'initialtoast',
 					style: {
 						textAlign: 'left',
 						background: 'rgba(255, 255, 255, 0.5)',
@@ -33,8 +32,8 @@ function App() {
 						KhtmlBackdropFilter: 'blur(10px) saturate(200%)',
 						boxShadow: '0 10px 10px 0 rgb(0, 0, 0, 5%)',
 						border: 'none',
-					  }
-				  });
+					},
+				});
 			}, 3000);
 		}
 	}, []);
@@ -44,9 +43,7 @@ function App() {
 	const [shadowScroll, setShadowScroll] = React.useState(true);
 
 	return (
-		<div
-			className='App'
-		>
+		<div className='App'>
 			<Router basename={process.env.PUBLIC_URL}>
 				<Navbar
 					setIsActive={setIsActive}
@@ -57,7 +54,12 @@ function App() {
 					setShadowScroll={setShadowScroll}
 				/>
 				<FloatingWSP />
-				<Toaster closeButton richColors toastOptions={{ className: 'initial-toast' }} duration={7000}/>
+				<Toaster
+					closeButton
+					richColors
+					toastOptions={{ className: 'initial-toast' }}
+					duration={7000}
+				/>
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/laespumita' element={<Laespumita />} />

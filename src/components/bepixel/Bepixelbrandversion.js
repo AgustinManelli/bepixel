@@ -6,8 +6,8 @@ import bpg2 from '../../image/bepixelguideline/brandversion2.webp';
 function Bepixelbrandversion() {
 	return (
 		<div className='bepixelbrandversionContainer'>
-			<img src={bpg1} loading='lazy'/>
-			<img src={bpg2} loading='lazy'/>
+			<img src={bpg1} loading='lazy' />
+			<img src={bpg2} loading='lazy' />
 		</div>
 	);
 }

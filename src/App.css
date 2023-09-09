@@ -8,6 +8,10 @@ svg {
 	vertical-align: initial;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 html,
 body {
 	font-size: 18px;

@@ -5,9 +5,9 @@ import Tittles from '../Tittles';
 import { useTranslation } from 'react-i18next';
 
 export default function Homefaq() {
-	const [t, i18n] = useTranslation('global');
+	const [t] = useTranslation('global');
 	return (
-		<section className='homefaqContainer'>
+		<section className='homefaqContainer' id='homefaq'>
 			<div className='homefaq_mw ContainerGeneral'>
 				<div>
 					<Logo className='homefaqLogo' />

@@ -7,7 +7,7 @@ function Bepixelsections(props) {
 		<section className='bepixelsectionsContainer'>
 			<div className='bepixelsections_i'>
 				<div className='bepixelsections_nomenclator'>
-					<img src={bepixel} loading='lazy'/>
+					<img src={bepixel} loading='lazy' />
 					<p> {props.section} </p>
 				</div>
 				{props.page}

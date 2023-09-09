@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../stylesheets/bepixel/Bepixelcolors.css';
-import logo from '../../image/bepixelguideline/logo.svg';
 
 function Bepixelcolors() {
 	return (

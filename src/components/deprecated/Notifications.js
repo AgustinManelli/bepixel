@@ -5,7 +5,6 @@ import { IoNotifications } from 'react-icons/io5';
 import $ from 'jquery';
 
 function Notifications() {
-	
 	useEffect(() => {
 		if (window.localStorage.getItem('npopup') == null) {
 			window.localStorage.setItem('npopup', true);
