@@ -5,7 +5,7 @@ import $ from 'jquery';
 import { toast } from 'sonner';
 
 function Languagebtn(props) {
-	const [i18n] = useTranslation('global');
+	const [t, i18n] = useTranslation('global');
 
 	useEffect(() => {
 		if (

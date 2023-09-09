@@ -33,8 +33,6 @@
 	);
 	border-radius: 50%;
 	position: absolute;
-	top: calc(50%-200px);
-	left: calc(50%-200px);
 	-webkit-animation: glowEffect 4s ease-in-out;
 	-moz-animation: glowEffect 4s ease-in-out;
 	animation: glowEffect 4s ease-in-out;
