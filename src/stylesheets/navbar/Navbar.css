@@ -180,6 +180,7 @@
 .progressBar::-webkit-progress-value {
 	background: var(--mainColor);
 	background-attachment: fixed;
+	transition: width 0.2s ease-in-out;
 }
 
 .progressBar::-moz-progress-bar {

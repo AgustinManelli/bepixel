@@ -63,6 +63,7 @@ function Navbar({
 			document.documentElement.scrollHeight -
 			document.documentElement.clientHeight;
 		const scrolled = (winScroll / height) * 100;
+
 		document.getElementById('progressbar').value = scrolled;
 	};
 
