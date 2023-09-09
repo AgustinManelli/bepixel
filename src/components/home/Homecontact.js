@@ -6,7 +6,7 @@ import $ from 'jquery';
 import { useTranslation } from 'react-i18next';
 
 export default function Homecontact() {
-	const [t, i18n] = useTranslation('global');
+	const [t] = useTranslation('global');
 
 	$('#form-home').on('submit', function () {
 		toast.success('Email enviado correctamente');
@@ -21,6 +21,7 @@ export default function Homecontact() {
 					action='https://formsubmit.co/bepixelarg@gmail.com'
 					method='POST'
 				>
+
 					<div className='form__group field'>
 						<input
 							type='input'

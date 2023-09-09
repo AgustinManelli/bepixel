@@ -9,7 +9,7 @@ export default function Homefaq() {
 	return (
 		<section className='homefaqContainer' id='homefaq'>
 			<div className='homefaq_mw ContainerGeneral'>
-				<div>
+				<div className='videoLogoContainer'>
 					<Logo className='homefaqLogo' />
 				</div>
 				<div className='homefaqtext'>

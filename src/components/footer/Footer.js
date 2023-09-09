@@ -18,7 +18,7 @@ function Footer() {
 			</section>
 			<Languagebtn id='buttonlanguage2' />
 			<span className='footerspan'>
-				made with <BsFillHeartFill className='footerheart' /> by bepixel
+				made by <BsFillHeartFill className='footerheart' /> bepixel
 			</span>
 		</footer>
 	);

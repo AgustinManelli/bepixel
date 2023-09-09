@@ -9,6 +9,7 @@
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-ms-user-select: none;
+	user-select: none
 }
 
 .nav {
@@ -178,6 +179,12 @@
 }
 
 .progressBar::-webkit-progress-value {
+	background: var(--mainColor);
+	background-attachment: fixed;
+	transition: width 0.2s ease-in-out;
+}
+
+.progressBar::progress-value {
 	background: var(--mainColor);
 	background-attachment: fixed;
 	transition: width 0.2s ease-in-out;

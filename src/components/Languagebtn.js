@@ -72,7 +72,7 @@ function Languagebtn(props) {
 				<div className='switch'>
 					<div className='dot'></div>
 				</div>
-				<p className='btn-shine'>English version avalible (beta)</p>
+				<p className='btn-shine'>English version available (beta)</p>
 			</label>
 		</div>
 	);

@@ -9,6 +9,7 @@ import Bepixelstruct from '../components/bepixel/Bepixelstruct';
 import Bepixelbrandversion from '../components/bepixel/Bepixelbrandversion';
 import Bepixelconstruction from '../components/bepixel/Bepixelconstruction';
 import Bepixelcolors from '../components/bepixel/Bepixelcolors';
+import AmbilightVideo from '../components/AmbilightVideo';
 
 function Ourbrand() {
 	document.title = 'bepixel | nuestra marca';
@@ -17,19 +18,22 @@ function Ourbrand() {
 
 	return (
 		<div className='ourbrandContainer'>
-			<header className='ourbrandSection_mw'>
-				<div className='ourbrandSection1_1'>
-					<img src={bepixelbrand} />
-					<p>
-						"bepixel" es una combinación de dos palabras: "be", que viene del
-						inglés "ser", y "pixel", que es una referencia al diseño gráfico y
-						la tecnología. Juntos, estos términos crean una marca moderna y
-						relevante que refleja la especialidad de la empresa en diseño y
-						marketing digital.<br></br>
-						<br></br>
-						Esta presentación tiene como objetivo mostrar parte de nuestro
-						trabajo y la calidad de nuestros proyectos.
-					</p>
+			<header className='ourbrandHeaderContainer'>
+				<div className='ourbrandSection1 ContainerGeneral'>
+					<div className='ourbrandSection1_1'>
+						<img src={bepixelbrand} />
+						<p>
+							"bepixel" es una combinación de dos palabras: "be", que viene del
+							inglés "ser", y "pixel", que es una referencia al diseño gráfico y
+							la tecnología. Juntos, estos términos crean una marca moderna y
+							relevante que refleja la especialidad de la empresa en diseño y
+							marketing digital.<br></br>
+							<br></br>
+							Esta presentación tiene como objetivo mostrar parte de nuestro
+							trabajo y la calidad de nuestros proyectos.
+						</p>
+					</div>
+					<AmbilightVideo />
 				</div>
 			</header>
 			<Bepixelsections section='significados' page={<Bepixelmeaning />} />
