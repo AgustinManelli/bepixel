@@ -15,7 +15,6 @@ function Navbar({
 	shadowScroll,
 	setShadowScroll,
 }) {
-
 	const [t] = useTranslation('global');
 
 	const openDropdown = event => {

@@ -21,7 +21,6 @@ export default function Homecontact() {
 					action='https://formsubmit.co/bepixelarg@gmail.com'
 					method='POST'
 				>
-
 					<div className='form__group field'>
 						<input
 							type='input'

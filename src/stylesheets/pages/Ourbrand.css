@@ -11,14 +11,13 @@
 	overflow: hidden;
 }
 
-.ourbrandSection1{
+.ourbrandSection1 {
 	gap: 100px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	
 }
 
 .ourbrandSection1_1 {
