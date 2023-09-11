@@ -13,22 +13,25 @@ function Navbar({
 	isPhone,
 	setIsPhone,
 	shadowScroll,
-	setShadowScroll,
+	setShadowScroll
 }) {
+	//translate const
 	const [t] = useTranslation('global');
 
-	const openDropdown = event => {
+
+
+	const openDropdown = () => {
 		$('.responsivenavDropdown').toggleClass('responsivenavDropdownOpened');
 		$('.responsiveArrow').toggleClass('responsiveArrowinverted');
 	};
 
-	const handleClick = event => {
+	const handleClick = () => {
 		setIsActive(current => !current);
 		$('.responsivenavDropdown').removeClass('responsivenavDropdownOpened');
 		$('.responsiveArrow').removeClass('responsiveArrowinverted');
 	};
 
-	const closeNav = event => {
+	const closeNav = () => {
 		setIsActive(false);
 		$('body,html').animate({ scrollTop: '0px' }, 500);
 	};

@@ -4,8 +4,6 @@ import logovideo from '../image/logochico_1.mp4';
 import postervideo from '../image/bepixelguideline/brandpresentation.webp';
 
 function AmbilightVideo() {
-	let intervalId;
-	const FRAMERATE = 30;
 
 	/*window.onload = function () {
         const canvas = document.getElementById('ambilight');
@@ -39,40 +37,45 @@ function AmbilightVideo() {
         repaintAmbilight();
         video.currentTime = 0;
     };*/
-
+	
 	useEffect(() => {
+		let intervalId;
+		const FRAMERATE = 30;
+
 		const canvas = document.getElementById('ambilight');
 		const context = canvas.getContext('2d');
-
 		const video = document.getElementById('video');
 
 		function repaintAmbilight() {
 			context.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+			console.log('width: '+video.clientWidth);
+			console.log('height: '+video.clientHeight);
 		}
+
 
 		function startAmbilightRepaint() {
 			intervalId = window.setInterval(repaintAmbilight, 1000 / FRAMERATE);
 		}
-
+		
 		function stopAmbilightRepaint() {
 			clearInterval(intervalId);
 		}
-
+		
 		video.addEventListener('play', startAmbilightRepaint);
-
+		
 		video.addEventListener('pause', stopAmbilightRepaint);
-
+		
 		video.addEventListener('ended', stopAmbilightRepaint);
-
+		
 		video.addEventListener('seeked', repaintAmbilight);
-
+		
 		video.addEventListener('load', repaintAmbilight);
-
+		
 		// load first frame
 		repaintAmbilight();
 		video.currentTime = 0;
-	}, []);
-
+	});
+		
 	return (
 		<div className='videoWrapper'>
 			<div className='ambilightWrapper'>
@@ -84,11 +87,11 @@ function AmbilightVideo() {
 						poster={postervideo}
 						preload='none'
 						controlsList='nofullscreen nodownload'
-						Webkit-playsInline
 						playsInline
+						webkit-playsInline
 					/>
 				</div>
-				<canvas id='ambilight' className='ambilight'></canvas>
+				<canvas id='ambilight' className='ambilight' width='1080' height='1080'></canvas>
 			</div>
 		</div>
 	);

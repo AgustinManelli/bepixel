@@ -16,7 +16,7 @@ function Languagebtn(props) {
 		}
 	}, []);
 
-	const lenguagecheck = event => {
+	const lenguagecheck = () => {
 		const checkboxlenguage = document.querySelector(`#${props.id}`);
 
 		if (checkboxlenguage.checked) {

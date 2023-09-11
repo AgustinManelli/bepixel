@@ -19,12 +19,11 @@
 	/*aspect-ratio: 16 / 9;*/
 	z-index: 30;
 	opacity: 1;
-	object-fit: cover;
-	background-size: cover;
+	object-fit: fill;
 }
 
 #ambilight {
-	filter: blur(80px) opacity(0.3) saturate(150%);
+	filter: blur(80px) opacity(0.5) saturate(150%);
 	-webkit-filter: blur(80px) opacity(0.3) saturate(150%);
 	-moz-filter: blur(80px) opacity(0.3) saturate(150%);
 	left: 0;
@@ -35,6 +34,7 @@
 	width: 100%;
 	z-index: -1;
 	height: 100%;
+
 }
 
 @media screen and (max-width: 815px) {
