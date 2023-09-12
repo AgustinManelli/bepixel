@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import '../stylesheets/AmbilightVideo.css';
-import logovideo from '../image/logochico_1.mp4';
-import postervideo from '../image/bepixelguideline/brandpresentation.webp';
+import '../../stylesheets/bepixel/AmbilightVideo.css';
+import logovideo from '../../image/logochico_1.mp4';
+import postervideo from '../../image/bepixelguideline/brandpresentation.webp';
 import $ from 'jquery';
 
 function AmbilightVideo() {

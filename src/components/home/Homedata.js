@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../stylesheets/home/Homedata.css';
 import Tittles from '../Tittles';
-import ServiceItem from '../ServiceItem';
+import ServiceItem from './ServiceItem';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useTranslation } from 'react-i18next';

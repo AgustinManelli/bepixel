@@ -1,11 +1,11 @@
 import React from 'react';
-import '../stylesheets/ServiceItem.css';
+import '../../stylesheets/home/ServiceItem.css';
 
 function ServiceItem(props) {
 	return (
 		<div className='serviceItem'>
 			<img
-				src={require(`../image/${props.img}`)}
+				src={require(`../../image/${props.img}`)}
 				loading='lazy'
 				alt='service item'
 			/>

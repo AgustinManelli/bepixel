@@ -8,13 +8,7 @@
 
 .serviceItem img {
 	width: 100px;
-	opacity: 80%;
 	transition: all 0.3s;
-}
-
-.serviceItem img:hover {
-	opacity: 100%;
-	transform: scale(102%);
 }
 
 .serviceItem div {

@@ -6,6 +6,7 @@ import logof from '../../image/ISOTIPO.svg';
 import logof2 from '../../image/LOGOVERTICAL.svg';
 import $ from 'jquery';
 import { useTranslation } from 'react-i18next';
+import CTAButton from '../CTAButton';
 
 function Navbar({
 	setIsActive,
@@ -33,7 +34,7 @@ function Navbar({
 
 	const closeNav = () => {
 		setIsActive(false);
-		$('body,html').animate({ scrollTop: '0px' }, 500);
+		$('body,html').animate({ scrollTop: '0px' });
 	};
 
 	const handleResize = () => {
@@ -136,6 +137,9 @@ function Navbar({
 							{t('navbar.navelement2')}
 						</NavLink>
 					</li>
+					<li style={{position: "absolute", right: "0"}}>
+						<CTAButton title="crea ahora tu proyecto" link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'/>
+					</li>
 				</ul>
 				<progress
 					className='progressBar'
@@ -189,6 +193,9 @@ function Navbar({
 					>
 						{t('navbar.navelement2')}
 					</NavLink>
+				</li>
+				<li className='navLi'>
+					<CTAButton title="crea ahora tu proyecto" link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'/>
 				</li>
 			</ul>
 		</header>

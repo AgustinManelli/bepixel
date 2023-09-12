@@ -9,7 +9,7 @@ import Bepixelstruct from '../components/bepixel/Bepixelstruct';
 import Bepixelbrandversion from '../components/bepixel/Bepixelbrandversion';
 import Bepixelconstruction from '../components/bepixel/Bepixelconstruction';
 import Bepixelcolors from '../components/bepixel/Bepixelcolors';
-import AmbilightVideo from '../components/AmbilightVideo';
+import AmbilightVideo from '../components/bepixel/AmbilightVideo';
 import { useTranslation } from 'react-i18next';
 import HeaderComponent from '../components/bepixel/HeaderComponent';
 

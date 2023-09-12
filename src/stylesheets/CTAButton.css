@@ -1,0 +1,21 @@
+
+
+.ctaButton{
+    display: inline-block;
+    position: relative;
+    background-color: var(--mainColor);
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: transform .1s ease-in-out, background-color .2s linear;
+}
+
+.ctaButtonContainer span{
+    color: #fff;
+    font-weight: 700;
+}
+
+.ctaButton:hover {
+    transform: scale(105%);
+    background-color: rgb(255, 59, 193);
+}

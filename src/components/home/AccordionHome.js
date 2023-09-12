@@ -1,7 +1,7 @@
 import React from 'react';
-import '../stylesheets/AccordionHome.css';
-import Accordion from '../components/Accordion.js';
-import Tittles from './Tittles';
+import '../../stylesheets/home/AccordionHome.css';
+import Accordion from '../Accordion.js';
+import Tittles from '../Tittles';
 import { useTranslation } from 'react-i18next';
 
 function AccordionHome() {
