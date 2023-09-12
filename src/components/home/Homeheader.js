@@ -1,4 +1,3 @@
-import { React } from 'react';
 import '../../stylesheets/home/Homeheader.css';
 import { useTranslation } from 'react-i18next';
 import ScrolldownArrow from '../ScrolldownArrow';

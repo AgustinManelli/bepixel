@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../stylesheets/home/Homedata.css';
 import Tittles from '../Tittles';
 import ServiceItem from './ServiceItem';

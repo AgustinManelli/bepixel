@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../stylesheets/bepixel/Bepixelconstruction.css';
 import bpg1 from '../../image/bepixelguideline/construction.svg';
 import bpg2 from '../../image/bepixelguideline/construction2.svg';

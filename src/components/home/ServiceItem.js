@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../stylesheets/home/ServiceItem.css';
 
 function ServiceItem(props) {

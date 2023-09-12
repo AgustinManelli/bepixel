@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../stylesheets/home/Homecontact.css';
 import Tittles from '../Tittles';
 import { toast } from 'sonner';

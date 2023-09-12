@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../stylesheets/home/AccordionHome.css';
 import Accordion from '../Accordion.js';
 import Tittles from '../Tittles';

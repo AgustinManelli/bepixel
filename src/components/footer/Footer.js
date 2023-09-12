@@ -1,4 +1,3 @@
-import React from 'react';
 import Footerfaq from './Footerfaq';
 import Footerinfo from './Footerinfo';
 import '../../stylesheets/footer/Footer.css';

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../stylesheets/CTAButton.css';
 
 function CTAButton(props) {

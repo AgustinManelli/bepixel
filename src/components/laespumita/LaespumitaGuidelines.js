@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../stylesheets/laespumita/LaespumitaGuidelines.css';
 import Laespumitabefore from '../../image/laespumitabefore.webp';
 import Laespumitaafter from '../../image/laespumitaafter.svg';

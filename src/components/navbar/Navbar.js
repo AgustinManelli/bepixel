@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { IoIosArrowDown } from 'react-icons/io';
 import '../../stylesheets/navbar/Navbar.css';
@@ -137,7 +137,7 @@ function Navbar({
 							{t('navbar.navelement2')}
 						</NavLink>
 					</li>
-					<li style={{position: "absolute", right: "20"}}>
+					<li style={{position: "absolute", right: "20px"}}>
 						<CTAButton title="crea ahora tu proyecto" link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'/>
 					</li>
 				</ul>

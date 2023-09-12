@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../stylesheets/bepixel/Bepixelsections.css';
 import bepixel from '../../image/ISOTIPO.svg';
 

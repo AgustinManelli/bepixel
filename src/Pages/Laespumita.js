@@ -1,4 +1,3 @@
-import React from 'react';
 import LaespumitaGuidelines from '../components/laespumita/LaespumitaGuidelines';
 import laespumitalogo from '../image/laespumita.svg'
 import laespumitaheader from '../image/laespumitaheader.webp'

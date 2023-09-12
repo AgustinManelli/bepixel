@@ -1,4 +1,3 @@
-import React from 'react';
 import '../stylesheets/ScrolldownArrow.css';
 
 export default function ScrolldownArrow(props) {

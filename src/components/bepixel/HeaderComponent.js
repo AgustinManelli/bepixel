@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../stylesheets/bepixel/HeaderComponent.css';
 
 function HeaderComponent(props) {

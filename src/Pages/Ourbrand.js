@@ -1,4 +1,3 @@
-import React from 'react';
 import '../stylesheets/pages/Ourbrand.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';

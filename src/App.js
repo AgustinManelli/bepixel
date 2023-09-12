@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Home from './Pages/Home';
@@ -38,9 +38,9 @@ function App() {
 		}
 	}, []);
 
-	const [isActive, setIsActive] = React.useState(false);
-	const [isPhone, setIsPhone] = React.useState(false);
-	const [shadowScroll, setShadowScroll] = React.useState(true);
+	const [isActive, setIsActive] = useState(false);
+	const [isPhone, setIsPhone] = useState(false);
+	const [shadowScroll, setShadowScroll] = useState(true);
 
 	return (
 		<div className='App'>

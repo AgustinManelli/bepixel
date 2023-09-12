@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import '../../stylesheets/bepixel/AmbilightVideo.css';
 import logovideo from '../../image/logochico_1.mp4';
 import postervideo from '../../image/bepixelguideline/brandpresentation.webp';
@@ -28,12 +28,19 @@ function AmbilightVideo() {
 			clearInterval(intervalId);
 			$('.headerComponentContainer').removeClass('headerVideoActive');
 		}
+
+		function endAmbilightRepaint() {
+			clearInterval(intervalId);
+			$('.headerComponentContainer').removeClass('headerVideoActive');
+			context.clearRect(0, 0, video.videoWidth, video.videoHeight);
+			video.load();
+		}
 		
 		video.addEventListener('play', startAmbilightRepaint);
 		
 		video.addEventListener('pause', stopAmbilightRepaint);
 		
-		video.addEventListener('ended', stopAmbilightRepaint);
+		video.addEventListener('ended', endAmbilightRepaint);
 		
 		video.addEventListener('seeked', repaintAmbilight);
 		

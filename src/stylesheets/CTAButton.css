@@ -1,21 +1,33 @@
 
-
+.ctaButtonContainer{
+    width: fit-content;
+    height: fit-content;
+}
 .ctaButton{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    background-color: var(--mainColor);
+    /*background-color: var(--mainColor);*/
+    border: solid 2px var(--mainColor);
     border-radius: 10px;
-    padding: 12px;
+    padding: 10px;
     cursor: pointer;
-    transition: transform .1s ease-in-out, background-color .2s linear;
+    transition: transform .1s ease-in-out, border .1s linear;
 }
 
 .ctaButtonContainer span{
-    color: #fff;
+    color: var(--mainColor);
     font-weight: 700;
+    font-size: 13px;
+    transition: color .1s;
 }
 
-.ctaButton:hover {
+.ctaButton:hover{
     transform: scale(105%);
-    background-color: rgb(255, 59, 193);
+    border: solid 2px rgb(255, 103, 207);
+}
+
+.ctaButton:hover.ctaButton span{
+    color: rgb(255, 103, 207);
 }

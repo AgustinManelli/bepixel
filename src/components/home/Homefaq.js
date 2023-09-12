@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../stylesheets/home/Homefaq.css';
 import { ReactComponent as Logo } from '../../image/LOGOVERTICALSTROKE.svg';
 import Tittles from '../Tittles';

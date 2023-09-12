@@ -1,4 +1,3 @@
-import React from 'react';
 import '../stylesheets/FloatingWSP.css';
 import { BsWhatsapp } from 'react-icons/bs';
 

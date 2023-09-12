@@ -1,5 +1,7 @@
 .footerinfoContainer {
+	height: fit-content;
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	max-width: 400px;
 	gap: 10px;

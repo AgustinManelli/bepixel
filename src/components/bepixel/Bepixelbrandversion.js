@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../stylesheets/bepixel/Bepixelbrandversion.css';
 import bpg1 from '../../image/bepixelguideline/brandversion1.svg';
 import bpg2 from '../../image/bepixelguideline/brandversion2.webp';

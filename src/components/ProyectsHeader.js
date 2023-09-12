@@ -1,4 +1,3 @@
-import React from 'react';
 import ScrolldownArrow from './ScrolldownArrow';
 import '../stylesheets/ProyectsHeader.css';
 

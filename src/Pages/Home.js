@@ -1,4 +1,3 @@
-import React from 'react';
 import '../stylesheets/pages/Home.css';
 import Homeheader from '../components/home/Homeheader';
 import Homedata from '../components/home/Homedata';
