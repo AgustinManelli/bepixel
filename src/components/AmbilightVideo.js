@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../stylesheets/AmbilightVideo.css';
 import logovideo from '../image/logochico_1.mp4';
 import postervideo from '../image/bepixelguideline/brandpresentation.webp';
+import $ from 'jquery';
 
 function AmbilightVideo() {
 	
@@ -19,11 +20,13 @@ function AmbilightVideo() {
 
 
 		function startAmbilightRepaint() {
+			$('.headerComponentContainer').addClass('headerVideoActive');
 			intervalId = window.setInterval(repaintAmbilight, 1000 / FRAMERATE);
 		}
 		
 		function stopAmbilightRepaint() {
 			clearInterval(intervalId);
+			$('.headerComponentContainer').removeClass('headerVideoActive');
 		}
 		
 		video.addEventListener('play', startAmbilightRepaint);
