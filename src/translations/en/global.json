@@ -5,50 +5,70 @@
 		"footer-faq-text1": "At bepixel we are dedicated to creating the graphic pieces that your brand needs, both for your networks and even corporate stationery.",
 		"footer-faq-text2": "We are from Córdoba, Argentina, but we work for all of Argentina and... the world 👀",
 		"footer-faq-title1": "What is bepixel?",
-		"footer-faq-title2": "Where we are?"
+		"footer-faq-title2": "Where are we located?"
 	},
 	"home-contact": {
 		"btnsend": "send",
 		"placeholder-mensaje": "message",
 		"placeholder-name": "name",
 		"placeholder-number": "phone number",
-		"text": "fill out the form and contact us, we will contact you as soon as possible.",
+		"text": "Fill out the form and contact us, we will get back to you as soon as possible.",
 		"title": "contact form"
 	},
 	"home-faq": {
-		"text": "We are bepixel, a graphic design agency from Córdoba, Argentina, dedicated to produce innovative and functional ideas in each project. Our goal is to represent creativity and originality in every of our designs, creating graphic identifications adapted to the needs of our clients.",
+		"text": "We are bepixel, a graphic design agency from Córdoba, Argentina, dedicated to produce innovative and functional ideas in each project. Our goal is to represent creativity and originality in every one of our designs, creating graphic identifications adapted to the needs of our clients.",
 		"title": "about us"
 	},
 	"home-faqs": {
-		"accordion1-text": "We are from Córdoba, Argentina, we do not have a head office but we carry out work on request for all of Argentina.",
-		"accordion1-title": "Where are they?",
+		"accordion1-text": "We are from Córdoba, Argentina. We do not have a physical office, but we carry out work upon request for all of Argentina.",
+		"accordion1-title": "Where are we located?",
 		"accordion2-text": "You can contact us at +54(3571)534631, at bepixelarg@gmail.com, or on any of our social networks.",
-		"accordion2-title": "How I can contact with you?",
-		"accordion3-text": "The value of the services varies depending on it and the hours required, we have the best prices on the market, we recently launched the platform and we want to show our effort and commitment to each of our projects.",
-		"accordion3-title": "How much do the services cost?",
-		"accordion4-text": "We have some starter packs for SMEs and start-ups, they will soon be presented on the web. At the moment you can consult it through our communication channels.",
-		"accordion4-title": "Do you have offers?",
-		"text": "Here you will find some questions about us and our services, for more information we provide all our means of contact so you can ask us.",
+		"accordion2-title": "How can I get in touch with you?",
+		"accordion3-text": "The cost of the services varies depending on the scope and the hours required. We offer the best prices in the market. We recently launched the platform and we want to demostrate our dedication and commitment to each of our projects.",
+		"accordion3-title": "How much do you the services cost?",
+		"accordion4-text": "We have some starter packs for SMEs and start-ups. They will soon be featured on the website. For now, you can inquire about them through our communication channels.",
+		"accordion4-title": "Do you have any special offers?",
+		"text": "Here you will find some questions about us and our services. For more information, we provide all our contact details so you can reach out to us.",
 		"title": "frequently asked questions (FAQs)"
 	},
 	"home-header": {
 		"buttoncta": "contact us",
 		"textelement1": "without",
 		"textelement2": "limits",
-		"textelement3": "We create necessary graphic components for your company. Find out about our services and contact us."
+		"textelement3": "We create necessary graphic components for your company. Learn about our services and get in touch with us."
 	},
 	"home-services": {
-		"text": "the best quality services for your company or startup.",
-		"textservice1": "graphic identification, logos, graphic resources.",
-		"textservice2": "business cards, brochures, brand manuals, labels, posters and shop windows.",
-		"textservice3": "creation of web pages, wordpress, resources and elements for social networks.",
+		"text": "providing the highest quality services for your company or startup.",
+		"textservice1": "graphic identification, logos and graphic resources.",
+		"textservice2": "business cards, brochures, brand manuals, labels, posters, and storefronts.",
+		"textservice3": "website creation, WordPress, and resources and elements for social media.",
 		"title": "services",
 		"titleservice1": "branding",
 		"titleservice2": "stationery and posters",
-		"titleservice3": "web/digital design"
+		"titleservice3": "website/digital design"
 	},
 	"navbar": {
 		"navelement1": "projects",
 		"navelement2": "our brand"
+	},
+	"ourbrand": {
+		"construction-footer": "The logo undergoes visual adjustments to keep it balanced.",
+		"header-text-1": "bepixel is a combination of two words: 'be', which comes from the English word 'to be', and 'pixel', which is a reference to graphic design and technology. Together, these terms create a modern and relevant brand that reflects the company's expertise in design and digital marketing.",
+		"header-text-2": "This presentation aims to showcase part of our work and the quality of our projects.",
+		"meaning": {
+			"element-1": "represents the initial of bepixel, a rounded construction allows visual harmony combined with straight cuts, symbolizing the digital aspect.",
+			"element-1-spand": "letter b: ",
+			"element-2": "pixel disconnecting part of the letter b, symbolizes the grid structure of pixels that form the basis of all digital images and most graphic designs.",
+			"element-2-spand": "pixel: ",
+			"element-3": "conveys positive emotions, communicates values, connects our services with the happy side of projects.",
+			"element-3-spand": "smile: "
+		},
+		"titles": {
+			"brand-version": "brand Versions",
+			"colors": "colors",
+			"construction": "construction",
+			"meaning": "meanings",
+			"struct": "structure"
+		}
 	}
 }

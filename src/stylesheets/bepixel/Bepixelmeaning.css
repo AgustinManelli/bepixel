@@ -29,9 +29,14 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 15px;
+	font-weight: 500;
 	gap: 20px;
 	color: var(--secondaryColor);
 	text-align: left;
+}
+
+.bepixelmeaning_elements spand{
+	font-weight: 800;
 }
 
 .bepixelmeaning_elements img {

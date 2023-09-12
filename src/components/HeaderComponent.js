@@ -1,19 +1,20 @@
 import React from 'react';
 import '../stylesheets/HeaderComponent.css';
-import Tittles from './Tittles';
 
 function HeaderComponent(props) {
 	return (
-		<header className='laespumitaHeaderContainer'>
-			<div className='laespumitaLogo'>
-				<img
-					src={require(`../image/${props.logo}`)}
-					alt='logo bepixel proyects'
-				></img>
-			</div>
-			<div className='laespumitaTextContainer'>
-				<Tittles nombre={props.title} color='white' />
-				<p>{props.paraph}</p>
+		<header className='headerComponentContainer'>
+			<div className='headerComponentSection1 ContainerGeneral'>
+				<div className='headerComponentSection1_1'>
+					<img src={props.img} />
+					<p>
+						{props.text1}
+					</p>
+					<p>
+						{props.text2}
+					</p>
+				</div>
+				{props.element}
 			</div>
 		</header>
 	);

@@ -10,40 +10,40 @@ import Bepixelbrandversion from '../components/bepixel/Bepixelbrandversion';
 import Bepixelconstruction from '../components/bepixel/Bepixelconstruction';
 import Bepixelcolors from '../components/bepixel/Bepixelcolors';
 import AmbilightVideo from '../components/AmbilightVideo';
+import { useTranslation } from 'react-i18next';
+import HeaderComponent from '../components/HeaderComponent';
 
 function Ourbrand() {
+	const [t] = useTranslation('global');
 	document.title = 'bepixel | nuestra marca';
 
 	AOS.init();
 
 	return (
 		<div className='ourbrandContainer'>
-			<header className='ourbrandHeaderContainer'>
+			{/*<header className='ourbrandHeaderContainer'>
 				<div className='ourbrandSection1 ContainerGeneral'>
 					<div className='ourbrandSection1_1'>
 						<img src={bepixelbrand} />
 						<p>
-							"bepixel" es una combinación de dos palabras: "be", que viene del
-							inglés "ser", y "pixel", que es una referencia al diseño gráfico y
-							la tecnología. Juntos, estos términos crean una marca moderna y
-							relevante que refleja la especialidad de la empresa en diseño y
-							marketing digital.<br></br>
-							<br></br>
-							Esta presentación tiene como objetivo mostrar parte de nuestro
-							trabajo y la calidad de nuestros proyectos.
+							{t('ourbrand.header-text-1')}
+						</p>
+						<p>
+							{t('ourbrand.header-text-2')}
 						</p>
 					</div>
 					<AmbilightVideo />
 				</div>
-			</header>
-			<Bepixelsections section='significados' page={<Bepixelmeaning />} />
-			<Bepixelsections section='construcción' page={<Bepixelconstruction />} />
-			<Bepixelsections section='estructura' page={<Bepixelstruct />} />
+			</header>*/}
+			<HeaderComponent img={bepixelbrand} text1={t('ourbrand.header-text-1')} text2={t('ourbrand.header-text-2')} element={<AmbilightVideo />}/>
+			<Bepixelsections section={t('ourbrand.titles.meaning')} page={<Bepixelmeaning />} />
+			<Bepixelsections section={t('ourbrand.titles.construction')} page={<Bepixelconstruction footer={t('ourbrand.construction-footer')}/>} />
+			<Bepixelsections section={t('ourbrand.titles.struct')} page={<Bepixelstruct />} />
 			<Bepixelsections
-				section='versiones de marca'
+				section={t('ourbrand.titles.brand-version')}
 				page={<Bepixelbrandversion />}
 			/>
-			<Bepixelsections section='colores' page={<Bepixelcolors />} />
+			<Bepixelsections section={t('ourbrand.titles.colors')} page={<Bepixelcolors />} />
 		</div>
 	);
 }

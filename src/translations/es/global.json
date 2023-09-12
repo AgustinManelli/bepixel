@@ -50,5 +50,25 @@
 	"navbar": {
 		"navelement1": "trabajos",
 		"navelement2": "nuestra marca"
+	},
+	"ourbrand": {
+		"construction-footer": "el logotipo cuenta con ajustes visuales para mantenerlo compensado.",
+		"header-text-1": "bepixel es una combinación de dos palabras: 'be', que viene del inglés 'ser', y 'pixel', que es una referencia al diseño gráfico y la tecnología. Juntos, estos términos crean una marca moderna y relevante que refleja la especialidad de la empresa en diseño y marketing digital.",
+		"header-text-2": "Esta presentación tiene como objetivo mostrar parte de nuestro trabajo y la calidad de nuestros proyectos.",
+		"meaning": {
+			"element-1": "representa la inicial de bepixel, una construcción redondeada permite una armonía visual conbinado con cortes rectos, simbolizando la parte digital.",
+			"element-1-spand": "letra b: ",
+			"element-2": "pixel desconectando parte de la letra b, simboliza la estructura de la cuadrícula de los píxeles que son la base de todas las imágenes digitales y de la mayoría de los diseños gráficos.",
+			"element-2-spand": "píxel: ",
+			"element-3": "transmite emociones positivas, comunica valores, conecta nuestro servicios con el lado felíz de los proyectos.",
+			"element-3-spand": "sonrisa: "
+		},
+		"titles": {
+			"brand-version": "versiones de marca",
+			"colors": "colores",
+			"construction": "construcción",
+			"meaning": "significados",
+			"struct": "estructura"
+		}
 	}
 }
