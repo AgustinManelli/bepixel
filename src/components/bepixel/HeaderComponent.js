@@ -1,5 +1,5 @@
 import React from 'react';
-import '../stylesheets/HeaderComponent.css';
+import '../../stylesheets/bepixel/HeaderComponent.css';
 
 function HeaderComponent(props) {
 	return (

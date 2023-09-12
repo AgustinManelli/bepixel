@@ -1,12 +1,18 @@
 import React from 'react';
+import ScrolldownArrow from './ScrolldownArrow';
 import '../stylesheets/ProyectsHeader.css';
 
 function ProyectsHeader(props) {
 	return (
-		<header className='proyectHeaderContainer'>
-			<div className='proyectHeaderSection1'>
-				<div className='proyectHeaderSection1_1'>
-					<img src={props.img} />
+		<header className='proyectHeaderSection1'>
+			<ScrolldownArrow to={props.to}/>
+			<div className='proyectHeaderSection1_1'>
+				<div className='proyectHeaderSection_1_1_Container'>
+					<div className='proyectHeaderSection1_1_1'>
+						<h2>{props.title}</h2>
+						<div></div>
+						<img src={props.img} />
+					</div>
 					<p>
 						{props.text1}
 					</p>
@@ -14,8 +20,8 @@ function ProyectsHeader(props) {
 						{props.text2}
 					</p>
 				</div>
-				<div className="proyectHeaderImg" style={{backgroundImage: "url(" + props.element + ")", backgroundPosition: "center center", backgroundRepeat: "no-repeat", backgroundSize: "cover"}} > </div>
 			</div>
+			<div className="proyectHeaderImg" style={{backgroundImage: "url(" + props.element + ")", backgroundPosition: "center center", backgroundRepeat: "no-repeat", backgroundSize: "cover"}} > </div>
 		</header>
 	);
 }

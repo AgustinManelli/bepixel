@@ -1,10 +1,10 @@
 import React from 'react';
 import '../stylesheets/ScrolldownArrow.css';
 
-export default function ScrolldownArrow() {
+export default function ScrolldownArrow(props) {
 	return (
 		<div className='scrolldownArrowContainer'>
-			<a href='#homefaq' className='scroll-down'>
+			<a href={`#${props.to}`} className='scroll-down'>
 				{' '}
 			</a>
 		</div>

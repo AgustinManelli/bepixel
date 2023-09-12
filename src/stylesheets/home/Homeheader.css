@@ -19,7 +19,7 @@
 	align-items: center;
 	overflow: hidden;
 }
-.homeheaderElement:after {
+.homeheaderElement:before {
 	content: '';
 	display: block;
 	width: 700px;

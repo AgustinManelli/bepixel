@@ -11,7 +11,7 @@ import Bepixelconstruction from '../components/bepixel/Bepixelconstruction';
 import Bepixelcolors from '../components/bepixel/Bepixelcolors';
 import AmbilightVideo from '../components/AmbilightVideo';
 import { useTranslation } from 'react-i18next';
-import HeaderComponent from '../components/HeaderComponent';
+import HeaderComponent from '../components/bepixel/HeaderComponent';
 
 function Ourbrand() {
 	const [t] = useTranslation('global');

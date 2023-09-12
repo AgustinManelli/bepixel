@@ -20,7 +20,7 @@
 
 .laespumitaGuideWhytext {
 	display: flex;
-	gap: 30px;
+	gap: 10px;
 	flex-direction: column;
 	max-width: 500px;
 	text-align: left;
