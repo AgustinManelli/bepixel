@@ -48,6 +48,7 @@
 		"titleservice3": "website/digital design"
 	},
 	"navbar": {
+		"cta": "create your project now",
 		"navelement1": "projects",
 		"navelement2": "our brand"
 	},
@@ -70,5 +71,20 @@
 			"meaning": "meanings",
 			"struct": "structure"
 		}
+	},
+	"projects": {
+		"la-espumita": {
+			"header": {
+				"text1": "Redesign of brand and corporate identity for a small cleaning and household products business. This project involved a complete brand overhaul while retaining distinctive elements.",
+				"text2": "Below is the brand and the rationale behind all the changes that were made."
+			}
+		}
+	},
+	"stars-number": {
+		"button": "send",
+		"error": "Oops. An error occurred, please try again.",
+		"placeholder": "leave us a message",
+		"success": "Rating submitted, we appreciate your message.",
+		"title": "How useful did you find our website?"
 	}
 }

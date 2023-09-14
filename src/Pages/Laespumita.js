@@ -13,8 +13,8 @@ function Laespumita() {
 			<ProyectsHeader
 				title='la espumita'
 				img={laespumitalogo}
-				text1='Rediseño de marca e identificación corporativa para pyme de artículos de limpieza y del hogar. En este trabajo se realizó el rediseño de marca completo manteniendo aspectos distintivos.'
-				text2='A continuación se presenta la marca y la justificación de todos los cambios que se realizaron.'
+				text1={t('projects.la-espumita.header.text1')}
+				text2={t('projects.la-espumita.header.text2')}
 				element={laespumitaheader}
 				to='laespumitaGuidelinesWhyContainer'
 			/>

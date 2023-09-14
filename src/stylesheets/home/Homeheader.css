@@ -21,6 +21,7 @@
 }
 .homeheaderElement:before {
 	content: '';
+	z-index: 1;
 	display: block;
 	width: 700px;
 	height: 700px;

@@ -48,6 +48,7 @@
 		"titleservice3": "diseño web/digital"
 	},
 	"navbar": {
+		"cta": "crea ahora tu proyecto ahora",
 		"navelement1": "trabajos",
 		"navelement2": "nuestra marca"
 	},
@@ -70,5 +71,20 @@
 			"meaning": "significados",
 			"struct": "estructura"
 		}
+	},
+	"projects": {
+		"la-espumita": {
+			"header": {
+				"text1": "Rediseño de marca e identificación corporativa para pyme de artículos de limpieza y del hogar. En este trabajo se realizó el rediseño de marca completo manteniendo aspectos distintivos.",
+				"text2": "A continuación se presenta la marca y la justificación de todos los cambios que se realizaron."
+			}
+		}
+	},
+	"stars-number": {
+		"button": "enviar",
+		"error": "Ups. Ocurrió un error, vuelva a internarlo nuevamente.",
+		"placeholder": "dejanos un mensaje",
+		"success": "Valoración enviada, agradecemos su mensaje.",
+		"title": "¿Qué tan útil te resultó nuestra web?"
 	}
 }
