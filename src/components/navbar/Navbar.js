@@ -14,12 +14,10 @@ function Navbar({
 	isPhone,
 	setIsPhone,
 	shadowScroll,
-	setShadowScroll
+	setShadowScroll,
 }) {
 	//translate const
 	const [t] = useTranslation('global');
-
-
 
 	const openDropdown = () => {
 		$('.responsivenavDropdown').toggleClass('responsivenavDropdownOpened');
@@ -137,8 +135,11 @@ function Navbar({
 							{t('navbar.navelement2')}
 						</NavLink>
 					</li>
-					<li style={{position: "absolute", right: "20px"}}>
-						<CTAButton title="crea ahora tu proyecto" link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'/>
+					<li style={{ position: 'absolute', right: '20px' }}>
+						<CTAButton
+							title='crea ahora tu proyecto'
+							link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'
+						/>
 					</li>
 				</ul>
 				<progress
@@ -195,7 +196,10 @@ function Navbar({
 					</NavLink>
 				</li>
 				<li className='navLi'>
-					<CTAButton title="crea ahora tu proyecto" link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'/>
+					<CTAButton
+						title='crea ahora tu proyecto'
+						link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'
+					/>
 				</li>
 			</ul>
 		</header>

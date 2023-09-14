@@ -34,15 +34,34 @@ function Ourbrand() {
 					<AmbilightVideo />
 				</div>
 			</header>*/}
-			<HeaderComponent img={bepixelbrand} text1={t('ourbrand.header-text-1')} text2={t('ourbrand.header-text-2')} element={<AmbilightVideo />}/>
-			<Bepixelsections section={t('ourbrand.titles.meaning')} page={<Bepixelmeaning />} />
-			<Bepixelsections section={t('ourbrand.titles.construction')} page={<Bepixelconstruction footer={t('ourbrand.construction-footer')}/>} />
-			<Bepixelsections section={t('ourbrand.titles.struct')} page={<Bepixelstruct />} />
+			<HeaderComponent
+				img={bepixelbrand}
+				text1={t('ourbrand.header-text-1')}
+				text2={t('ourbrand.header-text-2')}
+				element={<AmbilightVideo />}
+			/>
+			<Bepixelsections
+				section={t('ourbrand.titles.meaning')}
+				page={<Bepixelmeaning />}
+			/>
+			<Bepixelsections
+				section={t('ourbrand.titles.construction')}
+				page={
+					<Bepixelconstruction footer={t('ourbrand.construction-footer')} />
+				}
+			/>
+			<Bepixelsections
+				section={t('ourbrand.titles.struct')}
+				page={<Bepixelstruct />}
+			/>
 			<Bepixelsections
 				section={t('ourbrand.titles.brand-version')}
 				page={<Bepixelbrandversion />}
 			/>
-			<Bepixelsections section={t('ourbrand.titles.colors')} page={<Bepixelcolors />} />
+			<Bepixelsections
+				section={t('ourbrand.titles.colors')}
+				page={<Bepixelcolors />}
+			/>
 		</div>
 	);
 }

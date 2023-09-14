@@ -1,33 +1,34 @@
-
-.ctaButtonContainer{
-    width: fit-content;
-    height: fit-content;
+.ctaButtonContainer {
+	width: fit-content;
+	height: fit-content;
 }
-.ctaButton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    /*background-color: var(--mainColor);*/
-    border: solid 2px var(--mainColor);
-    border-radius: 10px;
-    padding: 10px;
-    cursor: pointer;
-    transition: transform .1s ease-in-out, border .1s linear;
-}
-
-.ctaButtonContainer span{
-    color: var(--mainColor);
-    font-weight: 700;
-    font-size: 13px;
-    transition: color .1s;
+.ctaButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	/*background-color: var(--mainColor);*/
+	border: solid 2px var(--mainColor);
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+	transition:
+		transform 0.1s ease-in-out,
+		border 0.1s linear;
 }
 
-.ctaButton:hover{
-    transform: scale(105%);
-    border: solid 2px rgb(255, 103, 207);
+.ctaButtonContainer span {
+	color: var(--mainColor);
+	font-weight: 700;
+	font-size: 13px;
+	transition: color 0.1s;
 }
 
-.ctaButton:hover.ctaButton span{
-    color: rgb(255, 103, 207);
+.ctaButton:hover {
+	transform: scale(105%);
+	border: solid 2px rgb(255, 103, 207);
+}
+
+.ctaButton:hover.ctaButton span {
+	color: rgb(255, 103, 207);
 }

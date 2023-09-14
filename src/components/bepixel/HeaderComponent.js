@@ -6,12 +6,8 @@ function HeaderComponent(props) {
 			<div className='headerComponentSection1 ContainerGeneral'>
 				<div className='headerComponentSection1_1'>
 					<img src={props.img} />
-					<p>
-						{props.text1}
-					</p>
-					<p>
-						{props.text2}
-					</p>
+					<p>{props.text1}</p>
+					<p>{props.text2}</p>
 				</div>
 				{props.element}
 			</div>

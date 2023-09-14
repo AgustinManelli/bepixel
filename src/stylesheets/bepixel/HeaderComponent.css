@@ -12,7 +12,7 @@
 	transition: background-color 1s;
 }
 
-.headerVideoActive{
+.headerVideoActive {
 	background-color: rgb(0, 22, 47);
 }
 

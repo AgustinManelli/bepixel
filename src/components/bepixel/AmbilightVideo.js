@@ -5,7 +5,6 @@ import postervideo from '../../image/bepixelguideline/brandpresentation.webp';
 import $ from 'jquery';
 
 function AmbilightVideo() {
-	
 	useEffect(() => {
 		let intervalId;
 		const FRAMERATE = 60;
@@ -18,12 +17,11 @@ function AmbilightVideo() {
 			context.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
 		}
 
-
 		function startAmbilightRepaint() {
 			$('.headerComponentContainer').addClass('headerVideoActive');
 			intervalId = window.setInterval(repaintAmbilight, 1000 / FRAMERATE);
 		}
-		
+
 		function stopAmbilightRepaint() {
 			clearInterval(intervalId);
 			$('.headerComponentContainer').removeClass('headerVideoActive');
@@ -35,22 +33,22 @@ function AmbilightVideo() {
 			context.clearRect(0, 0, video.videoWidth, video.videoHeight);
 			video.load();
 		}
-		
+
 		video.addEventListener('play', startAmbilightRepaint);
-		
+
 		video.addEventListener('pause', stopAmbilightRepaint);
-		
+
 		video.addEventListener('ended', endAmbilightRepaint);
-		
+
 		video.addEventListener('seeked', repaintAmbilight);
-		
+
 		video.addEventListener('load', repaintAmbilight);
-		
+
 		// load first frame
 		repaintAmbilight();
 		video.currentTime = 0;
-	},[]);
-		
+	}, []);
+
 	return (
 		<div className='videoWrapper'>
 			<div className='ambilightWrapper'>
@@ -66,7 +64,12 @@ function AmbilightVideo() {
 						webkit-playsInline
 					/>
 				</div>
-				<canvas id='ambilight' className='ambilight' width='1080' height='1080'></canvas>
+				<canvas
+					id='ambilight'
+					className='ambilight'
+					width='1080'
+					height='1080'
+				></canvas>
 			</div>
 		</div>
 	);

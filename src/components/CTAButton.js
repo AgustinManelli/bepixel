@@ -3,9 +3,9 @@ import '../stylesheets/CTAButton.css';
 function CTAButton(props) {
 	return (
 		<div className='ctaButtonContainer'>
-            <a href={props.link} target='_blank ' className='ctaButton'>
-                <span>{props.title}</span>
-            </a>
+			<a href={props.link} target='_blank ' className='ctaButton'>
+				<span>{props.title}</span>
+			</a>
 		</div>
 	);
 }

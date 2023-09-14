@@ -7,7 +7,7 @@ function Homeheader() {
 
 	return (
 		<header className='homeheaderElements'>
-			<ScrolldownArrow to='homefaq'/>
+			<ScrolldownArrow to='homefaq' />
 			<div className='homeheaderElement'>
 				<div className='homeheaderElement_1 textelement'>
 					<div>

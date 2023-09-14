@@ -4,6 +4,7 @@ import '../../stylesheets/footer/Footer.css';
 import logoh from '../../image/LOGOTIPO.svg';
 import { BsFillHeartFill } from 'react-icons/bs';
 import Languagebtn from '../Languagebtn';
+import StarsNumber from '../api/StarsNumber';
 
 function Footer() {
 	return (
@@ -16,6 +17,9 @@ function Footer() {
 				</div>
 			</section>
 			<Languagebtn id='buttonlanguage2' />
+			<section>
+				<StarsNumber />
+			</section>
 			<span className='footerspan'>
 				made by <BsFillHeartFill className='footerheart' /> bepixel
 			</span>
