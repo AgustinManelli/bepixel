@@ -41,7 +41,7 @@ This project was built with the following frameworks/libraries.
 
 Agustín Manelli - agustinmanelli@hotmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/AgustinManelli/bepixel)
+Project Link: [bepixel website link](https://bepixel.vercel.app)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [product-screenshot]: https://i.postimg.cc/651xzJDp/Captura-de-pantalla-2023-09-14-102831.png
