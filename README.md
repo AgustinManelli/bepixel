@@ -43,8 +43,6 @@ Agustín Manelli - agustinmanelli@hotmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/AgustinManelli/bepixel)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- MARKDOWN LINKS & IMAGES -->
 [product-screenshot]: https://i.postimg.cc/651xzJDp/Captura-de-pantalla-2023-09-14-102831.png
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
