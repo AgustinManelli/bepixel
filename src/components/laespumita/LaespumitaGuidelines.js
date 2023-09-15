@@ -17,12 +17,8 @@ function LaespumitaGuidelines() {
 			>
 				<div className='laespumitaGuideWhytext'>
 					<h2>{t('projects.la-espumita.body.why.title')}</h2>
-					<p>
-						{t('projects.la-espumita.body.why.text1')}
-					</p>
-					<p>
-						{t('projects.la-espumita.body.why.text2')}
-					</p>
+					<p>{t('projects.la-espumita.body.why.text1')}</p>
+					<p>{t('projects.la-espumita.body.why.text2')}</p>
 				</div>
 				<div className='laespumitaGuideWhyimg'>
 					<img src={Laespumitabefore} loading='lazy' alt='La espumita antes' />
@@ -49,9 +45,7 @@ function LaespumitaGuidelines() {
 			<div className='laespumitaGuidelinesAplicationsContainer'>
 				<div className='laespumitaGuidelinesAplications_mw'>
 					<div className='laespumitaGuidelinesAplications'>
-						<p>
-							{t('projects.la-espumita.body.label')}
-						</p>
+						<p>{t('projects.la-espumita.body.label')}</p>
 						<img
 							src={Laespumitasticker}
 							loading='lazy'
