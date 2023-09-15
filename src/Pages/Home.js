@@ -5,12 +5,9 @@ import Homefaq from '../components/home/Homefaq';
 import Homecontact from '../components/home/Homecontact';
 import AccordionHome from '../components/home/AccordionHome.js';
 import 'aos/dist/aos.css';
-import AOS from 'aos';
 
 function Home() {
 	document.title = 'bepixel | home';
-
-	AOS.init();
 
 	return (
 		<div className='homeContainer'>

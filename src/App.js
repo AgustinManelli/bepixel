@@ -9,8 +9,10 @@ import FloatingWSP from './components/FloatingWSP';
 import Ourbrand from './Pages/Ourbrand';
 import { Toaster, toast } from 'sonner';
 import { IoNotifications } from 'react-icons/io5';
+import Open from './Pages/Open';
 
 function App() {
+
 	useEffect(() => {
 		if (window.localStorage.getItem('npopup') === null) {
 			window.localStorage.setItem('npopup', true);
@@ -61,8 +63,9 @@ function App() {
 					duration={7000}
 				/>
 				<Routes>
-					<Route path='/' element={<Home />} />
+					<Route path='/' element={<Home />}/>
 					<Route path='/laespumita' element={<Laespumita />} />
+					<Route path='/open' element={<Open />} />
 					<Route path='/ourbrand' element={<Ourbrand />} />
 				</Routes>
 				<Footer />

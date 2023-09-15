@@ -7,6 +7,7 @@ import logof2 from '../../image/LOGOVERTICAL.svg';
 import $ from 'jquery';
 import { useTranslation } from 'react-i18next';
 import CTAButton from '../CTAButton';
+import LanguageSwitch from './LanguageSwitch';
 
 function Navbar({
 	setIsActive,
@@ -122,6 +123,13 @@ function Navbar({
 							>
 								la espumita
 							</NavLink>
+							<NavLink
+								to='/open'
+								className='navAnchor navDropdownLink '
+								onClick={closeNav}
+							>
+								open
+							</NavLink>
 						</div>
 					</li>
 
@@ -135,11 +143,12 @@ function Navbar({
 							{t('navbar.navelement2')}
 						</NavLink>
 					</li>
-					<li style={{ position: 'absolute', right: '20px' }}>
+					<li style={{ position: 'absolute', right: '5px', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
 						<CTAButton
 							title={t('navbar.cta')}
 							link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'
 						/>
+						<LanguageSwitch />
 					</li>
 				</ul>
 				<progress
@@ -183,6 +192,13 @@ function Navbar({
 						>
 							la espumita
 						</NavLink>
+						<NavLink
+							to='/open'
+							className='navAnchor navDropdownLink '
+							onClick={closeNav}
+						>
+							open
+						</NavLink>
 					</div>
 				</li>
 				<li className='navLi'>
@@ -195,11 +211,12 @@ function Navbar({
 						{t('navbar.navelement2')}
 					</NavLink>
 				</li>
-				<li className='navLi'>
+				<li className='navLi' style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
 					<CTAButton
 						title={t('navbar.cta')}
 						link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'
 					/>
+					<LanguageSwitch />
 				</li>
 			</ul>
 		</header>

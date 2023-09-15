@@ -1,0 +1,57 @@
+.lngMenu{
+    width: fit-content;
+    position: relative;
+}
+
+.lngMenu button{
+    appearance: button;
+    -webkit-appearance: button;
+  
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05);
+  color: #4700b3;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color .2s;
+}
+
+.lngMenu button:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.lngFlag{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.lngMenu ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    margin-top: 10px;
+}
+
+.lngMenu li{
+    color: #4700b3;
+    display: block;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.lngMenu li:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.lngMeu ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}

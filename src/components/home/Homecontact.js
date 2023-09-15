@@ -52,20 +52,6 @@ export default function Homecontact() {
 						<input
 							type='input'
 							className='form__field'
-							placeholder='numero'
-							name='numero'
-							id='numero'
-							required
-						/>
-						<label htmlFor='numero' className='form__label'>
-							{t('home-contact.placeholder-number')}
-						</label>
-					</div>
-
-					<div className='form__group field'>
-						<input
-							type='input'
-							className='form__field'
 							placeholder='mensaje'
 							name='mensaje'
 							id='mensaje'

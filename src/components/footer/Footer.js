@@ -16,7 +16,7 @@ function Footer() {
 					<Footerfaq />
 				</div>
 			</section>
-			<Languagebtn id='buttonlanguage2' />
+			{/*<Languagebtn id='buttonlanguage2' />*/}
 			<section>
 				<StarsNumber />
 			</section>

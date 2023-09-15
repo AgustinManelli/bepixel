@@ -36,7 +36,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 10px;
+	gap: 15px;
 }
 
 .proyectHeaderSection1_1_1 div {
@@ -46,7 +46,8 @@
 }
 
 .proyectHeaderSection1_1_1 img {
-	width: 100px;
+	height: 60px;
+	fill: #fff;
 }
 
 .proyectHeaderSection1_1_1 h2 {
