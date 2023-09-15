@@ -2,8 +2,7 @@ import '../stylesheets/pages/Ourbrand.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import bepixelbrand from '../image/ISOTIPO.svg';
-import Bepixelsections from '../components/bepixel/Bepixelsections';
-import Bepixelmeaning from '../components/bepixel/Bepixelmeaning';
+import BrandSections from '../components/BrandSections';
 import Bepixelstruct from '../components/bepixel/Bepixelstruct';
 import Bepixelbrandversion from '../components/bepixel/Bepixelbrandversion';
 import Bepixelconstruction from '../components/bepixel/Bepixelconstruction';
@@ -11,6 +10,10 @@ import Bepixelcolors from '../components/bepixel/Bepixelcolors';
 import AmbilightVideo from '../components/bepixel/AmbilightVideo';
 import { useTranslation } from 'react-i18next';
 import HeaderComponent from '../components/bepixel/HeaderComponent';
+import MeaningSection from '../components/MeaningSection'
+import bpg3 from '../image/bepixelguideline/bpg3.svg';
+import bpg4 from '../image/bepixelguideline/bpg4.svg';
+import bpg5 from '../image/bepixelguideline/bpg5.svg';
 
 function Ourbrand() {
 	const [t] = useTranslation('global');
@@ -20,47 +23,38 @@ function Ourbrand() {
 
 	return (
 		<div className='ourbrandContainer'>
-			{/*<header className='ourbrandHeaderContainer'>
-				<div className='ourbrandSection1 ContainerGeneral'>
-					<div className='ourbrandSection1_1'>
-						<img src={bepixelbrand} />
-						<p>
-							{t('ourbrand.header-text-1')}
-						</p>
-						<p>
-							{t('ourbrand.header-text-2')}
-						</p>
-					</div>
-					<AmbilightVideo />
-				</div>
-			</header>*/}
 			<HeaderComponent
 				img={bepixelbrand}
 				text1={t('ourbrand.header-text-1')}
 				text2={t('ourbrand.header-text-2')}
 				element={<AmbilightVideo />}
 			/>
-			<Bepixelsections
+			<BrandSections
 				section={t('ourbrand.titles.meaning')}
-				page={<Bepixelmeaning />}
+				page={<MeaningSection logo={bepixelbrand} title1={t('ourbrand.meaning.element-1-spand')} text1={t('ourbrand.meaning.element-1')} title2={t('ourbrand.meaning.element-2-spand')} text2={t('ourbrand.meaning.element-2')} title3={t('ourbrand.meaning.element-3-spand')} text3={t('ourbrand.meaning.element-3')} asset1={bpg5} asset2={bpg3} asset3={bpg4}/>}
+				logo={bepixelbrand}
 			/>
-			<Bepixelsections
+			<BrandSections
 				section={t('ourbrand.titles.construction')}
 				page={
 					<Bepixelconstruction footer={t('ourbrand.construction-footer')} />
 				}
+				logo={bepixelbrand}
 			/>
-			<Bepixelsections
+			<BrandSections
 				section={t('ourbrand.titles.struct')}
 				page={<Bepixelstruct />}
+				logo={bepixelbrand}
 			/>
-			<Bepixelsections
+			<BrandSections
 				section={t('ourbrand.titles.brand-version')}
 				page={<Bepixelbrandversion />}
+				logo={bepixelbrand}
 			/>
-			<Bepixelsections
+			<BrandSections
 				section={t('ourbrand.titles.colors')}
 				page={<Bepixelcolors />}
+				logo={bepixelbrand}
 			/>
 		</div>
 	);

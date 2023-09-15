@@ -37,6 +37,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 15px;
+	z-index: 1;
 }
 
 .proyectHeaderSection1_1_1 div {
@@ -71,6 +72,7 @@
 	-webkit-animation: glowEffect 4s ease-in-out;
 	-moz-animation: glowEffect 4s ease-in-out;
 	animation: glowEffect 4s ease-in-out;
+	z-index: 0;
 }
 
 @-moz-keyframes glowEffect {

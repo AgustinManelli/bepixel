@@ -1,12 +1,11 @@
-import '../../stylesheets/bepixel/Bepixelsections.css';
-import bepixel from '../../image/ISOTIPO.svg';
+import '../stylesheets/BrandSections.css';
 
-function Bepixelsections(props) {
+function BrandSections(props) {
 	return (
 		<section className='bepixelsectionsContainer'>
 			<div className='bepixelsections_i'>
 				<div className='bepixelsections_nomenclator'>
-					<img src={bepixel} loading='lazy' />
+					<img src={props.logo} loading='lazy' alt='logo sections'/>
 					<p> {props.section} </p>
 				</div>
 				{props.page}
@@ -15,4 +14,4 @@ function Bepixelsections(props) {
 	);
 }
 
-export default Bepixelsections;
+export default BrandSections;
