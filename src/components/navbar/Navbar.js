@@ -8,6 +8,7 @@ import $ from 'jquery';
 import { useTranslation } from 'react-i18next';
 import CTAButton from '../CTAButton';
 import LanguageSwitch from './LanguageSwitch';
+import { motion, useScroll, useSpring } from 'framer-motion';
 
 function Navbar({
 	setIsActive,
@@ -17,7 +18,6 @@ function Navbar({
 	shadowScroll,
 	setShadowScroll,
 }) {
-	//translate const
 	const [t] = useTranslation('global');
 
 	const openDropdown = () => {
@@ -50,15 +50,6 @@ function Navbar({
 		} else {
 			setShadowScroll(true);
 		}
-
-		const winScroll =
-			document.body.scrollTop || document.documentElement.scrollTop;
-		const height =
-			document.documentElement.scrollHeight -
-			document.documentElement.clientHeight;
-		const scrolled = (winScroll / height) * 100;
-
-		document.getElementById('progressbar').value = scrolled;
 	};
 
 	useEffect(() => {
@@ -77,6 +68,13 @@ function Navbar({
 		} else {
 			setIsPhone(false);
 		}
+	});
+
+	const { scrollYProgress } = useScroll();
+	const scaleX = useSpring(scrollYProgress, {
+		stiffness: 100,
+		damping: 30,
+		restDelta: 0.001,
 	});
 
 	return (
@@ -143,7 +141,17 @@ function Navbar({
 							{t('navbar.navelement2')}
 						</NavLink>
 					</li>
-					<li style={{ position: 'absolute', right: '5px', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
+					<li
+						style={{
+							position: 'absolute',
+							right: '5px',
+							display: 'flex',
+							flexDirection: 'row',
+							alignItems: 'center',
+							justifyContent: 'center',
+							gap: '10px',
+						}}
+					>
 						<CTAButton
 							title={t('navbar.cta')}
 							link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'
@@ -151,12 +159,7 @@ function Navbar({
 						<LanguageSwitch />
 					</li>
 				</ul>
-				<progress
-					className='progressBar'
-					id='progressbar'
-					max='100'
-					value='0'
-				></progress>
+				<motion.div className='progress-bar' style={{ scaleX }} />
 			</nav>
 
 			<ul
@@ -211,7 +214,16 @@ function Navbar({
 						{t('navbar.navelement2')}
 					</NavLink>
 				</li>
-				<li className='navLi' style={{display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
+				<li
+					className='navLi'
+					style={{
+						display: 'flex',
+						flexDirection: 'row',
+						alignItems: 'center',
+						justifyContent: 'center',
+						gap: '10px',
+					}}
+				>
 					<CTAButton
 						title={t('navbar.cta')}
 						link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'

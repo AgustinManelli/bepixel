@@ -161,38 +161,14 @@
 	display: none;
 }
 
-.progressBar {
+.progress-bar {
 	position: absolute;
-	left: 15px;
 	top: -4px;
-	-webkit-appearance: none;
-	appearance: none;
-	width: calc(100% - 30px);
+	left: 15px;
 	height: 2px;
-	border: none;
-	background: transparent;
-	filter: opacity(70%);
-}
-
-.progressBar::-webkit-progress-bar {
-	background: transparent;
-}
-
-.progressBar::-webkit-progress-value {
-	background: var(--mainColor);
-	background-attachment: fixed;
-	transition: width 0.2s ease-in-out;
-}
-
-.progressBar::progress-value {
-	background: var(--mainColor);
-	background-attachment: fixed;
-	transition: width 0.2s ease-in-out;
-}
-
-.progressBar::-moz-progress-bar {
-	background: var(--mainColor);
-	background-attachment: fixed;
+	width: calc(100% - 30px);
+	transform-origin: 0%;
+	background-color: var(--mainColor);
 }
 
 .responsiveMenu {

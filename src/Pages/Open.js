@@ -1,15 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import ProyectsHeader from '../components/ProyectsHeader';
-import logoOpen from '../image/open/openlogo.svg'
-import mug from '../image/open/mug.webp'
-
+import logoOpen from '../image/open/openlogo.svg';
+import mug from '../image/open/mug.webp';
 
 function Open() {
 	document.title = 'bepixel | open';
 	const [t] = useTranslation('global');
 
 	return (
-		<div >
+		<div>
 			<ProyectsHeader
 				title='open'
 				img={logoOpen}
