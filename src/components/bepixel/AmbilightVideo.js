@@ -61,7 +61,6 @@ function AmbilightVideo() {
 						preload='none'
 						controlsList='nofullscreen nodownload'
 						playsInline
-						webkit-playsInline
 					/>
 				</div>
 				<canvas

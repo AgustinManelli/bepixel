@@ -8,7 +8,7 @@ const BackgroundPattern = () => (
 		width='100%'
 		height='100%'
 		xmlns='http://www.w3.org/2000/svg'
-		style={{ position: 'absolute', 'z-index': '0', opacity: '0.008' }}
+		style={{ position: 'absolute', 'zIndex': '0', opacity: '0.008' }}
 	>
 		<defs>
 			<pattern
@@ -21,13 +21,13 @@ const BackgroundPattern = () => (
 				<rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)' />
 				<path
 					d='M20 20v20h20V20zm5 5h10v10H25zM0 0v20h20V0zm5 5h10v10H5z'
-					stroke-width='1'
+					strokeWidth='1'
 					stroke='none'
 					fill='hsla(258.5,59.4%,59.4%,1)'
 				/>
 				<path
 					d='M5 25h10v10H5zM25 5h10v10H25z'
-					stroke-width='1'
+					strokeWidth='1'
 					stroke='none'
 					fill='hsla(339.6,82.2%,51.6%,1)'
 				/>
