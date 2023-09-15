@@ -74,6 +74,14 @@
 	},
 	"projects": {
 		"la-espumita": {
+			"body": {
+				"label": "Se realizaron stickers nomencladores para colocar sobre productos líquidos sueltos, donde el envase no permita diferenciar cual es su contenido.",
+				"why": {
+					"text1": "El problema con la marca 'la espumita' y su logo radica en su dificultad de aplicación en bordados, carteles y papelería, lo que afectaba su legibilidad y calidad en distintos formatos. El cliente percibía la marca como antigua, ya que el logo tenía aproximadamente 15 años sin modificaciones. Además, era importante conservar la identidad corporativa y adecuarlo al sector.",
+					"text2": "El cliente no contaba con su logo vectorizado ni colores corporativos definidos, lo que llevaba a variaciones en las aplicaciones e inconsistencias. Se mantuvo el aro dorado y el azul en la marca, pero se modificaron las burbujas, que resultaban redundantes y causaban problemas en reducciones y a larga distancia.",
+					"title": "¿Por qué el cambio?"
+				}
+			},
 			"header": {
 				"text1": "Rediseño de marca e identificación corporativa para pyme de artículos de limpieza y del hogar. En este trabajo se realizó el rediseño de marca completo manteniendo aspectos distintivos.",
 				"text2": "A continuación se presenta la marca y la justificación de todos los cambios que se realizaron."

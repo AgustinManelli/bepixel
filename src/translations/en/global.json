@@ -74,6 +74,14 @@
 	},
 	"projects": {
 		"la-espumita": {
+			"body": {
+				"label": "Sticker nameplates were created to be placed on loose liquid products, where the packaging doesn't allow for easy differentiation of its contents.",
+				"why": {
+					"text1": "The problem with the brand 'La Espumita' and its logo lay in its difficulty for application on embroideries, signs, and stationery, which affected its readability and quality in various formats. The client perceived the brand as outdated, as the logo had remained unchanged for approximately 15 years. Additionally, it was important to preserve the corporate identity while adapting it to the industry.",
+					"text2": "The client didn't have their logo in vector format nor defined corporate colors, leading to variations in applications and inconsistencies. The golden ring and blue were retained in the brand, but the bubbles were modified, as they were redundant and caused issues in reductions and from a distance.",
+					"title": "Why the Change?"
+				}
+			},
 			"header": {
 				"text1": "Redesign of brand and corporate identity for a small cleaning and household products business. This project involved a complete brand overhaul while retaining distinctive elements.",
 				"text2": "Below is the brand and the rationale behind all the changes that were made."

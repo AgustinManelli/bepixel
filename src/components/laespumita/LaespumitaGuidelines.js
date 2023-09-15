@@ -5,8 +5,10 @@ import Laespumitavariations from '../../image/laespumitavariations.svg';
 import Laespumitashirt from '../../image/laespumitashirt.webp';
 import Laespumitabag from '../../image/laespumitabag.webp';
 import Laespumitasticker from '../../image/laespumitasticker.webp';
+import { useTranslation } from 'react-i18next';
 
 function LaespumitaGuidelines() {
+	const [t] = useTranslation('global');
 	return (
 		<div className='laespumitaGuidelinesContainer'>
 			<div
@@ -14,21 +16,12 @@ function LaespumitaGuidelines() {
 				className='laespumitaGuidelinesWhyContainer'
 			>
 				<div className='laespumitaGuideWhytext'>
-					<h2>¿Por qué el cambio?</h2>
+					<h2>{t('projects.la-espumita.body.why.title')}</h2>
 					<p>
-						El problema con la marca "la espumita" y su logo radica en su
-						dificultad de aplicación en bordados, carteles y papelería, lo que
-						afectaba su legibilidad y calidad en distintos formatos. El cliente
-						percibía la marca como antigua, ya que el logo tenía aproximadamente
-						15 años sin modificaciones. Además, era importante conservar la
-						identidad corporativa y adecuarlo al sector.
+						{t('projects.la-espumita.body.why.text1')}
 					</p>
 					<p>
-						El cliente no contaba con su logo vectorizado ni colores
-						corporativos definidos, lo que llevaba a variaciones en las
-						aplicaciones e inconsistencias. Se mantuvo el aro dorado y el azul
-						en la marca, pero se modificaron las burbujas, que resultaban
-						redundantes y causaban problemas en reducciones y a larga distancia.
+						{t('projects.la-espumita.body.why.text2')}
 					</p>
 				</div>
 				<div className='laespumitaGuideWhyimg'>
@@ -57,9 +50,7 @@ function LaespumitaGuidelines() {
 				<div className='laespumitaGuidelinesAplications_mw'>
 					<div className='laespumitaGuidelinesAplications'>
 						<p>
-							Se realizaron stickers nomencladores para colocar sobre productos
-							líquidos sueltos, donde el envase no permita diferenciar cual es
-							su contenido.
+							{t('projects.la-espumita.body.label')}
 						</p>
 						<img
 							src={Laespumitasticker}
