@@ -36,22 +36,6 @@ function Navbar({
 		$('body,html').animate({ scrollTop: '0px' });
 	};
 
-	const handleResize = () => {
-		if (window.innerWidth <= 815) {
-			setIsPhone(true);
-		} else {
-			setIsPhone(false);
-		}
-	};
-
-	const scrollnavigate = () => {
-		if (window.scrollY > 0) {
-			setShadowScroll(false);
-		} else {
-			setShadowScroll(true);
-		}
-	};
-
 	useEffect(() => {
 		if (window.scrollY > 0) {
 			setShadowScroll(false);
@@ -60,13 +44,19 @@ function Navbar({
 		}
 	}, []);
 
-	useEffect(() => {
-		window.addEventListener('resize', handleResize);
-		window.addEventListener('scroll', scrollnavigate);
+	window.addEventListener('resize', function(){
 		if (window.innerWidth <= 815) {
 			setIsPhone(true);
 		} else {
 			setIsPhone(false);
+		}
+	});
+	
+	window.addEventListener('scroll', function(){
+		if (window.scrollY > 0) {
+			setShadowScroll(false);
+		} else {
+			setShadowScroll(true);
 		}
 	});
 

@@ -47,8 +47,8 @@ function App() {
 		<div className='App'>
 			<Router basename={process.env.PUBLIC_URL}>
 				<Navbar
-					setIsActive={setIsActive}
 					isActive={isActive}
+					setIsActive={setIsActive}
 					isPhone={isPhone}
 					setIsPhone={setIsPhone}
 					shadowScroll={shadowScroll}
