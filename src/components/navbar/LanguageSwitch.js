@@ -71,10 +71,8 @@ function LanguageSwitch() {
 		}
 	}, []);
 
-	useEffect(() => {
-		document.addEventListener('scroll', function () {
-			setIsOpen(false);
-		});
+	document.addEventListener('scroll', function () {
+		setIsOpen(false);
 	});
 
 	const languageSwitchEs = () => {
@@ -117,16 +115,25 @@ function LanguageSwitch() {
 		});
 	};
 
+	const closeOpenLanguage = () => {
+		window.addEventListener('click', function (e) {
+			if (document.getElementById('languageBottom').contains(e.target)) {
+			} else {
+				setIsOpen(false);
+			}
+		});
+	};
+
 	return (
 		<motion.nav
 			initial={false}
 			animate={isOpen ? 'open' : 'closed'}
 			className='lngMenu'
-		>
+			id='languageBottom'
+			ref={closeOpenLanguage()}>
 			<motion.button
 				whileTap={{ scale: 0.97 }}
-				onClick={() => setIsOpen(!isOpen)}
-			>
+				onClick={() => setIsOpen(!isOpen)}>
 				<motion.div className='lngFlag'>
 					{lng === 'es' ? <ArgFlag /> : <UsFlag />}
 				</motion.div>
@@ -152,8 +159,7 @@ function LanguageSwitch() {
 						},
 					},
 				}}
-				style={{ pointerEvents: isOpen ? 'auto' : 'none' }}
-			>
+				style={{ pointerEvents: isOpen ? 'auto' : 'none' }}>
 				<motion.li variants={itemVariants} onClick={languageSwitchEs}>
 					<motion.div className='lngFlag'>
 						<ArgFlag />

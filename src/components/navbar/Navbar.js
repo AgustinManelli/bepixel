@@ -8,10 +8,10 @@ import NavbarLinks from './NavbarLinks';
 import NavbarResponsive from './NavbarResponsive';
 
 function Navbar() {
-	const [isActive, setIsActive] = useState(false);
-	const [isPhone, setIsPhone] = useState(false);
-	const [shadowScroll, setShadowScroll] = useState(true);
-	const [isOpen, setIsOpen] = useState(false);
+	const [isActive, setIsActive] = useState(false); // open mobile menu
+	const [isPhone, setIsPhone] = useState(false); // change structure when is phone
+	const [shadowScroll, setShadowScroll] = useState(true); //change color when scroll
+	const [isOpen, setIsOpen] = useState(false); // open submenu
 
 	useEffect(() => {
 		if (window.scrollY > 0) {
@@ -25,12 +25,16 @@ function Navbar() {
 		setIsOpen(!isOpen);
 	};
 
-	const handleClick = () => {
-		setIsActive(current => !current);
+	const closeOpen = () => {
 		setIsOpen(false);
 	};
 
+	const handleClick = () => {
+		setIsActive(current => !current);
+	};
+
 	const closeNav = () => {
+		setIsOpen(false);
 		setIsActive(false);
 		window.scrollTo(0, 0);
 	};
@@ -44,6 +48,7 @@ function Navbar() {
 	});
 
 	window.addEventListener('scroll', function () {
+		setIsOpen(false);
 		if (window.scrollY > 0) {
 			setShadowScroll(false);
 		} else {
@@ -80,7 +85,13 @@ function Navbar() {
 					<span></span>
 				</div>
 				<ul className='navUl'>
-					<NavbarLinks shadowScroll={shadowScroll} closeNav={closeNav} />
+					<NavbarLinks
+						shadowScroll={shadowScroll}
+						closeNav={closeNav}
+						openDropdown={openDropdown}
+						isOpen={isOpen}
+						closeOpen={closeOpen}
+					/>
 				</ul>
 				<motion.div className='progress-bar' style={{ scaleX }} />
 			</div>

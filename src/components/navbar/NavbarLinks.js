@@ -3,13 +3,20 @@ import { IoIosArrowDown } from 'react-icons/io';
 import { useTranslation } from 'react-i18next';
 import CTAButton from '../CTAButton';
 import LanguageSwitch from './LanguageSwitch';
+import Dropdown from './Dropdown';
 
-function NavbarLinks({ shadowScroll, closeNav }) {
+function NavbarLinks({
+	shadowScroll,
+	closeNav,
+	openDropdown,
+	isOpen,
+	closeOpen,
+}) {
 	const [t] = useTranslation('global');
 
 	return (
 		<>
-			<li className='navLi navLiArrow' id='navLi'>
+			{/*<li className='navLi navLiArrow' id='navLi'>
 				<div className='navAnchorDropdown' activeclassname='navAnchor active'>
 					{t('navbar.navelement1')}
 					<IoIosArrowDown />
@@ -28,6 +35,35 @@ function NavbarLinks({ shadowScroll, closeNav }) {
 						open
 					</NavLink>
 				</div>
+			</li>*/}
+
+			<li className='navLi'>
+				<Dropdown
+					openDropdown={openDropdown}
+					isOpen={isOpen}
+					closeNav={closeNav}
+					closeOpen={closeOpen}
+					elements={
+						<>
+							<li className='dropdownMenuLi'>
+								<NavLink
+									to='/laespumita'
+									className='dropdownMenuNavLink navAnchor'
+									onClick={closeNav}>
+									la espumita
+								</NavLink>
+							</li>
+							<li className='dropdownMenuLi'>
+								<NavLink
+									to='/open'
+									className='dropdownMenuNavLink navAnchor'
+									onClick={closeNav}>
+									open
+								</NavLink>
+							</li>
+						</>
+					}
+				/>
 			</li>
 
 			<li className='navLi'>
