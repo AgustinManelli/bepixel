@@ -2,14 +2,14 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
-import Home from './Pages/Home';
+import Home from './pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Laespumita from './Pages/Laespumita';
+import Laespumita from './pages/projects/Laespumita';
 import FloatingWSP from './components/FloatingWSP';
-import Ourbrand from './Pages/Ourbrand';
+import Ourbrand from './pages/Ourbrand';
 import { Toaster, toast } from 'sonner';
 import { IoNotifications } from 'react-icons/io5';
-import Open from './Pages/Open';
+import Open from './pages/projects/Open';
 
 function App() {
 	useEffect(() => {

@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next';
-import ProyectsHeader from '../components/ProyectsHeader';
-import logoOpen from '../assets/image/open/openlogo.svg';
-import asset1 from '../assets/image/open/asset1.svg';
-import asset2 from '../assets/image/open/asset2.svg';
-import asset3 from '../assets/image/open/asset3.svg';
-import mug from '../assets/image/open/mug.webp';
-import BrandSections from '../components/BrandSections'
-import MeaningSection from '../components/MeaningSection';
+import ProyectsHeader from '../../components/ProyectsHeader';
+import logoOpen from '../../assets/image/open/openlogo.svg';
+import asset1 from '../../assets/image/open/asset1.svg';
+import asset2 from '../../assets/image/open/asset2.svg';
+import asset3 from '../../assets/image/open/asset3.svg';
+import mug from '../../assets/image/open/mug.webp';
+import BrandSections from '../../components/BrandSections'
+import MeaningSection from '../../components/MeaningSection';
 
 
 function Open() {
