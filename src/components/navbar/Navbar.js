@@ -8,11 +8,10 @@ import NavbarLinks from './NavbarLinks';
 import NavbarResponsive from './NavbarResponsive';
 
 function Navbar() {
-
 	const [isActive, setIsActive] = useState(false);
 	const [isPhone, setIsPhone] = useState(false);
 	const [shadowScroll, setShadowScroll] = useState(true);
-	const [isOpen, setIsOpen] = useState(false)
+	const [isOpen, setIsOpen] = useState(false);
 
 	useEffect(() => {
 		if (window.scrollY > 0) {
@@ -21,21 +20,20 @@ function Navbar() {
 			setShadowScroll(true);
 		}
 	}, []);
-	
+
 	const openDropdown = () => {
-		setIsOpen(!isOpen)
+		setIsOpen(!isOpen);
 	};
 
 	const handleClick = () => {
 		setIsActive(current => !current);
-		setIsOpen(false)
+		setIsOpen(false);
 	};
 
 	const closeNav = () => {
 		setIsActive(false);
 		window.scrollTo(0, 0);
 	};
-
 
 	window.addEventListener('resize', function () {
 		if (window.innerWidth <= 815) {
@@ -65,8 +63,7 @@ function Navbar() {
 			<div
 				className={
 					shadowScroll ? (isActive ? 'nav navshadow' : 'nav') : 'nav navshadow'
-				}
-			>
+				}>
 				<NavLink className='anchorlogoNav' to='/' onClick={closeNav}>
 					<img
 						src={isPhone ? logof2 : logof}
@@ -77,13 +74,12 @@ function Navbar() {
 				</NavLink>
 				<div
 					className={isActive ? 'icon nav-icon-5 open' : 'icon nav-icon-5'}
-					onClick={handleClick}
-				>
+					onClick={handleClick}>
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
-				<ul className={isActive ? 'navUl activated' : 'navUl'}>
+				<ul className='navUl'>
 					<NavbarLinks shadowScroll={shadowScroll} closeNav={closeNav} />
 				</ul>
 				<motion.div className='progress-bar' style={{ scaleX }} />
@@ -94,9 +90,12 @@ function Navbar() {
 					isActive
 						? 'responsiveMenu responsiveOpened navshadow'
 						: 'responsiveMenu'
-				}
-			>
-				<NavbarResponsive closeNav={closeNav} openDropdown={openDropdown} isOpen={isOpen}/>
+				}>
+				<NavbarResponsive
+					closeNav={closeNav}
+					openDropdown={openDropdown}
+					isOpen={isOpen}
+				/>
 			</ul>
 		</nav>
 	);

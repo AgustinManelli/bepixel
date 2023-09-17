@@ -3,6 +3,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 import CTAButton from '../CTAButton';
 import LanguageSwitch from './LanguageSwitch';
 import { useTranslation } from 'react-i18next';
+import '../../stylesheets/navbar/NavbarLinks.css';
 
 function NavbarResponsive({ openDropdown, closeNav, isOpen }) {
 	const [t] = useTranslation('global');
@@ -13,32 +14,39 @@ function NavbarResponsive({ openDropdown, closeNav, isOpen }) {
 					to='/'
 					className='navAnchor'
 					activeclassname='navAnchor active'
-					onClick={closeNav}
-				>
+					onClick={closeNav}>
 					home
 				</NavLink>
 			</li>
 			<li className='navLi navLiResponsive' onClick={openDropdown}>
 				<div
 					className='navAnchorDropdown'
-					activeclassname='navAnchorDropdown active'
-				>
+					activeclassname='navAnchorDropdown active'>
 					{t('navbar.navelement1')}
-					<IoIosArrowDown className={isOpen ? 'responsiveArrow responsiveArrowinverted' : 'responsiveArrow'}/>
+					<IoIosArrowDown
+						className={
+							isOpen
+								? 'responsiveArrow responsiveArrowinverted'
+								: 'responsiveArrow'
+						}
+					/>
 				</div>
-				<div className={isOpen ? 'responsivenavDropdown responsivenavDropdownOpened' : 'responsivenavDropdown'}>
+				<div
+					className={
+						isOpen
+							? 'responsivenavDropdown responsivenavDropdownOpened'
+							: 'responsivenavDropdown'
+					}>
 					<NavLink
 						to='/laespumita'
 						className='navDropdownLinkResponsive'
-						onClick={closeNav}
-					>
+						onClick={closeNav}>
 						la espumita
 					</NavLink>
 					<NavLink
 						to='/open'
-						className='navAnchor navDropdownLink '
-						onClick={closeNav}
-					>
+						className='navDropdownLinkResponsive'
+						onClick={closeNav}>
 						open
 					</NavLink>
 				</div>
@@ -48,8 +56,7 @@ function NavbarResponsive({ openDropdown, closeNav, isOpen }) {
 					to='/ourbrand'
 					className='navAnchor'
 					activeclassname='navAnchor active'
-					onClick={closeNav}
-				>
+					onClick={closeNav}>
 					{t('navbar.navelement2')}
 				</NavLink>
 			</li>
@@ -61,8 +68,7 @@ function NavbarResponsive({ openDropdown, closeNav, isOpen }) {
 					alignItems: 'center',
 					justifyContent: 'center',
 					gap: '10px',
-				}}
-			>
+				}}>
 				<CTAButton
 					title={t('navbar.cta')}
 					link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'
