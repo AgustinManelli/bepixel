@@ -14,6 +14,7 @@ import MeaningSection from '../components/MeaningSection'
 import bpg3 from '../image/bepixelguideline/bpg3.svg';
 import bpg4 from '../image/bepixelguideline/bpg4.svg';
 import bpg5 from '../image/bepixelguideline/bpg5.svg';
+import businesscard from '../image/bepixelguideline/bussinescard.webp'
 
 function Ourbrand() {
 	const [t] = useTranslation('global');
@@ -54,6 +55,13 @@ function Ourbrand() {
 			<BrandSections
 				section={t('ourbrand.titles.colors')}
 				page={<Bepixelcolors />}
+				logo={bepixelbrand}
+			/>
+			<BrandSections
+				section={t('ourbrand.titles.businesscard')}
+				page={
+					<img src={businesscard} style={{width:'100%', marginTop: '50px'}}/>
+				}
 				logo={bepixelbrand}
 			/>
 		</div>
