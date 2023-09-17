@@ -1,5 +1,5 @@
 import '../../stylesheets/home/Homefaq.css';
-import { ReactComponent as Logo } from '../../image/LOGOVERTICALSTROKE.svg';
+import { ReactComponent as Logo } from '../../assets/image/LOGOVERTICALSTROKE.svg';
 import Tittles from '../Tittles';
 import { useTranslation } from 'react-i18next';
 

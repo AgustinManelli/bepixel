@@ -1,10 +1,10 @@
 import '../../stylesheets/laespumita/LaespumitaGuidelines.css';
-import Laespumitabefore from '../../image/laespumitabefore.webp';
-import Laespumitaafter from '../../image/laespumitaafter.svg';
-import Laespumitavariations from '../../image/laespumitavariations.svg';
-import Laespumitashirt from '../../image/laespumitashirt.webp';
-import Laespumitabag from '../../image/laespumitabag.webp';
-import Laespumitasticker from '../../image/laespumitasticker.webp';
+import Laespumitabefore from '../../assets/image/laespumitabefore.webp';
+import Laespumitaafter from '../../assets/image/laespumitaafter.svg';
+import Laespumitavariations from '../../assets/image/laespumitavariations.svg';
+import Laespumitashirt from '../../assets/image/laespumitashirt.webp';
+import Laespumitabag from '../../assets/image/laespumitabag.webp';
+import Laespumitasticker from '../../assets/image/laespumitasticker.webp';
 import { useTranslation } from 'react-i18next';
 
 function LaespumitaGuidelines() {

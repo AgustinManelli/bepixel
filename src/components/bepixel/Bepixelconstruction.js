@@ -1,6 +1,6 @@
 import '../../stylesheets/bepixel/Bepixelconstruction.css';
-import bpg1 from '../../image/bepixelguideline/construction.svg';
-import bpg2 from '../../image/bepixelguideline/construction2.svg';
+import bpg1 from '../../assets/image/bepixelguideline/construction.svg';
+import bpg2 from '../../assets/image/bepixelguideline/construction2.svg';
 
 function Bepixelconstruction(props) {
 	return (

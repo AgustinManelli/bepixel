@@ -1,7 +1,7 @@
 import Footerfaq from './Footerfaq';
 import Footerinfo from './Footerinfo';
 import '../../stylesheets/footer/Footer.css';
-import logoh from '../../image/LOGOTIPO.svg';
+import logoh from '../../assets/image/LOGOTIPO.svg';
 import { BsFillHeartFill } from 'react-icons/bs';
 import StarsNumber from '../api/StarsNumber';
 

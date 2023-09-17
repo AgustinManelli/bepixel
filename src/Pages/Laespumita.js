@@ -1,6 +1,6 @@
 import LaespumitaGuidelines from '../components/laespumita/LaespumitaGuidelines';
-import laespumitalogo from '../image/laespumita.svg';
-import laespumitaheader from '../image/laespumitaheader.webp';
+import laespumitalogo from '../assets/image/laespumita.svg';
+import laespumitaheader from '../assets/image/laespumitaheader.webp';
 import { useTranslation } from 'react-i18next';
 import ProyectsHeader from '../components/ProyectsHeader';
 

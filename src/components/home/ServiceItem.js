@@ -4,7 +4,7 @@ function ServiceItem(props) {
 	return (
 		<div className='serviceItem'>
 			<img
-				src={require(`../../image/${props.img}`)}
+				src={require(`../../assets/image/${props.img}`)}
 				loading='lazy'
 				alt='service item'
 			/>

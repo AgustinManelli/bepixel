@@ -1,7 +1,7 @@
 import '../stylesheets/pages/Ourbrand.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import bepixelbrand from '../image/ISOTIPO.svg';
+import bepixelbrand from '../assets/image/ISOTIPO.svg';
 import BrandSections from '../components/BrandSections';
 import Bepixelstruct from '../components/bepixel/Bepixelstruct';
 import Bepixelbrandversion from '../components/bepixel/Bepixelbrandversion';
@@ -11,10 +11,10 @@ import AmbilightVideo from '../components/bepixel/AmbilightVideo';
 import { useTranslation } from 'react-i18next';
 import HeaderComponent from '../components/bepixel/HeaderComponent';
 import MeaningSection from '../components/MeaningSection'
-import bpg3 from '../image/bepixelguideline/bpg3.svg';
-import bpg4 from '../image/bepixelguideline/bpg4.svg';
-import bpg5 from '../image/bepixelguideline/bpg5.svg';
-import businesscard from '../image/bepixelguideline/bussinescard.webp'
+import bpg3 from '../assets/image/bepixelguideline/bpg3.svg';
+import bpg4 from '../assets/image/bepixelguideline/bpg4.svg';
+import bpg5 from '../assets/image/bepixelguideline/bpg5.svg';
+import businesscard from '../assets/image/bepixelguideline/bussinescard.webp'
 
 function Ourbrand() {
 	const [t] = useTranslation('global');

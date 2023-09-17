@@ -1,6 +1,6 @@
 import '../../stylesheets/bepixel/Bepixelbrandversion.css';
-import bpg1 from '../../image/bepixelguideline/brandversion1.svg';
-import bpg2 from '../../image/bepixelguideline/brandversion2.webp';
+import bpg1 from '../../assets/image/bepixelguideline/brandversion1.svg';
+import bpg2 from '../../assets/image/bepixelguideline/brandversion2.webp';
 
 function Bepixelbrandversion() {
 	return (

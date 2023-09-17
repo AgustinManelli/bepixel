@@ -1,5 +1,5 @@
 import '../../stylesheets/bepixel/Bepixelstruct.css';
-import bpg1 from '../../image/bepixelguideline/bpg6.svg';
+import bpg1 from '../../assets/image/bepixelguideline/bpg6.svg';
 
 function Bepixelstruct() {
 	return (
