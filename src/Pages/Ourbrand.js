@@ -10,11 +10,11 @@ import Bepixelcolors from '../components/bepixel/Bepixelcolors';
 import AmbilightVideo from '../components/bepixel/AmbilightVideo';
 import { useTranslation } from 'react-i18next';
 import HeaderComponent from '../components/bepixel/HeaderComponent';
-import MeaningSection from '../components/MeaningSection'
+import MeaningSection from '../components/MeaningSection';
 import bpg3 from '../assets/image/bepixelguideline/bpg3.svg';
 import bpg4 from '../assets/image/bepixelguideline/bpg4.svg';
 import bpg5 from '../assets/image/bepixelguideline/bpg5.svg';
-import businesscard from '../assets/image/bepixelguideline/bussinescard.webp'
+import businesscard from '../assets/image/bepixelguideline/bussinescard.webp';
 
 function Ourbrand() {
 	const [t] = useTranslation('global');
@@ -32,7 +32,20 @@ function Ourbrand() {
 			/>
 			<BrandSections
 				section={t('ourbrand.titles.meaning')}
-				page={<MeaningSection logo={bepixelbrand} title1={t('ourbrand.meaning.element-1-spand')} text1={t('ourbrand.meaning.element-1')} title2={t('ourbrand.meaning.element-2-spand')} text2={t('ourbrand.meaning.element-2')} title3={t('ourbrand.meaning.element-3-spand')} text3={t('ourbrand.meaning.element-3')} asset1={bpg5} asset2={bpg3} asset3={bpg4}/>}
+				page={
+					<MeaningSection
+						logo={bepixelbrand}
+						title1={t('ourbrand.meaning.element-1-spand')}
+						text1={t('ourbrand.meaning.element-1')}
+						title2={t('ourbrand.meaning.element-2-spand')}
+						text2={t('ourbrand.meaning.element-2')}
+						title3={t('ourbrand.meaning.element-3-spand')}
+						text3={t('ourbrand.meaning.element-3')}
+						asset1={bpg5}
+						asset2={bpg3}
+						asset3={bpg4}
+					/>
+				}
 				logo={bepixelbrand}
 			/>
 			<BrandSections
@@ -60,7 +73,10 @@ function Ourbrand() {
 			<BrandSections
 				section={t('ourbrand.titles.businesscard')}
 				page={
-					<img src={businesscard} style={{width:'100%', marginTop: '50px'}}/>
+					<img
+						src={businesscard}
+						style={{ width: '100%', marginTop: '50px' }}
+					/>
 				}
 				logo={bepixelbrand}
 			/>

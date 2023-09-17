@@ -71,12 +71,11 @@ function LanguageSwitch() {
 		}
 	}, []);
 
-	useEffect(()=>{
-		document.addEventListener('scroll', function(){
-			setIsOpen(false)
-		})
-	})
-
+	useEffect(() => {
+		document.addEventListener('scroll', function () {
+			setIsOpen(false);
+		});
+	});
 
 	const languageSwitchEs = () => {
 		i18n.changeLanguage('es');

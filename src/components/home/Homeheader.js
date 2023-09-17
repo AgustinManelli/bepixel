@@ -8,7 +8,7 @@ const BackgroundPattern = () => (
 		width='100%'
 		height='100%'
 		xmlns='http://www.w3.org/2000/svg'
-		style={{ position: 'absolute', 'zIndex': '0', opacity: '0.008' }}
+		style={{ position: 'absolute', zIndex: '0', opacity: '0.008' }}
 	>
 		<defs>
 			<pattern
@@ -52,7 +52,7 @@ function Homeheader() {
 				<BackgroundPattern />
 				<div
 					className='homeheaderElement_1 textelement'
-					style={{ 'z-index': '1' }}
+					style={{ zIndex: '1' }}
 				>
 					<div>
 						<h2>branding</h2>

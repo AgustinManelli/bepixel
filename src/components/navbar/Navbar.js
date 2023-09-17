@@ -1,14 +1,13 @@
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { IoIosArrowDown } from 'react-icons/io';
 import '../../stylesheets/navbar/Navbar.css';
 import logof from '../../assets/image/ISOTIPO.svg';
 import logof2 from '../../assets/image/LOGOVERTICAL.svg';
 import $ from 'jquery';
 import { useTranslation } from 'react-i18next';
-import CTAButton from '../CTAButton';
-import LanguageSwitch from './LanguageSwitch';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import NavbarLinks from './NavbarLinks';
+import NavbarResponsive from './NavbarResponsive';
 
 function Navbar({
 	setIsActive,
@@ -44,15 +43,15 @@ function Navbar({
 		}
 	}, []);
 
-	window.addEventListener('resize', function(){
+	window.addEventListener('resize', function () {
 		if (window.innerWidth <= 815) {
 			setIsPhone(true);
 		} else {
 			setIsPhone(false);
 		}
 	});
-	
-	window.addEventListener('scroll', function(){
+
+	window.addEventListener('scroll', function () {
 		if (window.scrollY > 0) {
 			setShadowScroll(false);
 		} else {
@@ -91,63 +90,7 @@ function Navbar({
 					<span></span>
 				</div>
 				<ul className={isActive ? 'navUl activated' : 'navUl'}>
-					<li className='navLi navLiArrow' id='navLi'>
-						<div
-							className='navAnchorDropdown'
-							activeclassname='navAnchor active'
-						>
-							{t('navbar.navelement1')}
-							<IoIosArrowDown />
-						</div>
-						<div
-							className={
-								shadowScroll ? 'navDropdown' : 'navDropdown dropdownShadow'
-							}
-						>
-							<NavLink
-								to='/laespumita'
-								className='navAnchor navDropdownLink '
-								onClick={closeNav}
-							>
-								la espumita
-							</NavLink>
-							<NavLink
-								to='/open'
-								className='navAnchor navDropdownLink '
-								onClick={closeNav}
-							>
-								open
-							</NavLink>
-						</div>
-					</li>
-
-					<li className='navLi'>
-						<NavLink
-							to='/ourbrand'
-							className='navAnchor'
-							activeclassname='navAnchor active'
-							onClick={closeNav}
-						>
-							{t('navbar.navelement2')}
-						</NavLink>
-					</li>
-					<li
-						style={{
-							position: 'absolute',
-							right: '5px',
-							display: 'flex',
-							flexDirection: 'row',
-							alignItems: 'center',
-							justifyContent: 'center',
-							gap: '10px',
-						}}
-					>
-						<CTAButton
-							title={t('navbar.cta')}
-							link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'
-						/>
-						<LanguageSwitch />
-					</li>
+					<NavbarLinks shadowScroll={shadowScroll} closeNav={closeNav} />
 				</ul>
 				<motion.div className='progress-bar' style={{ scaleX }} />
 			</nav>
@@ -159,67 +102,7 @@ function Navbar({
 						: 'responsiveMenu'
 				}
 			>
-				<li className='navLi'>
-					<NavLink
-						to='/'
-						className='navAnchor'
-						activeclassname='navAnchor active'
-						onClick={closeNav}
-					>
-						home
-					</NavLink>
-				</li>
-				<li className='navLi navLiResponsive' onClick={openDropdown}>
-					<div
-						className='navAnchorDropdown'
-						activeclassname='navAnchorDropdown active'
-					>
-						{t('navbar.navelement1')}
-						<IoIosArrowDown className='responsiveArrow' />
-					</div>
-					<div className='responsivenavDropdown'>
-						<NavLink
-							to='/laespumita'
-							className='navDropdownLinkResponsive'
-							onClick={closeNav}
-						>
-							la espumita
-						</NavLink>
-						<NavLink
-							to='/open'
-							className='navAnchor navDropdownLink '
-							onClick={closeNav}
-						>
-							open
-						</NavLink>
-					</div>
-				</li>
-				<li className='navLi'>
-					<NavLink
-						to='/ourbrand'
-						className='navAnchor'
-						activeclassname='navAnchor active'
-						onClick={closeNav}
-					>
-						{t('navbar.navelement2')}
-					</NavLink>
-				</li>
-				<li
-					className='navLi'
-					style={{
-						display: 'flex',
-						flexDirection: 'row',
-						alignItems: 'center',
-						justifyContent: 'center',
-						gap: '10px',
-					}}
-				>
-					<CTAButton
-						title={t('navbar.cta')}
-						link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'
-					/>
-					<LanguageSwitch />
-				</li>
+				<NavbarResponsive closeNav={closeNav} openDropdown={openDropdown} />
 			</ul>
 		</header>
 	);
