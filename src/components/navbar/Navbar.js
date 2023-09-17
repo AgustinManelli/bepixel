@@ -1,40 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import '../../stylesheets/navbar/Navbar.css';
 import logof from '../../assets/image/ISOTIPO.svg';
 import logof2 from '../../assets/image/LOGOVERTICAL.svg';
-import $ from 'jquery';
-import { useTranslation } from 'react-i18next';
-import { motion, useScroll, useSpring } from 'framer-motion';
 import NavbarLinks from './NavbarLinks';
 import NavbarResponsive from './NavbarResponsive';
+import $ from 'jquery';
 
-function Navbar({
-	setIsActive,
-	isActive,
-	isPhone,
-	setIsPhone,
-	shadowScroll,
-	setShadowScroll,
-}) {
-	const [t] = useTranslation('global');
+function Navbar() {
 
-	const openDropdown = () => {
-		$('.responsivenavDropdown').toggleClass('responsivenavDropdownOpened');
-		$('.responsiveArrow').toggleClass('responsiveArrowinverted');
-	};
-
-	const handleClick = () => {
-		setIsActive(current => !current);
-		$('.responsivenavDropdown').removeClass('responsivenavDropdownOpened');
-		$('.responsiveArrow').removeClass('responsiveArrowinverted');
-	};
-
-	const closeNav = () => {
-		setIsActive(false);
-		$('body,html').animate({ scrollTop: '0px' });
-	};
-
+	const [isActive, setIsActive] = useState(false);
+	const [isPhone, setIsPhone] = useState(false);
+	const [shadowScroll, setShadowScroll] = useState(true);
+	const [isOpen, setIsOpen] = useState(false)
+	
 	useEffect(() => {
 		if (window.scrollY > 0) {
 			setShadowScroll(false);
@@ -42,6 +22,21 @@ function Navbar({
 			setShadowScroll(true);
 		}
 	}, []);
+	
+	const openDropdown = () => {
+		setIsOpen(!isOpen)
+	};
+
+	const handleClick = () => {
+		setIsActive(current => !current);
+		setIsOpen(false)
+	};
+
+	const closeNav = () => {
+		setIsActive(false);
+		$('body,html').animate({ scrollTop: '0px' });
+	};
+
 
 	window.addEventListener('resize', function () {
 		if (window.innerWidth <= 815) {
@@ -67,8 +62,8 @@ function Navbar({
 	});
 
 	return (
-		<header id='navContainer' className='navContainer'>
-			<nav
+		<nav id='navContainer' className='navContainer'>
+			<div
 				className={
 					shadowScroll ? (isActive ? 'nav navshadow' : 'nav') : 'nav navshadow'
 				}
@@ -93,7 +88,7 @@ function Navbar({
 					<NavbarLinks shadowScroll={shadowScroll} closeNav={closeNav} />
 				</ul>
 				<motion.div className='progress-bar' style={{ scaleX }} />
-			</nav>
+			</div>
 
 			<ul
 				className={
@@ -102,9 +97,9 @@ function Navbar({
 						: 'responsiveMenu'
 				}
 			>
-				<NavbarResponsive closeNav={closeNav} openDropdown={openDropdown} />
+				<NavbarResponsive closeNav={closeNav} openDropdown={openDropdown} isOpen={isOpen}/>
 			</ul>
-		</header>
+		</nav>
 	);
 }
 

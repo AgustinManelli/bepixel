@@ -39,21 +39,10 @@ function App() {
 		}
 	}, []);
 
-	const [isActive, setIsActive] = useState(false);
-	const [isPhone, setIsPhone] = useState(false);
-	const [shadowScroll, setShadowScroll] = useState(true);
-
 	return (
 		<div className='App'>
 			<Router basename={process.env.PUBLIC_URL}>
-				<Navbar
-					isActive={isActive}
-					setIsActive={setIsActive}
-					isPhone={isPhone}
-					setIsPhone={setIsPhone}
-					shadowScroll={shadowScroll}
-					setShadowScroll={setShadowScroll}
-				/>
+				<Navbar/>
 				<FloatingWSP />
 				<Toaster
 					closeButton

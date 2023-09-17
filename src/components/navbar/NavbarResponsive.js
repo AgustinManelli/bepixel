@@ -4,7 +4,7 @@ import CTAButton from '../CTAButton';
 import LanguageSwitch from './LanguageSwitch';
 import { useTranslation } from 'react-i18next';
 
-function NavbarResponsive({ openDropdown, closeNav }) {
+function NavbarResponsive({ openDropdown, closeNav, isOpen }) {
 	const [t] = useTranslation('global');
 	return (
 		<>
@@ -24,9 +24,9 @@ function NavbarResponsive({ openDropdown, closeNav }) {
 					activeclassname='navAnchorDropdown active'
 				>
 					{t('navbar.navelement1')}
-					<IoIosArrowDown className='responsiveArrow' />
+					<IoIosArrowDown className={isOpen ? 'responsiveArrow responsiveArrowinverted' : 'responsiveArrow'}/>
 				</div>
-				<div className='responsivenavDropdown'>
+				<div className={isOpen ? 'responsivenavDropdown responsivenavDropdownOpened' : 'responsivenavDropdown'}>
 					<NavLink
 						to='/laespumita'
 						className='navDropdownLinkResponsive'
