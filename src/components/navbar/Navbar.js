@@ -6,7 +6,6 @@ import logof from '../../assets/image/ISOTIPO.svg';
 import logof2 from '../../assets/image/LOGOVERTICAL.svg';
 import NavbarLinks from './NavbarLinks';
 import NavbarResponsive from './NavbarResponsive';
-import $ from 'jquery';
 
 function Navbar() {
 
@@ -14,7 +13,7 @@ function Navbar() {
 	const [isPhone, setIsPhone] = useState(false);
 	const [shadowScroll, setShadowScroll] = useState(true);
 	const [isOpen, setIsOpen] = useState(false)
-	
+
 	useEffect(() => {
 		if (window.scrollY > 0) {
 			setShadowScroll(false);
@@ -34,7 +33,7 @@ function Navbar() {
 
 	const closeNav = () => {
 		setIsActive(false);
-		$('body,html').animate({ scrollTop: '0px' });
+		window.scrollTo(0, 0);
 	};
 
 
