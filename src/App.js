@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect} from 'react';
+import { useEffect } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Home from './pages/Home';
@@ -10,6 +10,7 @@ import Ourbrand from './pages/Ourbrand';
 import { Toaster, toast } from 'sonner';
 import { IoNotifications } from 'react-icons/io5';
 import Open from './pages/projects/Open';
+import Toolspage from './pages/Toolspage';
 
 function App() {
 	useEffect(() => {
@@ -42,7 +43,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Router basename={process.env.PUBLIC_URL}>
-				<Navbar/>
+				<Navbar />
 				<FloatingWSP />
 				<Toaster
 					closeButton
@@ -55,6 +56,7 @@ function App() {
 					<Route path='/laespumita' element={<Laespumita />} />
 					<Route path='/open' element={<Open />} />
 					<Route path='/ourbrand' element={<Ourbrand />} />
+					<Route path='/tools' element={<Toolspage />} />
 				</Routes>
 				<Footer />
 			</Router>

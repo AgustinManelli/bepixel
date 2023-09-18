@@ -1,0 +1,19 @@
+.toolsHeaderContainer {
+	background-color: var(--secondaryColor);
+	width: 100vw;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.toolsHeaderContainer section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	max-width: 1020px;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
