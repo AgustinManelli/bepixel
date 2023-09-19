@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import '../../stylesheets/toolspage/ItemsFilter.css';
-function ItemsFilter({ setFilter }) {
+function ItemsFilter({ setFilter, items, setCurrentPage }) {
 	const handleChangeFilter = event => {
+		setCurrentPage(1);
 		setFilter(prevState => ({
 			...prevState,
 			category: event.target.value,
@@ -9,6 +10,7 @@ function ItemsFilter({ setFilter }) {
 	};
 
 	const handleChangeFilterSearch = event => {
+		setCurrentPage(1);
 		setFilter(prevState => ({
 			...prevState,
 			tag: event.target.value,

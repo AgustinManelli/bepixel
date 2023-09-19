@@ -1,18 +1,18 @@
-import { useState } from 'react';
+import { useId } from 'react';
 import '../../stylesheets/toolspage/ToolsBody.css';
 import ToolsItems from './ToolsItems';
 
-function ToolsBody({ items }) {
+function ToolsBody({ items, lastIndex, firstIndex }) {
 	return (
 		<section className='itemsBody'>
 			<div className='itemsBodyContainer'>
-				{items.map(items => (
-					<ToolsItems items={items} />
-				))}
-			</div>
-			<div>
-				<button>atras</button>
-				<button>siguiente</button>
+				{items
+					.map(items => (
+						<div key={items.id}>
+							<ToolsItems items={items} />
+						</div>
+					))
+					.slice(firstIndex, lastIndex)}
 			</div>
 		</section>
 	);

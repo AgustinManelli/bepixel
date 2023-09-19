@@ -6,8 +6,7 @@ function ToolsItems({ items }) {
 			className='itemAnchor'
 			href={items.linkpage}
 			target='_blank'
-			rel='noreferrer'
-			id={items.id}>
+			rel='noreferrer'>
 			<div className='itemCard'>
 				<div
 					className='itemContainer'
@@ -37,7 +36,9 @@ function ToolsItems({ items }) {
 						)}
 						<section>
 							{items.tag.slice(0, 3).map(tag => (
-								<p className='itemTag'>{tag}</p>
+								<p key={tag} className='itemTag'>
+									{tag}
+								</p>
 							))}
 						</section>
 					</div>
