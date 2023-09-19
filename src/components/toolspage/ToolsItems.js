@@ -1,21 +1,48 @@
 import '../../stylesheets/toolspage/ToolsItems.css';
 
 function ToolsItems({ items }) {
+	const splitsVal = items.tag.split(',');
+	console.log(splitsVal);
 	return (
-		<a href={items.linkpage} target='_blank' rel='noreferrer' id={items.id}>
-			<div
-				className='itemContainer'
-				style={{
-					backgroundImage: `url(${require(
-						'../../assets/thumbnails/' + items.thumbnail + '.png',
-					)})`,
-					backgroundRepeat: 'no-repeat',
-					backgroundSize: 'cover',
-					backgroundPosition: 'center center',
-				}}>
+		<a
+			className='itemAnchor'
+			href={items.linkpage}
+			target='_blank'
+			rel='noreferrer'
+			id={items.id}>
+			<div className='itemCard'>
+				<div
+					className='itemContainer'
+					style={{
+						backgroundImage: `url(${require(
+							'../../assets/thumbnails/' + items.thumbnail + '.png',
+						)})`,
+						backgroundRepeat: 'no-repeat',
+						backgroundSize: 'cover',
+						backgroundPosition: 'center center',
+					}}></div>
 				<div className='itemText'>
-					<h3>{items.title}</h3>
-					<p>{items.description}</p>
+					<div>
+						<p className='itemTitle'>{items.title}</p>
+						<p className='itemDescription'>{items.description}</p>
+					</div>
+
+					<div className='itemInfo'>
+						{items.paid !== 'free' ? (
+							items.paid !== 'paid' ? (
+								<p className='itemDescription itemFreemium'>freemium</p>
+							) : (
+								<p className='itemDescription itemPaid'>paid</p>
+							)
+						) : (
+							<p className='itemDescription itemFree'>free</p>
+						)}
+						<section>
+							{splitsVal.map(tag => (
+								<p className='itemTag'>{tag}</p>
+							))}
+						</section>
+					</div>
 				</div>
 			</div>
 		</a>
