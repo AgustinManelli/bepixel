@@ -211,6 +211,91 @@
 			"paid": "free",
 			"tag": ["api", "develop"],
 			"id": 17
+		},
+		{
+			"category": "web-dev",
+			"title": "Tabla periódica HTML5",
+			"description": "description 1",
+			"thumbnail": "lenguajehtml",
+			"name": "lenguajehtml",
+			"linkpage": "https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/",
+			"paid": "free",
+			"tag": ["tools", "develop", "HTML5"],
+			"id": 18
+		},
+		{
+			"category": "web-dev",
+			"title": "Roadmap.sh",
+			"description": "description 1",
+			"thumbnail": "roadmap",
+			"name": "roadmap",
+			"linkpage": "https://roadmap.sh/",
+			"paid": "free",
+			"tag": [
+				"tools",
+				"develop",
+				"fullstack",
+				"roadmap",
+				"guides",
+				"best practices",
+				"developer"
+			],
+			"id": 19
+		},
+		{
+			"category": "graphic-design",
+			"title": "Excalidraw",
+			"description": "description 1",
+			"thumbnail": "excalidraw",
+			"name": "excalidraw",
+			"linkpage": "https://excalidraw.com/",
+			"paid": "freemium",
+			"tag": ["tools", "draw", "board"],
+			"id": 20
+		},
+		{
+			"category": "graphic-design",
+			"title": "IconScout",
+			"description": "description 1",
+			"thumbnail": "iconscout",
+			"name": "iconscout",
+			"linkpage": "https://iconscout.com/",
+			"paid": "freemium",
+			"tag": ["icons", "3d", "design", "illustrations", "avatar", "assets"],
+			"id": 21
+		},
+		{
+			"category": "graphic-design",
+			"title": "Upscale.media",
+			"description": "description 1",
+			"thumbnail": "upscalemedia",
+			"name": "upscalemedia",
+			"linkpage": "https://www.upscale.media/es/upload",
+			"paid": "freemium",
+			"tag": ["photo", "media", "upscale", "tools"],
+			"id": 22
+		},
+		{
+			"category": "graphic-design",
+			"title": "Texturelabs",
+			"description": "description 1",
+			"thumbnail": "texturelabs",
+			"name": "texturelabs",
+			"linkpage": "https://texturelabs.org/",
+			"paid": "free",
+			"tag": ["textures", "assets", "media", "design"],
+			"id": 23
+		},
+		{
+			"category": "web-dev",
+			"title": "Framer Motion",
+			"description": "description 1",
+			"thumbnail": "framermotion",
+			"name": "framermotion",
+			"linkpage": "https://www.framer.com/motion/",
+			"paid": "free",
+			"tag": ["dev", "animation", "library", "react"],
+			"id": 24
 		}
 	]
 }

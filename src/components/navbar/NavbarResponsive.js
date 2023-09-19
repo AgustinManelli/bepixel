@@ -5,7 +5,7 @@ import LanguageSwitch from './LanguageSwitch';
 import { useTranslation } from 'react-i18next';
 import '../../stylesheets/navbar/NavbarLinks.css';
 
-function NavbarResponsive({ openDropdown, closeNav, isOpen }) {
+function NavbarResponsive({ openDropdown, closeNav, isOpen, isPhone }) {
 	const [t] = useTranslation('global');
 	return (
 		<>
@@ -73,7 +73,7 @@ function NavbarResponsive({ openDropdown, closeNav, isOpen }) {
 					title={t('navbar.cta')}
 					link='https://api.whatsapp.com/send?phone=543571534631&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio.'
 				/>
-				<LanguageSwitch />
+				{isPhone ? <LanguageSwitch /> : ''}
 			</li>
 		</>
 	);

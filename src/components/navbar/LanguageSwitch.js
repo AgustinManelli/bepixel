@@ -55,7 +55,7 @@ const UsFlag = () => (
 	</svg>
 );
 
-function LanguageSwitch() {
+function LanguageSwitch({ id }) {
 	const [t, i18n] = useTranslation('global');
 	const [isOpen, setIsOpen] = useState(false);
 	const [lng, setLng] = useState('');

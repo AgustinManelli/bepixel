@@ -9,8 +9,6 @@ function Pagination({
 	const totalItems = filteredItems.length;
 	const pageNumbers = [];
 
-	console.log(totalItems);
-
 	for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
 		pageNumbers.push(i);
 	}

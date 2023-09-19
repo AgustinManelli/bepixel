@@ -12,6 +12,7 @@ function Navbar() {
 	const [isPhone, setIsPhone] = useState(false); // change structure when is phone
 	const [shadowScroll, setShadowScroll] = useState(true); //change color when scroll
 	const [isOpen, setIsOpen] = useState(false); // open submenu
+	const [isOpenResponsive, setIsOpenResponsive] = useState(false);
 
 	useEffect(() => {
 		if (window.scrollY > 0) {
@@ -19,10 +20,15 @@ function Navbar() {
 		} else {
 			setShadowScroll(true);
 		}
+		if (window.innerWidth <= 815) {
+			setIsPhone(true);
+		} else {
+			setIsPhone(false);
+		}
 	}, []);
 
 	const openDropdown = () => {
-		setIsOpen(!isOpen);
+		setIsOpenResponsive(!isOpenResponsive);
 	};
 
 	const closeOpen = () => {
@@ -91,6 +97,7 @@ function Navbar() {
 						openDropdown={openDropdown}
 						isOpen={isOpen}
 						closeOpen={closeOpen}
+						isPhone={isPhone}
 					/>
 				</ul>
 				<motion.div className='progress-bar' style={{ scaleX }} />
@@ -105,7 +112,8 @@ function Navbar() {
 				<NavbarResponsive
 					closeNav={closeNav}
 					openDropdown={openDropdown}
-					isOpen={isOpen}
+					isOpen={isOpenResponsive}
+					isPhone={isPhone}
 				/>
 			</ul>
 		</nav>
