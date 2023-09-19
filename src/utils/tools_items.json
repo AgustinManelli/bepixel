@@ -1,51 +1,6 @@
 {
 	"items": [
 		{
-			"id": 1,
-			"category": "web-dev",
-			"title": "FLOATING UI",
-			"description": "description 1",
-			"thumbnail": "floatingui",
-			"name": "gloatingui",
-			"linkpage": "https://floating-ui.com/",
-			"paid": "free",
-			"tag": "ui, ux, develop"
-		},
-		{
-			"id": 2,
-			"category": "web-dev",
-			"title": "Griddy",
-			"description": "description 1",
-			"thumbnail": "griddy",
-			"name": "griddy",
-			"linkpage": "https://griddy.io/",
-			"paid": "free",
-			"tag": "grid, css, style"
-		},
-		{
-			"id": 3,
-			"category": "web-dev",
-			"title": "Vivus",
-			"description": "description 1",
-			"thumbnail": "vivus",
-			"name": "vivus",
-			"linkpage": "http://maxwellito.github.io/vivus/",
-			"paid": "free",
-			"tag": "style, svg"
-		},
-		{
-			"id": 4,
-			"category": "web-dev",
-			"title": "Blob animation",
-			"description": "description 1",
-			"thumbnail": "blobanimation",
-			"name": "blobanimation",
-			"linkpage": "https://blobanimation.com/",
-			"paid": "free",
-			"tag": "css, style, animation"
-		},
-		{
-			"id": 5,
 			"category": "web-dev",
 			"title": "AOS",
 			"description": "description 1",
@@ -53,54 +8,19 @@
 			"name": "aos",
 			"linkpage": "https://michalsnik.github.io/aos/",
 			"paid": "free",
-			"tag": "css, animation"
+			"tag": ["css", "animation"]
 		},
 		{
-			"id": 6,
 			"category": "web-dev",
-			"title": "Sonner",
+			"title": "Blob animation",
 			"description": "description 1",
-			"thumbnail": "sonner",
-			"name": "sonner",
-			"linkpage": "https://sonner.emilkowal.ski/",
+			"thumbnail": "blobanimation",
+			"name": "blobanimation",
+			"linkpage": "https://blobanimation.com/",
 			"paid": "free",
-			"tag": "ui, ux, notifications"
+			"tag": ["css", "style", "animation"]
 		},
 		{
-			"id": 7,
-			"category": "web-dev",
-			"title": "Sortable",
-			"description": "description 1",
-			"thumbnail": "sortable",
-			"name": "sortable",
-			"linkpage": "https://sortablejs.github.io/Sortable/",
-			"paid": "free",
-			"tag": "ui, ux, sort"
-		},
-		{
-			"id": 8,
-			"category": "web-dev",
-			"title": "sweetalert2",
-			"description": "description 1",
-			"thumbnail": "sweetalert2",
-			"name": "sweetalert2",
-			"linkpage": "https://sweetalert2.github.io/",
-			"paid": "free",
-			"tag": "ui, ux, notifications"
-		},
-		{
-			"id": 9,
-			"category": "web-dev",
-			"title": "gitmoji",
-			"description": "description 1",
-			"thumbnail": "gitmoji",
-			"name": "gitmoji",
-			"linkpage": "https://gitmoji.dev/",
-			"paid": "free",
-			"tag": "emoji, style"
-		},
-		{
-			"id": 10,
 			"category": "web-dev",
 			"title": "Bundlephobia",
 			"description": "description 1",
@@ -108,32 +28,9 @@
 			"name": "bundlephobia",
 			"linkpage": "https://bundlephobia.com/",
 			"paid": "free",
-			"tag": "support, dependecies"
+			"tag": ["support", "dependencies"]
 		},
 		{
-			"id": 11,
-			"category": "web-dev",
-			"title": "Rapidapi",
-			"description": "description 1",
-			"thumbnail": "rapidapi",
-			"name": "rapidapi",
-			"linkpage": "https://rapidapi.com/hub",
-			"paid": "free",
-			"tag": "api, develop"
-		},
-		{
-			"id": 12,
-			"category": "web-dev",
-			"title": "Uiverse",
-			"description": "description 1",
-			"thumbnail": "uiverse",
-			"name": "uiverse",
-			"linkpage": "https://uiverse.io/",
-			"paid": "freemium",
-			"tag": "ui, ux, style, css"
-		},
-		{
-			"id": 13,
 			"category": "web-dev",
 			"title": "Can I use",
 			"description": "description 1",
@@ -141,21 +38,26 @@
 			"name": "caniuse",
 			"linkpage": "https://caniuse.com/",
 			"paid": "free",
-			"tag": "support, html, css"
+			"tag": ["support", "html", "css"]
 		},
 		{
-			"id": 14,
 			"category": "graphic-design",
-			"title": "Resource boy",
+			"title": "Free Mockups",
 			"description": "description 1",
-			"thumbnail": "resourceboy",
-			"name": "resourceboy",
-			"linkpage": "https://resourceboy.com/",
-			"paid": "free",
-			"tag": "design, resources"
+			"thumbnail": "lsgraphics",
+			"name": "lsgraphics",
+			"linkpage": "https://www.ls.graphics/free-mockups",
+			"paid": "freemium",
+			"tag": [
+				"visuals",
+				"image",
+				"wallpapers",
+				"backgrounds",
+				"renders",
+				"sources"
+			]
 		},
 		{
-			"id": 15,
 			"category": "graphic-design",
 			"title": "Huemint",
 			"description": "description 1",
@@ -163,7 +65,134 @@
 			"name": "huemint",
 			"linkpage": "https://huemint.com/",
 			"paid": "free",
-			"tag": "design, color, brand"
+			"tag": ["design", "color", "brand"]
+		},
+		{
+			"category": "graphic-design",
+			"title": "Resource boy",
+			"description": "description 1",
+			"thumbnail": "resourceboy",
+			"name": "resourceboy",
+			"linkpage": "https://resourceboy.com/",
+			"paid": "free",
+			"tag": ["design", "resources"]
+		},
+		{
+			"category": "photostock",
+			"title": "Unspash",
+			"description": "description 1",
+			"thumbnail": "unsplash",
+			"name": "unsplash",
+			"linkpage": "https://unsplash.com/",
+			"paid": "freemium",
+			"tag": [
+				"visuals",
+				"image",
+				"wallpapers",
+				"backgrounds",
+				"renders",
+				"sources"
+			]
+		},
+		{
+			"category": "web-dev",
+			"title": "FLOATING UI",
+			"description": "description 1",
+			"thumbnail": "floatingui",
+			"name": "floatingui",
+			"linkpage": "https://floating-ui.com/",
+			"paid": "free",
+			"tag": ["ux", "ui", "develop"]
+		},
+		{
+			"category": "web-dev",
+			"title": "Gitmoji",
+			"description": "description 1",
+			"thumbnail": "gitmoji",
+			"name": "gitmoji",
+			"linkpage": "https://gitmoji.dev/",
+			"paid": "free",
+			"tag": ["emoji", "style"]
+		},
+		{
+			"category": "web-dev",
+			"title": "Griddy",
+			"description": "description 1",
+			"thumbnail": "griddy",
+			"name": "griddy",
+			"linkpage": "https://griddy.io/",
+			"paid": "free",
+			"tag": ["grid", "css", "style"]
+		},
+		{
+			"category": "web-dev",
+			"title": "Rapidapi",
+			"description": "description 1",
+			"thumbnail": "rapidapi",
+			"name": "rapidapi",
+			"linkpage": "https://rapidapi.com/hub",
+			"paid": "free",
+			"tag": ["api", "develop"]
+		},
+		{
+			"category": "web-dev",
+			"title": "Sonner",
+			"description": "description 1",
+			"thumbnail": "sonner",
+			"name": "sonner",
+			"linkpage": "https://sonner.emilkowal.ski/",
+			"paid": "free",
+			"tag": ["ux", "ui", "notifications"]
+		},
+		{
+			"category": "web-dev",
+			"title": "Uiverse",
+			"description": "description 1",
+			"thumbnail": "uiverse",
+			"name": "uiverse",
+			"linkpage": "https://uiverse.io/",
+			"paid": "freemium",
+			"tag": ["ux", "ui", "style", "css"]
+		},
+		{
+			"category": "web-dev",
+			"title": "Vivus",
+			"description": "description 1",
+			"thumbnail": "vivus",
+			"name": "vivus",
+			"linkpage": "http://maxwellito.github.io/vivus/",
+			"paid": "free",
+			"tag": ["style", "svg"]
+		},
+		{
+			"category": "tools",
+			"title": "Prepostseo",
+			"description": "description 1",
+			"thumbnail": "prepostseo",
+			"name": "prepostseo",
+			"linkpage": "https://www.prepostseo.com/",
+			"paid": "freemium",
+			"tag": ["tools", "text", "web"]
+		},
+		{
+			"category": "graphic-design",
+			"title": "The Happy Toolbox",
+			"description": "description 1",
+			"thumbnail": "thehappytoolbox",
+			"name": "thehappytoolbox",
+			"linkpage": "https://thehappytoolbox.com/",
+			"paid": "freemium",
+			"tag": ["tools", "icons", "design"]
+		},
+		{
+			"category": "graphic-design",
+			"title": "Let'sEnhance.io",
+			"description": "description 1",
+			"thumbnail": "letsenhance",
+			"name": "letsenhance",
+			"linkpage": "https://letsenhance.io/",
+			"paid": "freemium",
+			"tag": ["tools", "photo"]
 		}
 	]
 }

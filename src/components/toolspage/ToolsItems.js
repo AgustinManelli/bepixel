@@ -1,8 +1,6 @@
 import '../../stylesheets/toolspage/ToolsItems.css';
 
 function ToolsItems({ items }) {
-	const splitsVal = items.tag.split(',');
-	console.log(splitsVal);
 	return (
 		<a
 			className='itemAnchor'
@@ -38,7 +36,7 @@ function ToolsItems({ items }) {
 							<p className='itemDescription itemFree'>free</p>
 						)}
 						<section>
-							{splitsVal.map(tag => (
+							{items.tag.slice(0, 3).map(tag => (
 								<p className='itemTag'>{tag}</p>
 							))}
 						</section>
