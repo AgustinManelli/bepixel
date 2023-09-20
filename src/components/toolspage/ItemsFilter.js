@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import '../../stylesheets/toolspage/ItemsFilter.css';
-function ItemsFilter({ setFilter, items, setCurrentPage }) {
+function ItemsFilter({ setFilter, setCurrentPage, changeItemsPerPage }) {
 	const handleChangeFilter = event => {
 		setCurrentPage(1);
 		setFilter(prevState => ({
@@ -31,6 +31,15 @@ function ItemsFilter({ setFilter, items, setCurrentPage }) {
 
 	return (
 		<section className='itemsFilterContainer'>
+			<div>
+				<p>cantidad de ítems por página</p>
+				<select name='select' onChange={changeItemsPerPage}>
+					<option value='8' default>
+						Value 8
+					</option>
+					<option value='16'>Value 16</option>
+				</select>
+			</div>
 			<div className='radio-inputs'>
 				<label className='radio'>
 					<input

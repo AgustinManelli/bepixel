@@ -29,6 +29,7 @@ function Navbar() {
 
 	const openDropdown = () => {
 		setIsOpenResponsive(!isOpenResponsive);
+		setIsOpen(!isOpen);
 	};
 
 	const closeOpen = () => {

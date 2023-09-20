@@ -4,7 +4,7 @@ import ToolsHeader from '../components/toolspage/ToolsHeader';
 import ItemsFilter from '../components/toolspage/ItemsFilter';
 import { useEffect } from 'react';
 import Pagination from '../components/toolspage/Pagination';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 function useFilters() {
 	const [filters, setFilter] = useState({
@@ -27,37 +27,48 @@ function useFilters() {
 }
 
 function Toolspage() {
-	// ------------LOCATION------------------
-	const location = useLocation().search; //Toma los valores de ubicacion
-	const params = new URLSearchParams(location); //Separa los parametros
-	const page = params.get('page'); //Obtiene un parámetro llamado page
-	const category = params.get('category'); // Obtiene un parámetro llamado category
-
-	useEffect(() => {
-		if (category !== '' || category === null) {
-			setFilter(prevState => ({
-				...prevState,
-				category: 'all',
-			}));
-		}
-		if (page !== '' || page === null) {
-			setCurrentPage(1);
-		}
-	}, [page, category]);
-
-	//--------------------------------------
-
 	const [items, setItems] = useState([]);
-	const { filters, filterItems, setFilter } = useFilters(); //Se pide filters para mostrar por pantalla los filtros aplicados
+	const { filters, filterItems, setFilter } = useFilters();
 	const [itemsPerPage, setItemsPerPage] = useState(8);
 	const [currentPage, setCurrentPage] = useState(1);
 	const lastIndex = currentPage * itemsPerPage;
 	const firstIndex = lastIndex - itemsPerPage;
 
+	const navigate = useNavigate();
+	const [searchParams, setSearchParams] = useSearchParams();
+
 	useEffect(() => {
 		const initialItems = require('../utils/tools_items.json').items;
 		setItems(initialItems);
 	}, []);
+
+	/////////////////////////////////////////////////////////////////////////////////////////
+
+	useEffect(() => {
+		// Actualizar los parámetros de la URL cuando cambian los filtros o la página
+		const params = new URLSearchParams();
+		if (filters.category !== 'all') {
+			params.set('category', filters.category);
+		}
+		if (currentPage !== 1) {
+			params.set('page', currentPage.toString());
+		}
+		navigate(`?${params.toString()}`);
+	}, [filters, currentPage]);
+
+	useEffect(() => {
+		const urlParams = Object.fromEntries(searchParams.entries());
+
+		const pageParam = parseInt(urlParams.page) || 1;
+		setCurrentPage(pageParam);
+
+		setFilter(prevFilters => ({
+			...prevFilters,
+			category: urlParams.category || prevFilters.category,
+		}));
+	}, []);
+
+	///////////////////////////////////////////////////////////////////////////////////////////
 
 	const filteredItems = filterItems(items);
 
@@ -73,6 +84,7 @@ function Toolspage() {
 	});
 
 	const changeItemsPerPage = event => {
+		console.log(event);
 		setItemsPerPage(event.target.value);
 	};
 
@@ -82,7 +94,9 @@ function Toolspage() {
 			<ItemsFilter
 				setFilter={setFilter}
 				items={items}
+				currentPage={currentPage}
 				setCurrentPage={setCurrentPage}
+				changeItemsPerPage={changeItemsPerPage}
 			/>
 			<ToolsBody
 				items={filteredItems}
@@ -107,12 +121,6 @@ function Toolspage() {
 				}}>
 				{JSON.stringify(filters)}
 			</p>
-			<div>
-				<select name='select' onChange={changeItemsPerPage}>
-					<option value='default'>Value 8</option>
-					<option value='16'>Value 16</option>
-				</select>
-			</div>
 		</>
 	);
 }

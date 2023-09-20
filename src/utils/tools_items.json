@@ -296,6 +296,94 @@
 			"paid": "free",
 			"tag": ["dev", "animation", "library", "react"],
 			"id": 24
+		},
+		{
+			"category": "web-dev",
+			"title": "Nuevo Título 1",
+			"description": "Nueva Descripción 1",
+			"thumbnail": "framermotion",
+			"name": "Nuevo Nombre 1",
+			"linkpage": "https://www.nuevo-link-1.com/",
+			"paid": "nuevo-pago-1",
+			"tag": ["nuevo-tag-1", "otro-tag", "tercer-tag"],
+			"id": 101
+		},
+		{
+			"category": "web-dev",
+			"title": "aNuevo Título 2",
+			"description": "Nueva Descripción 2",
+			"thumbnail": "framermotion",
+			"name": "aNuevo Nombre 2",
+			"linkpage": "https://www.nuevo-link-2.com/",
+			"paid": "nuevo-pago-2",
+			"tag": ["nuevo-tag-2", "otro-tag", "tercer-tag"],
+			"id": 102
+		},
+		{
+			"category": "web-dev",
+			"title": "bNuevo Título 3",
+			"description": "Nueva Descripción 1",
+			"thumbnail": "framermotion",
+			"name": "bNuevo Nombre 1",
+			"linkpage": "https://www.nuevo-link-1.com/",
+			"paid": "nuevo-pago-1",
+			"tag": ["nuevo-tag-1", "otro-tag", "tercer-tag"],
+			"id": 103
+		},
+		{
+			"category": "web-dev",
+			"title": "cNuevo Título 4",
+			"description": "Nueva Descripción 2",
+			"thumbnail": "framermotion",
+			"name": "cNuevo Nombre 2",
+			"linkpage": "https://www.nuevo-link-2.com/",
+			"paid": "nuevo-pago-2",
+			"tag": ["nuevo-tag-2", "otro-tag", "tercer-tag"],
+			"id": 104
+		},
+		{
+			"category": "web-dev",
+			"title": "dNuevo Título 5",
+			"description": "Nueva Descripción 1",
+			"thumbnail": "framermotion",
+			"name": "dNuevo Nombre 1",
+			"linkpage": "https://www.nuevo-link-1.com/",
+			"paid": "nuevo-pago-1",
+			"tag": ["nuevo-tag-1", "otro-tag", "tercer-tag"],
+			"id": 105
+		},
+		{
+			"category": "web-dev",
+			"title": "eNuevo Título 6",
+			"description": "Nueva Descripción 2",
+			"thumbnail": "framermotion",
+			"name": "eNuevo Nombre 2",
+			"linkpage": "https://www.nuevo-link-2.com/",
+			"paid": "nuevo-pago-2",
+			"tag": ["nuevo-tag-2", "otro-tag", "tercer-tag"],
+			"id": 106
+		},
+		{
+			"category": "web-dev",
+			"title": "fNuevo Título 7",
+			"description": "Nueva Descripción 1",
+			"thumbnail": "framermotion",
+			"name": "fNuevo Nombre 1",
+			"linkpage": "https://www.nuevo-link-1.com/",
+			"paid": "nuevo-pago-1",
+			"tag": ["nuevo-tag-1", "otro-tag", "tercer-tag"],
+			"id": 107
+		},
+		{
+			"category": "web-dev",
+			"title": "gNuevo Título 8",
+			"description": "Nueva Descripción 2",
+			"thumbnail": "framermotion",
+			"name": "gNuevo Nombre 2",
+			"linkpage": "https://www.nuevo-link-2.com/",
+			"paid": "nuevo-pago-2",
+			"tag": ["nuevo-tag-2", "otro-tag", "tercer-tag"],
+			"id": 108
 		}
 	]
 }

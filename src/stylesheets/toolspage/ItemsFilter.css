@@ -10,13 +10,13 @@
 	position: relative;
 	display: flex;
 	gap: 20px;
-	flex-wrap: wrap;
+	flex-wrap: no-wrap;
 	border-radius: 0.5rem;
 	background-color: #e9e9e9;
 	box-sizing: border-box;
 	box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
 	padding: 10px;
-	width: 600px;
+	width: fit-content;
 	font-size: 14px;
 }
 
@@ -108,5 +108,11 @@
 	.itemsFilterContainer {
 		margin-top: 20px;
 		flex-direction: column-reverse;
+		gap: 10px;
+	}
+
+	.radio-inputs {
+		width: fit-content;
+		font-size: 11px;
 	}
 }

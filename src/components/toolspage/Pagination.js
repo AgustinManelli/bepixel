@@ -9,6 +9,9 @@ function Pagination({
 	const totalItems = filteredItems.length;
 	const pageNumbers = [];
 
+	const firstIndex = currentPage - 1;
+	const lastIndex = firstIndex + 2;
+
 	for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
 		pageNumbers.push(i);
 	}
@@ -35,14 +38,45 @@ function Pagination({
 					className={`pagination:number arrow ${
 						currentPage === 1 ? 'isPaginationDisable' : ''
 					}`}
-					onClick={handlePreviousPage}>
+					onClick={currentPage === 1 ? '' : handlePreviousPage}>
 					<svg width='18' height='18'>
 						<use href='#left' />
 					</svg>
 					<span className='arrow:text'></span>
 				</div>
 
-				{pageNumbers.map(page => (
+				{currentPage >= 4 ? (
+					<div
+						className={`pagination:number ${
+							pageNumbers[0] === currentPage ? 'pagination:active' : ''
+						}`}
+						onClick={() => handleSpecificPage(pageNumbers[0])}>
+						{pageNumbers[0]}
+					</div>
+				) : (
+					''
+				)}
+
+				{currentPage >= 4 ? <div className='pagination:number'>...</div> : ''}
+
+				{currentPage > 1 && pageNumbers > 4 ? (
+					<div
+						className={`pagination:number ${
+							firstIndex === currentPage ? 'pagination:active' : ''
+						}`}
+						onClick={() => handleSpecificPage(firstIndex)}>
+						{firstIndex}
+					</div>
+				) : (
+					''
+				)}
+
+				{(pageNumbers.length > 4
+					? pageNumbers
+							.slice(0, pageNumbers.length - 1)
+							.slice(firstIndex, lastIndex)
+					: pageNumbers
+				).map(page => (
 					<div
 						key={page}
 						className={`pagination:number ${
@@ -53,11 +87,29 @@ function Pagination({
 					</div>
 				))}
 
+				{pageNumbers.length > 4 && pageNumbers.length - currentPage > 1 ? (
+					<div className='pagination:number'>...</div>
+				) : (
+					''
+				)}
+
+				{pageNumbers.length > 4 ? (
+					<div
+						className={`pagination:number ${
+							pageNumbers.length === currentPage ? 'pagination:active' : ''
+						}`}
+						onClick={() => handleSpecificPage(pageNumbers.length)}>
+						{pageNumbers.length}
+					</div>
+				) : (
+					''
+				)}
+
 				<div
 					className={`pagination:number arrow ${
 						currentPage >= pageNumbers.length ? 'isPaginationDisable' : ''
 					}`}
-					onClick={handleNextPage}>
+					onClick={currentPage >= pageNumbers.length ? '' : handleNextPage}>
 					<svg width='18' height='18'>
 						<use href='#right' />
 					</svg>
