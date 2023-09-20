@@ -1,6 +1,8 @@
 import '../../stylesheets/toolspage/ToolsItems.css';
+import { useTranslation } from 'react-i18next';
 
 function ToolsItems({ items }) {
+	const [t] = useTranslation('global');
 	return (
 		<a
 			className='itemAnchor'
@@ -21,7 +23,9 @@ function ToolsItems({ items }) {
 				<div className='itemText'>
 					<div>
 						<p className='itemTitle'>{items.title}</p>
-						<p className='itemDescription'>{items.description}</p>
+						<p className='itemDescription'>
+							{t(`toolsitems.${items.description}`)}
+						</p>
 					</div>
 
 					<div className='itemInfo'>

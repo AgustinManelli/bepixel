@@ -4,7 +4,7 @@
 			"id": 0,
 			"category": "photostock",
 			"title": "Unspash",
-			"description": "description 1",
+			"description": "unsplash",
 			"thumbnail": "unsplash",
 			"name": "unsplash",
 			"linkpage": "https://unsplash.com/",
@@ -21,7 +21,7 @@
 		{
 			"category": "graphic-design",
 			"title": "LSgraphics",
-			"description": "description 1",
+			"description": "lsgraphics",
 			"thumbnail": "lsgraphics",
 			"name": "lsgraphics",
 			"linkpage": "https://www.ls.graphics/free-mockups",
@@ -39,7 +39,7 @@
 		{
 			"category": "web-dev",
 			"title": "Uiverse",
-			"description": "description 1",
+			"description": "uiverse",
 			"thumbnail": "uiverse",
 			"name": "uiverse",
 			"linkpage": "https://uiverse.io/",
@@ -50,7 +50,7 @@
 		{
 			"category": "web-dev",
 			"title": "Sonner",
-			"description": "description 1",
+			"description": "sonner",
 			"thumbnail": "sonner",
 			"name": "sonner",
 			"linkpage": "https://sonner.emilkowal.ski/",
@@ -61,7 +61,7 @@
 		{
 			"category": "web-dev",
 			"title": "FLOATING UI",
-			"description": "description 1",
+			"description": "floatingui",
 			"thumbnail": "floatingui",
 			"name": "floatingui",
 			"linkpage": "https://floating-ui.com/",
@@ -72,7 +72,7 @@
 		{
 			"category": "tools",
 			"title": "Prepostseo",
-			"description": "description 1",
+			"description": "prepostseo",
 			"thumbnail": "prepostseo",
 			"name": "prepostseo",
 			"linkpage": "https://www.prepostseo.com/",
@@ -83,7 +83,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Let'sEnhance.io",
-			"description": "description 1",
+			"description": "letsenhance",
 			"thumbnail": "letsenhance",
 			"name": "letsenhance",
 			"linkpage": "https://letsenhance.io/",
@@ -94,7 +94,7 @@
 		{
 			"category": "graphic-design",
 			"title": "The Happy Toolbox",
-			"description": "description 1",
+			"description": "thehappytoolbox",
 			"thumbnail": "thehappytoolbox",
 			"name": "thehappytoolbox",
 			"linkpage": "https://thehappytoolbox.com/",
@@ -105,7 +105,7 @@
 		{
 			"category": "web-dev",
 			"title": "Can I use",
-			"description": "description 1",
+			"description": "caniuse",
 			"thumbnail": "caniuse",
 			"name": "caniuse",
 			"linkpage": "https://caniuse.com/",
@@ -116,7 +116,7 @@
 		{
 			"category": "web-dev",
 			"title": "Bundlephobia",
-			"description": "description 1",
+			"description": "bundlephobia",
 			"thumbnail": "bundlephobia",
 			"name": "bundlephobia",
 			"linkpage": "https://bundlephobia.com/",
@@ -127,7 +127,7 @@
 		{
 			"category": "web-dev",
 			"title": "Vivus",
-			"description": "description 1",
+			"description": "vivus",
 			"thumbnail": "vivus",
 			"name": "vivus",
 			"linkpage": "http://maxwellito.github.io/vivus/",
@@ -138,7 +138,7 @@
 		{
 			"category": "web-dev",
 			"title": "Griddy",
-			"description": "description 1",
+			"description": "griddy",
 			"thumbnail": "griddy",
 			"name": "griddy",
 			"linkpage": "https://griddy.io/",
@@ -149,7 +149,7 @@
 		{
 			"category": "web-dev",
 			"title": "Gitmoji",
-			"description": "description 1",
+			"description": "gitmoji",
 			"thumbnail": "gitmoji",
 			"name": "gitmoji",
 			"linkpage": "https://gitmoji.dev/",
@@ -160,7 +160,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Resource boy",
-			"description": "description 1",
+			"description": "resourceboy",
 			"thumbnail": "resourceboy",
 			"name": "resourceboy",
 			"linkpage": "https://resourceboy.com/",
@@ -171,7 +171,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Huemint",
-			"description": "description 1",
+			"description": "huemint",
 			"thumbnail": "huemint",
 			"name": "huemint",
 			"linkpage": "https://huemint.com/",
@@ -182,7 +182,7 @@
 		{
 			"category": "web-dev",
 			"title": "Blob animation",
-			"description": "description 1",
+			"description": "blobanimation",
 			"thumbnail": "blobanimation",
 			"name": "blobanimation",
 			"linkpage": "https://blobanimation.com/",
@@ -193,7 +193,7 @@
 		{
 			"category": "web-dev",
 			"title": "AOS",
-			"description": "description 1",
+			"description": "aos",
 			"thumbnail": "aos",
 			"name": "aos",
 			"linkpage": "https://michalsnik.github.io/aos/",
@@ -204,7 +204,7 @@
 		{
 			"category": "web-dev",
 			"title": "Rapidapi",
-			"description": "description 1",
+			"description": "rapidapi",
 			"thumbnail": "rapidapi",
 			"name": "rapidapi",
 			"linkpage": "https://rapidapi.com/hub",
@@ -215,7 +215,7 @@
 		{
 			"category": "web-dev",
 			"title": "Tabla periódica HTML5",
-			"description": "description 1",
+			"description": "tablaperiodicahtml",
 			"thumbnail": "lenguajehtml",
 			"name": "tablaperiodicahtml",
 			"linkpage": "https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/",
@@ -226,7 +226,7 @@
 		{
 			"category": "web-dev",
 			"title": "Roadmap.sh",
-			"description": "description 1",
+			"description": "roadmap",
 			"thumbnail": "roadmap",
 			"name": "roadmap",
 			"linkpage": "https://roadmap.sh/",
@@ -245,7 +245,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Excalidraw",
-			"description": "description 1",
+			"description": "excalidraw",
 			"thumbnail": "excalidraw",
 			"name": "excalidraw",
 			"linkpage": "https://excalidraw.com/",
@@ -256,7 +256,7 @@
 		{
 			"category": "graphic-design",
 			"title": "IconScout",
-			"description": "description 1",
+			"description": "iconscout",
 			"thumbnail": "iconscout",
 			"name": "iconscout",
 			"linkpage": "https://iconscout.com/",
@@ -267,7 +267,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Upscale.media",
-			"description": "description 1",
+			"description": "upscalemedia",
 			"thumbnail": "upscalemedia",
 			"name": "upscalemedia",
 			"linkpage": "https://www.upscale.media/es/upload",
@@ -278,7 +278,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Texturelabs",
-			"description": "description 1",
+			"description": "texturelabs",
 			"thumbnail": "texturelabs",
 			"name": "texturelabs",
 			"linkpage": "https://texturelabs.org/",
@@ -289,7 +289,7 @@
 		{
 			"category": "web-dev",
 			"title": "Framer Motion",
-			"description": "description 1",
+			"description": "framermotion",
 			"thumbnail": "framermotion",
 			"name": "framermotion",
 			"linkpage": "https://www.framer.com/motion/",
@@ -300,7 +300,7 @@
 		{
 			"category": "graphic-design",
 			"title": "GoodMockups",
-			"description": "description 1",
+			"description": "goodmockups",
 			"thumbnail": "goodmockups",
 			"name": "goodmockups",
 			"linkpage": "https://goodmockups.com/",
@@ -311,7 +311,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Branding Style Guides",
-			"description": "description 1",
+			"description": "brandingstyleguides",
 			"thumbnail": "brandingstyleguides",
 			"name": "brandingstyleguides",
 			"linkpage": "https://brandingstyleguides.com/",
@@ -322,7 +322,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Mockey",
-			"description": "description 1",
+			"description": "mockey",
 			"thumbnail": "mockey",
 			"name": "mockey",
 			"linkpage": "https://mockey.ai/",
@@ -333,7 +333,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Shots",
-			"description": "description 1",
+			"description": "shots",
 			"thumbnail": "shots",
 			"name": "shots",
 			"linkpage": "https://shots.so/",
@@ -344,7 +344,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Smart Mockups",
-			"description": "description 1",
+			"description": "smartmockups",
 			"thumbnail": "smartmockups",
 			"name": "smartmockups",
 			"linkpage": "https://smartmockups.com/es",
@@ -355,7 +355,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Can Include",
-			"description": "description 1",
+			"description": "caninclude",
 			"thumbnail": "caninclude",
 			"name": "caninclude",
 			"linkpage": "https://caninclude.glitch.me/",
@@ -366,7 +366,7 @@
 		{
 			"category": "photostock",
 			"title": "Pexels",
-			"description": "description 1",
+			"description": "pexels",
 			"thumbnail": "pexels",
 			"name": "pexels",
 			"linkpage": "https://www.pexels.com/",
@@ -377,7 +377,7 @@
 		{
 			"category": "graphic-design",
 			"title": "Craiyon",
-			"description": "description 1",
+			"description": "craiyon",
 			"thumbnail": "craiyon",
 			"name": "craiyon",
 			"linkpage": "https://www.craiyon.com/",
