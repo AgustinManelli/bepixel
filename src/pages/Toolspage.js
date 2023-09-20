@@ -83,20 +83,13 @@ function Toolspage() {
 		return alpSort(a.title, b.title);
 	});
 
-	const changeItemsPerPage = event => {
-		console.log(event);
-		setItemsPerPage(event.target.value);
-	};
-
 	return (
 		<>
 			<ToolsHeader />
 			<ItemsFilter
 				setFilter={setFilter}
-				items={items}
-				currentPage={currentPage}
+				filters={filters}
 				setCurrentPage={setCurrentPage}
-				changeItemsPerPage={changeItemsPerPage}
 			/>
 			<ToolsBody
 				items={filteredItems}

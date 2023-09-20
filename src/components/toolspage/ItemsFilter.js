@@ -1,11 +1,19 @@
 import { useEffect } from 'react';
 import '../../stylesheets/toolspage/ItemsFilter.css';
-function ItemsFilter({ setFilter, setCurrentPage, changeItemsPerPage }) {
+function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 	const handleChangeFilter = event => {
 		setCurrentPage(1);
 		setFilter(prevState => ({
 			...prevState,
 			category: event.target.value,
+		}));
+	};
+
+	const handleChangeFilterPricing = event => {
+		setCurrentPage(1);
+		setFilter(prevState => ({
+			...prevState,
+			price: event.target.value,
 		}));
 	};
 
@@ -31,53 +39,46 @@ function ItemsFilter({ setFilter, setCurrentPage, changeItemsPerPage }) {
 
 	return (
 		<section className='itemsFilterContainer'>
-			<div>
-				<p>cantidad de ítems por página</p>
-				<select name='select' onChange={changeItemsPerPage}>
-					<option value='8' default>
-						Value 8
-					</option>
-					<option value='16'>Value 16</option>
-				</select>
-			</div>
-			<div className='radio-inputs'>
-				<label className='radio'>
-					<input
-						type='radio'
-						name='radio'
-						value='graphic-design'
-						id='graphic-design'
-						onClick={handleChangeFilter}></input>
-					<span className='name'>Diseño gráfico</span>
-				</label>
-				<label className='radio'>
-					<input
-						type='radio'
-						name='radio'
-						value='web-dev'
-						id='web-dev'
-						onClick={handleChangeFilter}></input>
-					<span className='name'>Diseño web</span>
-				</label>
-				<label className='radio'>
-					<input
-						type='radio'
-						name='radio'
-						value='photostock'
-						id='photostock'
-						onClick={handleChangeFilter}></input>
-					<span className='name'>Imágenes Stock</span>
-				</label>
-				<label className='radio'>
-					<input
-						type='radio'
-						name='radio'
-						value='all'
-						id='all'
-						onClick={handleChangeFilter}></input>
-					<span className='name'>Todos</span>
-				</label>
-			</div>
+			<section className='radioInputsContainer'>
+				<div className='radio-inputs'>
+					<label className='radio'>
+						<input
+							type='radio'
+							name='radio'
+							value='graphic-design'
+							id='graphic-design'
+							onClick={handleChangeFilter}></input>
+						<span className='name'>Diseño gráfico</span>
+					</label>
+					<label className='radio'>
+						<input
+							type='radio'
+							name='radio'
+							value='web-dev'
+							id='web-dev'
+							onClick={handleChangeFilter}></input>
+						<span className='name'>Diseño web</span>
+					</label>
+					<label className='radio'>
+						<input
+							type='radio'
+							name='radio'
+							value='photostock'
+							id='photostock'
+							onClick={handleChangeFilter}></input>
+						<span className='name'>Imágenes Stock</span>
+					</label>
+					<label className='radio'>
+						<input
+							type='radio'
+							name='radio'
+							value='all'
+							id='all'
+							onClick={handleChangeFilter}></input>
+						<span className='name'>Todos</span>
+					</label>
+				</div>
+			</section>
 
 			<div>
 				<form className='itemSearch'>

@@ -45,7 +45,7 @@ function Pagination({
 					<span className='arrow:text'></span>
 				</div>
 
-				{currentPage >= 4 ? (
+				{currentPage >= 4 && pageNumbers.length > 4 ? (
 					<div
 						className={`pagination:number ${
 							pageNumbers[0] === currentPage ? 'pagination:active' : ''
@@ -57,9 +57,13 @@ function Pagination({
 					''
 				)}
 
-				{currentPage >= 4 ? <div className='pagination:number'>...</div> : ''}
+				{currentPage >= 4 && pageNumbers.length > 4 ? (
+					<div className='pagination:number'>...</div>
+				) : (
+					''
+				)}
 
-				{currentPage > 1 && pageNumbers > 4 ? (
+				{currentPage > 1 && pageNumbers.length > 4 ? (
 					<div
 						className={`pagination:number ${
 							firstIndex === currentPage ? 'pagination:active' : ''
@@ -87,7 +91,7 @@ function Pagination({
 					</div>
 				))}
 
-				{pageNumbers.length > 4 && pageNumbers.length - currentPage > 1 ? (
+				{pageNumbers.length > 4 && pageNumbers.length - lastIndex > 1 ? (
 					<div className='pagination:number'>...</div>
 				) : (
 					''
