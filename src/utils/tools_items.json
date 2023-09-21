@@ -384,6 +384,28 @@
 			"paid": "freemium",
 			"tag": ["ia", "visuals", "image", "generator"],
 			"id": 32
+		},
+		{
+			"category": "graphic-design",
+			"title": "Squoosh",
+			"description": "squoosh",
+			"thumbnail": "squoosh",
+			"name": "squoosh",
+			"linkpage": "https://squoosh.app/",
+			"paid": "free",
+			"tag": ["compressor", "image", "svg", "png"],
+			"id": 33
+		},
+		{
+			"category": "web-dev",
+			"title": "Codepen",
+			"description": "codepen",
+			"thumbnail": "codepen",
+			"name": "codepen",
+			"linkpage": "https://codepen.io/",
+			"paid": "freemium",
+			"tag": ["components", "css", "frontend"],
+			"id": 34
 		}
 	]
 }

@@ -105,7 +105,7 @@
 		"prepostseo": "Herramientas de texto online.",
 		"letsenhance": "Mejorador y escalador de imágenes.",
 		"thehappytoolbox": "Assets 3D para tus proyectos.",
-		"caniuse": "Tablas de soporte de navegador para tecnologías web",
+		"caniuse": "Tablas de soporte de navegador para tecnologías web.",
 		"bundlephobia": "Peso de paquetes npm.",
 		"vivus": "Dale vida a tus SVG.",
 		"griddy": "Crea grids sorprendentes.",
@@ -125,11 +125,13 @@
 		"goodmockups": "Galería de mockups para diseño gráfico.",
 		"brandingstyleguides": "Guidelines de miles de marcas.",
 		"mockey": "Generador de mockups con 1000+ plantillas.",
-		"shots": "Crea increíbles presentaciones para tus redes sociales, sitio web y más",
+		"shots": "Crea increíbles presentaciones para tus redes sociales, sitio web y más.",
 		"smartmockups": "Crea mockups en línea.",
 		"caninclude": "Guía de semántica para HTML.",
 		"pexels": "Stock de imágenes libres.",
-		"craiyon": "Crea imágenes con IA."
+		"craiyon": "Crea imágenes con IA.",
+		"squoosh": "Compresor y convertidor de imágenes.",
+		"codepen": "Cree, pruebe y descubra código front-end."
 	},
 	"toolsfilters": {
 		"graphicdesign": "Diseño gráfico",

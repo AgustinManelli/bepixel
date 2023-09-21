@@ -129,7 +129,9 @@
 		"smartmockups": "Create mockups online.",
 		"caninclude": "Semantic HTML guide.",
 		"pexels": "Free stock photos.",
-		"craiyon": "Create images with AI."
+		"craiyon": "Create images with AI.",
+		"squoosh": "Image compressor and converter.",
+		"codepen": "Build, test, and discover front-end code."
 	},
 	"toolsfilters": {
 		"graphicdesign": "Graphic design",

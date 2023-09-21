@@ -34,7 +34,7 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 	}, [filters]);
 
 	return (
-		<section className='itemsFilterContainer'>
+		<section className='itemsFilterContainer' id='itemsFilterContainer'>
 			<section className='radioInputsContainer'>
 				<div className='radio-inputs'>
 					<label className='radio'>

@@ -1,10 +1,9 @@
-import { useId } from 'react';
 import '../../stylesheets/toolspage/ToolsBody.css';
 import ToolsItems from './ToolsItems';
 
 function ToolsBody({ items, lastIndex, firstIndex }) {
 	return (
-		<section className='itemsBody'>
+		<section className='itemsBody' id='itemsBody'>
 			<div className='itemsBodyContainer'>
 				{items
 					.map(items => (
