@@ -17,18 +17,24 @@ function Pagination({
 	}
 
 	const handlePreviousPage = () => {
-		window.scrollTo(0, 0);
 		setCurrentPage(currentPage - 1);
+		setTimeout(() => {
+			window.scroll({ top: -1, left: 0, behavior: 'smooth' });
+		}, 10);
 	};
 
 	const handleNextPage = () => {
-		window.scrollTo(0, 0);
 		setCurrentPage(currentPage + 1);
+		setTimeout(() => {
+			window.scroll({ top: -1, left: 0, behavior: 'smooth' });
+		}, 10);
 	};
 
 	const handleSpecificPage = n => {
-		window.scrollTo(0, 0);
 		setCurrentPage(n);
+		setTimeout(() => {
+			window.scroll({ top: -1, left: 0, behavior: 'smooth' });
+		}, 10);
 	};
 
 	return (
