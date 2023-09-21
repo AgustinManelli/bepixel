@@ -60,6 +60,15 @@ function NavbarResponsive({ openDropdown, closeNav, isOpen, isPhone }) {
 					{t('navbar.navelement2')}
 				</NavLink>
 			</li>
+			<li className='navLi'>
+				<NavLink
+					to='/tools'
+					className='navAnchor'
+					activeclassname='navAnchor active'
+					onClick={closeNav}>
+					{t('navbar.navelement3')}
+				</NavLink>
+			</li>
 			<li
 				className='navLi'
 				style={{

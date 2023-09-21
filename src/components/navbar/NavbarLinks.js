@@ -17,27 +17,6 @@ function NavbarLinks({
 
 	return (
 		<>
-			{/*<li className='navLi navLiArrow' id='navLi'>
-				<div className='navAnchorDropdown' activeclassname='navAnchor active'>
-					{t('navbar.navelement1')}
-					<IoIosArrowDown />
-				</div>
-				<div className='navDropdown'>
-					<NavLink
-						to='/laespumita'
-						className='navAnchor navDropdownLink '
-						onClick={closeNav}>
-						la espumita
-					</NavLink>
-					<NavLink
-						to='/open'
-						className='navAnchor navDropdownLink '
-						onClick={closeNav}>
-						open
-					</NavLink>
-				</div>
-			</li>*/}
-
 			<li className='navLi'>
 				<Dropdown
 					openDropdown={openDropdown}
@@ -74,6 +53,15 @@ function NavbarLinks({
 					activeclassname='navAnchor active'
 					onClick={closeNav}>
 					{t('navbar.navelement2')}
+				</NavLink>
+			</li>
+			<li className='navLi'>
+				<NavLink
+					to='/tools'
+					className='navAnchor'
+					activeclassname='navAnchor active'
+					onClick={closeNav}>
+					{t('navbar.navelement3')}
 				</NavLink>
 			</li>
 			<li
