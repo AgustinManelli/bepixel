@@ -5,7 +5,13 @@ function HeaderComponent(props) {
 		<header className='headerComponentContainer'>
 			<div className='headerComponentSection1 ContainerGeneral'>
 				<div className='headerComponentSection1_1'>
-					<img src={props.img} />
+					<div style={{ position: 'relative' }}>
+						<img
+							src={props.img}
+							style={{ position: 'absolute', top: '0', filter: 'blur(50px)' }}
+						/>
+						<img src={props.img} />
+					</div>
 					<p>{props.text1}</p>
 					<p>{props.text2}</p>
 				</div>
