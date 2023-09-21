@@ -131,7 +131,8 @@
 		"pexels": "Free stock photos.",
 		"craiyon": "Create images with AI.",
 		"squoosh": "Image compressor and converter.",
-		"codepen": "Build, test, and discover front-end code."
+		"codepen": "Build, test, and discover front-end code.",
+		"reacthottoast": "Lightweight, customizable and beautiful notifications for React"
 	},
 	"toolsfilters": {
 		"graphicdesign": "Graphic design",

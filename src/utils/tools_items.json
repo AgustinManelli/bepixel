@@ -406,6 +406,17 @@
 			"paid": "freemium",
 			"tag": ["components", "css", "frontend"],
 			"id": 34
+		},
+		{
+			"category": "web-dev",
+			"title": "React Hot Toast",
+			"description": "reacthottoast",
+			"thumbnail": "reacthottoast",
+			"name": "reacthottoast",
+			"linkpage": "https://react-hot-toast.com/",
+			"paid": "free",
+			"tag": ["ux", "ui", "notifications", "toast"],
+			"id": 35
 		}
 	]
 }

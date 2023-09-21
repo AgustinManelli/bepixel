@@ -75,7 +75,10 @@ function Ourbrand() {
 				page={
 					<img
 						src={businesscard}
-						style={{ width: '100%', marginTop: '50px' }}
+						style={{
+							width: '100%',
+							marginTop: '50px',
+						}}
 					/>
 				}
 				logo={bepixelbrand}
