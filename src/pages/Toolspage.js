@@ -10,7 +10,9 @@ import { useFilters } from '../components/hooks/useFilters.js';
 function Toolspage() {
 	const [items, setItems] = useState([]);
 	const { filters, filterItems, setFilter } = useFilters();
-	const [itemsPerPage, setItemsPerPage] = useState(12);
+	const [itemsPerPage, setItemsPerPage] = useState(
+		window.innerWidth <= 815 ? '8' : '12',
+	);
 	const [currentPage, setCurrentPage] = useState(1);
 	const lastIndex = currentPage * itemsPerPage;
 	const firstIndex = lastIndex - itemsPerPage;
