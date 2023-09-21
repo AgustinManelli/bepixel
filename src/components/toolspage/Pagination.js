@@ -38,7 +38,7 @@ function Pagination({
 					className={`pagination:number arrow ${
 						currentPage === 1 ? 'isPaginationDisable' : ''
 					}`}
-					onClick={currentPage === 1 ? '' : handlePreviousPage}>
+					onClick={currentPage === 1 ? undefined : handlePreviousPage}>
 					<svg width='18' height='18'>
 						<use href='#left' />
 					</svg>
@@ -113,7 +113,9 @@ function Pagination({
 					className={`pagination:number arrow ${
 						currentPage >= pageNumbers.length ? 'isPaginationDisable' : ''
 					}`}
-					onClick={currentPage >= pageNumbers.length ? '' : handleNextPage}>
+					onClick={
+						currentPage >= pageNumbers.length ? undefined : handleNextPage
+					}>
 					<svg width='18' height='18'>
 						<use href='#right' />
 					</svg>

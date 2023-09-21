@@ -9,14 +9,6 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 		}));
 	};
 
-	const handleChangeFilterPricing = event => {
-		setCurrentPage(1);
-		setFilter(prevState => ({
-			...prevState,
-			price: event.target.value,
-		}));
-	};
-
 	const handleChangeFilterSearch = event => {
 		setCurrentPage(1);
 		setFilter(prevState => ({
@@ -34,8 +26,8 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 	};
 
 	useEffect(() => {
-		document.getElementById('all').checked = true;
-	}, []);
+		document.getElementById(`${filters.category}`).checked = true;
+	}, [filters]);
 
 	return (
 		<section className='itemsFilterContainer'>

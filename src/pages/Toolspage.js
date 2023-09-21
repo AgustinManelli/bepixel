@@ -5,31 +5,12 @@ import ItemsFilter from '../components/toolspage/ItemsFilter';
 import { useEffect } from 'react';
 import Pagination from '../components/toolspage/Pagination';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-
-function useFilters() {
-	const [filters, setFilter] = useState({
-		category: 'all',
-		tag: '',
-		name: '',
-	});
-	const filterItems = items => {
-		return items.filter(items => {
-			return (
-				(filters.category === 'all' || items.category === filters.category) &&
-				(filters.tag === '' ||
-					items.tag.includes(filters.tag, 0) ||
-					filters.name === '' ||
-					items.name.includes(filters.name.toLowerCase(), 0))
-			);
-		});
-	};
-	return { filters, filterItems, setFilter };
-}
+import { useFilters } from '../components/hooks/useFilters.js';
 
 function Toolspage() {
 	const [items, setItems] = useState([]);
 	const { filters, filterItems, setFilter } = useFilters();
-	const [itemsPerPage, setItemsPerPage] = useState(8);
+	const [itemsPerPage, setItemsPerPage] = useState(12);
 	const [currentPage, setCurrentPage] = useState(1);
 	const lastIndex = currentPage * itemsPerPage;
 	const firstIndex = lastIndex - itemsPerPage;
@@ -58,7 +39,6 @@ function Toolspage() {
 
 	useEffect(() => {
 		const urlParams = Object.fromEntries(searchParams.entries());
-
 		const pageParam = parseInt(urlParams.page) || 1;
 		setCurrentPage(pageParam);
 
