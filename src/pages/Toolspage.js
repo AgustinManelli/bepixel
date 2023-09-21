@@ -5,7 +5,7 @@ import ItemsFilter from '../components/toolspage/ItemsFilter';
 import { useEffect } from 'react';
 import Pagination from '../components/toolspage/Pagination';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { useFilters } from '../components/hooks/useFilters.js';
+import { useFilters } from '../hooks/useFilters.js';
 
 function Toolspage() {
 	const [items, setItems] = useState([]);

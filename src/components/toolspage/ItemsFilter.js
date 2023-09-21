@@ -30,7 +30,15 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 	};
 
 	useEffect(() => {
-		document.getElementById(`${filters.category}`).checked = true;
+		try {
+			document.getElementById(`${filters.category}`).checked = true;
+		} catch {
+			setCurrentPage(1);
+			setFilter(prevState => ({
+				...prevState,
+				category: 'all',
+			}));
+		}
 	}, [filters]);
 
 	return (

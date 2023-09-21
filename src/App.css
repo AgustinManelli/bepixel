@@ -58,3 +58,10 @@ a {
 	align-items: center;
 	justify-content: center;
 }
+
+.clip-img {
+	object-fit: cover;
+	object-position: 50%;
+	-webkit-clip-path: url(#clipPathSquircle);
+	clip-path: url(#clipPathSquircle);
+}
