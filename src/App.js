@@ -4,7 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Laespumita from './pages/projects/Laespumita';
+import Laespumita from './pages/projects/laespumita/Laespumita';
 import FloatingWSP from './components/FloatingWSP';
 import Ourbrand from './pages/ourbrand/Ourbrand';
 import { Toaster, toast } from 'sonner';

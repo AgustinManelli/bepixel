@@ -1,10 +1,10 @@
-import '../../stylesheets/laespumita/LaespumitaGuidelines.css';
-import Laespumitabefore from '../../assets/image/laespumitabefore.webp';
-import Laespumitaafter from '../../assets/image/laespumitaafter.svg';
-import Laespumitavariations from '../../assets/image/laespumitavariations.svg';
-import Laespumitashirt from '../../assets/image/laespumitashirt.webp';
-import Laespumitabag from '../../assets/image/laespumitabag.webp';
-import Laespumitasticker from '../../assets/image/laespumitasticker.webp';
+import '../../../stylesheets/laespumita/LaespumitaGuidelines.css';
+import Laespumitabefore from '../../../assets/image/laespumitabefore.webp';
+import Laespumitaafter from '../../../assets/image/laespumitaafter.svg';
+import Laespumitavariations from '../../../assets/image/laespumitavariations.svg';
+import Laespumitashirt from '../../../assets/image/laespumitashirt.webp';
+import Laespumitabag from '../../../assets/image/laespumitabag.webp';
+import Laespumitasticker from '../../../assets/image/laespumitasticker.webp';
 import { useTranslation } from 'react-i18next';
 
 function LaespumitaGuidelines() {
@@ -13,8 +13,7 @@ function LaespumitaGuidelines() {
 		<div className='laespumitaGuidelinesContainer'>
 			<div
 				id='laespumitaGuidelinesWhyContainer'
-				className='laespumitaGuidelinesWhyContainer'
-			>
+				className='laespumitaGuidelinesWhyContainer'>
 				<div className='laespumitaGuideWhytext'>
 					<h2>{t('projects.la-espumita.body.why.title')}</h2>
 					<p>{t('projects.la-espumita.body.why.text1')}</p>

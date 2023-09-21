@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../stylesheets/api/StarsNumber.css';
+import './StarsNumber.css';
 import { supabase } from '../../supabaseClient';
 import { AiFillStar } from 'react-icons/ai';
 import { toast } from 'sonner';
@@ -83,13 +83,11 @@ function StarsNumber() {
 							className='input-star'
 							placeholder={t('stars-number.placeholder')}
 							autoComplete='off'
-							onChange={e => setMessage(e.target.value)}
-						></input>
+							onChange={e => setMessage(e.target.value)}></input>
 						<input
 							className='button--submit'
 							value={t('stars-number.button')}
-							type='submit'
-						></input>
+							type='submit'></input>
 					</div>
 				</form>
 			</div>

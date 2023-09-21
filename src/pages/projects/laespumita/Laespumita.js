@@ -1,8 +1,8 @@
-import LaespumitaGuidelines from '../../components/laespumita/LaespumitaGuidelines';
-import laespumitalogo from '../../assets/image/laespumita.svg';
-import laespumitaheader from '../../assets/image/laespumitaheader.webp';
+import LaespumitaGuidelines from './LaespumitaGuidelines';
+import laespumitalogo from '../../../assets/image/laespumita.svg';
+import laespumitaheader from '../../../assets/image/laespumitaheader.webp';
 import { useTranslation } from 'react-i18next';
-import ProyectsHeader from '../../components/ProyectsHeader';
+import ProyectsHeader from '../../../components/ProyectsHeader';
 
 function Laespumita() {
 	document.title = 'bepixel | la espumita';
