@@ -130,5 +130,11 @@
 		"caninclude": "Semantic HTML guide.",
 		"pexels": "Free stock photos.",
 		"craiyon": "Create images with AI."
+	},
+	"toolsfilters": {
+		"graphicdesign": "Graphic design",
+		"webdesign": "Web design",
+		"photostock": "Photostock",
+		"all": "All"
 	}
 }

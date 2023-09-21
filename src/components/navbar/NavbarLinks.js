@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import { IoIosArrowDown } from 'react-icons/io';
 import { useTranslation } from 'react-i18next';
 import CTAButton from '../CTAButton';
 import LanguageSwitch from './LanguageSwitch';

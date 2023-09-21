@@ -82,18 +82,6 @@ function Toolspage() {
 				setCurrentPage={setCurrentPage}
 				filteredItems={filteredItems}
 			/>
-			<p
-				style={{
-					position: 'fixed',
-					bottom: '30px',
-					left: '10px',
-					backgroundColor: 'rgb(0,0,0,0.2)',
-					padding: '10px',
-					borderRadius: '10px',
-					zIndex: '10000',
-				}}>
-				{JSON.stringify(filters)}
-			</p>
 		</>
 	);
 }

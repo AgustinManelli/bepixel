@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
 import '../../stylesheets/toolspage/ItemsFilter.css';
+import { useTranslation } from 'react-i18next';
+
 function ItemsFilter({ setFilter, setCurrentPage, filters }) {
+	const [t] = useTranslation('global');
+
 	const handleChangeFilter = event => {
 		setCurrentPage(1);
 		setFilter(prevState => ({
@@ -40,7 +44,7 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 							value='graphic-design'
 							id='graphic-design'
 							onClick={handleChangeFilter}></input>
-						<span className='name'>Diseño gráfico</span>
+						<span className='name'>{t('toolsfilters.graphicdesign')}</span>
 					</label>
 					<label className='radio'>
 						<input
@@ -49,7 +53,7 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 							value='web-dev'
 							id='web-dev'
 							onClick={handleChangeFilter}></input>
-						<span className='name'>Diseño web</span>
+						<span className='name'>{t('toolsfilters.webdesign')}</span>
 					</label>
 					<label className='radio'>
 						<input
@@ -58,7 +62,7 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 							value='photostock'
 							id='photostock'
 							onClick={handleChangeFilter}></input>
-						<span className='name'>Imágenes Stock</span>
+						<span className='name'>{t('toolsfilters.photostock')}</span>
 					</label>
 					<label className='radio'>
 						<input
@@ -67,7 +71,7 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 							value='all'
 							id='all'
 							onClick={handleChangeFilter}></input>
-						<span className='name'>Todos</span>
+						<span className='name'>{t('toolsfilters.all')}</span>
 					</label>
 				</div>
 			</section>
