@@ -54,7 +54,7 @@ function Toolspage() {
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	const filteredItems = filterItems(items);
-	const filteredItemsOriginal = filterItems(items);
+	const ItemsOriginal = items;
 
 	function alpSort(a, b) {
 		a = a.toLowerCase();
@@ -86,7 +86,7 @@ function Toolspage() {
 				setCurrentPage={setCurrentPage}
 				filteredItems={filteredItems}
 			/>
-			<LastestResources filteredItemsOriginal={filteredItemsOriginal} />
+			<LastestResources filteredItemsOriginal={ItemsOriginal} />
 		</>
 	);
 }

@@ -6,7 +6,6 @@ import {
 	HiOutlineCodeBracket,
 	HiOutlineCamera,
 	HiOutlineHashtag,
-	HiOutlineExclamationCircle,
 } from 'react-icons/hi2';
 
 function ItemsFilter({ setFilter, setCurrentPage, filters }) {
