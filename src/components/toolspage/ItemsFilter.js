@@ -1,6 +1,12 @@
 import { useEffect } from 'react';
 import '../../stylesheets/toolspage/ItemsFilter.css';
 import { useTranslation } from 'react-i18next';
+import {
+	HiOutlinePaintBrush,
+	HiOutlineCodeBracket,
+	HiOutlineCamera,
+	HiOutlineHashtag,
+} from 'react-icons/hi2';
 
 function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 	const [t] = useTranslation('global');
@@ -52,7 +58,11 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 							value='graphic-design'
 							id='graphic-design'
 							onClick={handleChangeFilter}></input>
-						<span className='name'>{t('toolsfilters.graphicdesign')}</span>
+
+						<span className='name'>
+							<HiOutlinePaintBrush className='itemsFilterIcon' />
+							{t('toolsfilters.graphicdesign')}
+						</span>
 					</label>
 					<label className='radio'>
 						<input
@@ -61,7 +71,10 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 							value='web-dev'
 							id='web-dev'
 							onClick={handleChangeFilter}></input>
-						<span className='name'>{t('toolsfilters.webdesign')}</span>
+						<span className='name'>
+							<HiOutlineCodeBracket className='itemsFilterIcon' />
+							{t('toolsfilters.webdesign')}
+						</span>
 					</label>
 					<label className='radio'>
 						<input
@@ -70,7 +83,10 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 							value='photostock'
 							id='photostock'
 							onClick={handleChangeFilter}></input>
-						<span className='name'>{t('toolsfilters.photostock')}</span>
+						<span className='name'>
+							<HiOutlineCamera className='itemsFilterIcon' />
+							{t('toolsfilters.photostock')}
+						</span>
 					</label>
 					<label className='radio'>
 						<input
@@ -79,7 +95,10 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 							value='all'
 							id='all'
 							onClick={handleChangeFilter}></input>
-						<span className='name'>{t('toolsfilters.all')}</span>
+						<span className='name'>
+							<HiOutlineHashtag className='itemsFilterIcon' />
+							{t('toolsfilters.all')}
+						</span>
 					</label>
 				</div>
 			</section>
