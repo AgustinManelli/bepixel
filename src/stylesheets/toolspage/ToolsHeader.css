@@ -5,9 +5,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
 
 .toolsHeaderContainer section {
+	z-index: 1;
 	display: flex;
 	flex-direction: row;
 	align-items: center;

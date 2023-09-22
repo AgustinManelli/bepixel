@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import Pagination from '../components/toolspage/Pagination';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useFilters } from '../hooks/useFilters.js';
+import LastestResources from '../components/toolspage/LastestResources';
 
 function Toolspage() {
 	const [items, setItems] = useState([]);
@@ -53,6 +54,7 @@ function Toolspage() {
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	const filteredItems = filterItems(items);
+	const filteredItemsOriginal = filterItems(items);
 
 	function alpSort(a, b) {
 		a = a.toLowerCase();
@@ -84,6 +86,7 @@ function Toolspage() {
 				setCurrentPage={setCurrentPage}
 				filteredItems={filteredItems}
 			/>
+			<LastestResources filteredItemsOriginal={filteredItemsOriginal} />
 		</>
 	);
 }
