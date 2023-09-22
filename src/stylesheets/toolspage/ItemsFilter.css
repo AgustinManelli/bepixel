@@ -1,9 +1,9 @@
 .itemsFilterContainer {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 30px;
+	gap: 20px;
 	margin-top: 20px;
 }
 .radioInputsContainer {
@@ -23,11 +23,12 @@
 	flex-wrap: no-wrap;
 	box-sizing: border-box;
 	width: 100%;
-	font-size: 14px;
+	font-size: 12px;
 }
 .itemsFilterIcon {
 	width: 25px;
 	height: 20px;
+	stroke-width: 2;
 }
 .radio-inputs .radio {
 	flex: 1 1 auto;
