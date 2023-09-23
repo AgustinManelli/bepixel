@@ -20,11 +20,10 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 	};
 
 	const handleChangeFilterSearch = event => {
-		setCurrentPage(1);
-		setFilter(prevState => ({
-			...prevState,
-			tag: event.target.value,
-			name: event.target.value,
+		const value = event.target.value;
+		setFilter(prevFilters => ({
+			...prevFilters,
+			tag: value.toLowerCase(),
 		}));
 	};
 
