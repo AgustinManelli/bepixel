@@ -8,15 +8,17 @@ import {
 	HiOutlineHashtag,
 } from 'react-icons/hi2';
 
-function ItemsFilter({ setFilter, setCurrentPage, filters }) {
+function ItemsFilter({
+	setFilter,
+	setCurrentPage,
+	filters,
+	changeItemsParams,
+}) {
 	const [t] = useTranslation('global');
 
 	const handleChangeFilter = event => {
-		setCurrentPage(1);
-		setFilter(prevState => ({
-			...prevState,
-			category: event.target.value,
-		}));
+		const category = event.target.value;
+		changeItemsParams(category, 1);
 	};
 
 	const handleChangeFilterSearch = event => {
@@ -38,11 +40,7 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 		try {
 			document.getElementById(`${filters.category}`).checked = true;
 		} catch {
-			setCurrentPage(1);
-			setFilter(prevState => ({
-				...prevState,
-				category: 'all',
-			}));
+			changeItemsParams('all', 1);
 		}
 	}, [filters]);
 

@@ -18,25 +18,25 @@ function Toolspage() {
 	const lastIndex = currentPage * itemsPerPage;
 	const firstIndex = lastIndex - itemsPerPage;
 
-	const navigate = useNavigate();
-	const [searchParams, setSearchParams] = useSearchParams();
-
 	useEffect(() => {
 		const initialItems = require('../utils/tools_items.json').items;
 		setItems(initialItems);
 	}, []);
 
-	useEffect(() => {
+	const { search } = useLocation();
+	const navigate = useNavigate();
+	const [searchParams, setSearchParams] = useSearchParams();
+
+	const changeItemsParams = (category, n) => {
 		const params = new URLSearchParams();
-		if (filters.category !== 'all') {
-			params.set('category', filters.category);
+		if (category !== 'all' && category !== '') {
+			params.set('category', category);
 		}
-		if (currentPage !== 1) {
-			params.set('page', currentPage.toString());
+		if (n !== 1) {
+			params.set('page', n);
 		}
 		navigate(`?${params.toString()}`);
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [filters, currentPage]);
+	};
 
 	useEffect(() => {
 		const urlParams = Object.fromEntries(searchParams.entries());
@@ -45,10 +45,10 @@ function Toolspage() {
 
 		setFilter(prevFilters => ({
 			...prevFilters,
-			category: urlParams.category || prevFilters.category,
+			category: urlParams.category || 'all',
 		}));
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+	}, [search]);
 
 	const filteredItems = filterItems(items);
 	const ItemsOriginal = items;
@@ -71,6 +71,7 @@ function Toolspage() {
 				setFilter={setFilter}
 				filters={filters}
 				setCurrentPage={setCurrentPage}
+				changeItemsParams={changeItemsParams}
 			/>
 			<ToolsBody
 				items={filteredItems}
@@ -82,6 +83,8 @@ function Toolspage() {
 				currentPage={currentPage}
 				setCurrentPage={setCurrentPage}
 				filteredItems={filteredItems}
+				changeItemsParams={changeItemsParams}
+				filters={filters}
 			/>
 			<LastestResources filteredItemsOriginal={ItemsOriginal} />
 		</>

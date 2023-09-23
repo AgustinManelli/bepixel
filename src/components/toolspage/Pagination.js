@@ -5,6 +5,8 @@ function Pagination({
 	currentPage,
 	setCurrentPage,
 	filteredItems,
+	changeItemsParams,
+	filters,
 }) {
 	const totalItems = filteredItems.length;
 	const pageNumbers = [];
@@ -17,21 +19,21 @@ function Pagination({
 	}
 
 	const handlePreviousPage = () => {
-		setCurrentPage(currentPage - 1);
+		changeItemsParams(filters.category, currentPage - 1);
 		setTimeout(() => {
 			window.scroll({ top: -1, left: 0, behavior: 'smooth' });
 		}, 10);
 	};
 
 	const handleNextPage = () => {
-		setCurrentPage(currentPage + 1);
+		changeItemsParams(filters.category, currentPage + 1);
 		setTimeout(() => {
 			window.scroll({ top: -1, left: 0, behavior: 'smooth' });
 		}, 10);
 	};
 
 	const handleSpecificPage = n => {
-		setCurrentPage(n);
+		changeItemsParams(filters.category, n);
 		setTimeout(() => {
 			window.scroll({ top: -1, left: 0, behavior: 'smooth' });
 		}, 10);
