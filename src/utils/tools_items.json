@@ -428,6 +428,17 @@
 			"paid": "free",
 			"tag": ["photo", "image", "photostock", "psddfss"],
 			"id": 36
+		},
+		{
+			"category": "web-dev",
+			"title": "AutoAnimate",
+			"description": "autoanimate",
+			"thumbnail": "autoanimate",
+			"name": "autoanimate",
+			"linkpage": "https://auto-animate.formkit.com/",
+			"paid": "free",
+			"tag": ["animation", "ux", "ui", "React"],
+			"id": 37
 		}
 	]
 }
