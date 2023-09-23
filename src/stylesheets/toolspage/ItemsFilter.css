@@ -13,6 +13,8 @@
 	border-radius: 0.5rem;
 	box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
 	padding: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .radio-inputs {
 	position: relative;
@@ -125,5 +127,6 @@
 	.radio-inputs {
 		width: fit-content;
 		font-size: 11px;
+		flex-wrap: wrap;
 	}
 }

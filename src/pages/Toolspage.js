@@ -4,7 +4,7 @@ import ToolsHeader from '../components/toolspage/ToolsHeader';
 import ItemsFilter from '../components/toolspage/ItemsFilter';
 import { useEffect } from 'react';
 import Pagination from '../components/toolspage/Pagination';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { useFilters } from '../hooks/useFilters.js';
 import LastestResources from '../components/toolspage/LastestResources';
 
@@ -26,10 +26,7 @@ function Toolspage() {
 		setItems(initialItems);
 	}, []);
 
-	/////////////////////////////////////////////////////////////////////////////////////////
-
 	useEffect(() => {
-		// Actualizar los parámetros de la URL cuando cambian los filtros o la página
 		const params = new URLSearchParams();
 		if (filters.category !== 'all') {
 			params.set('category', filters.category);
@@ -38,6 +35,7 @@ function Toolspage() {
 			params.set('page', currentPage.toString());
 		}
 		navigate(`?${params.toString()}`);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [filters, currentPage]);
 
 	useEffect(() => {
@@ -49,9 +47,8 @@ function Toolspage() {
 			...prevFilters,
 			category: urlParams.category || prevFilters.category,
 		}));
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
-
-	///////////////////////////////////////////////////////////////////////////////////////////
 
 	const filteredItems = filterItems(items);
 	const ItemsOriginal = items;

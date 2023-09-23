@@ -54,6 +54,18 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 						<input
 							type='radio'
 							name='radio'
+							value='all'
+							id='all'
+							onClick={handleChangeFilter}></input>
+						<span className='name'>
+							<HiOutlineHashtag className='itemsFilterIcon' />
+							{t('toolsfilters.all')}
+						</span>
+					</label>
+					<label className='radio'>
+						<input
+							type='radio'
+							name='radio'
 							value='graphic-design'
 							id='graphic-design'
 							onClick={handleChangeFilter}></input>
@@ -85,18 +97,6 @@ function ItemsFilter({ setFilter, setCurrentPage, filters }) {
 						<span className='name'>
 							<HiOutlineCamera className='itemsFilterIcon' />
 							{t('toolsfilters.photostock')}
-						</span>
-					</label>
-					<label className='radio'>
-						<input
-							type='radio'
-							name='radio'
-							value='all'
-							id='all'
-							onClick={handleChangeFilter}></input>
-						<span className='name'>
-							<HiOutlineHashtag className='itemsFilterIcon' />
-							{t('toolsfilters.all')}
 						</span>
 					</label>
 				</div>
