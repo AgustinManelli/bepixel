@@ -27,6 +27,7 @@ function ItemsFilter({
 			...prevFilters,
 			tag: value.toLowerCase(),
 		}));
+		changeItemsParams('', 1);
 	};
 
 	const resetSearch = () => {
