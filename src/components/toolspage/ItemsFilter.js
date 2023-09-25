@@ -51,7 +51,7 @@ function ItemsFilter({
 			...prevFilters,
 			tag: value.toLowerCase(),
 		}));
-		changeItemsParams('', 1);
+		changeItemsParams(filters.category, 1);
 	};
 
 	const resetSearch = () => {
