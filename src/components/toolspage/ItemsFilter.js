@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '../../stylesheets/toolspage/ItemsFilter.css';
 import { useTranslation } from 'react-i18next';
 import {
@@ -10,15 +10,39 @@ import {
 
 function ItemsFilter({
 	setFilter,
-	setCurrentPage,
 	filters,
 	changeItemsParams,
+	categoryItemsList,
 }) {
+	function obtenerSubcategorias(datos) {
+		const subcategorias = [];
+
+		datos.forEach(objeto => {
+			if (!subcategorias.includes(objeto.subcategory)) {
+				subcategorias.push(objeto.subcategory);
+			}
+		});
+
+		return subcategorias;
+	}
+
+	const subcategoryList = obtenerSubcategorias(categoryItemsList);
+
+	const [subcategoriesItems, setSubcategoriesItems] = useState(subcategoryList);
+	useEffect(() => {
+		setSubcategoriesItems(subcategoryList);
+	}, [filters.category]);
+
 	const [t] = useTranslation('global');
 
 	const handleChangeFilter = event => {
 		const category = event.target.value;
 		changeItemsParams(category, 1);
+	};
+
+	const handleChangeSubfilter = event => {
+		const subcategory = event.target.value;
+		changeItemsParams(filters.category, 1, subcategory);
 	};
 
 	const handleChangeFilterSearch = event => {
@@ -100,6 +124,26 @@ function ItemsFilter({
 					</label>
 				</div>
 			</section>
+
+			{filters.category !== 'all' && subcategoriesItems.length > 1 ? (
+				<section className='radioInputsContainer'>
+					<div className='radio-inputs'>
+						{subcategoriesItems.map(subcategories => (
+							<label className='radio' key={subcategories}>
+								<input
+									type='radio'
+									name='radio'
+									value={subcategories}
+									id={subcategories}
+									onClick={handleChangeSubfilter}></input>
+								<span className='name'>{subcategories}</span>
+							</label>
+						))}
+					</div>
+				</section>
+			) : (
+				''
+			)}
 
 			<div>
 				<form className='itemSearch'>

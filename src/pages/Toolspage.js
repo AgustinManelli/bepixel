@@ -10,7 +10,7 @@ import LastestResources from '../components/toolspage/LastestResources';
 
 function Toolspage() {
 	const [items, setItems] = useState([]);
-	const { filters, filterItems, setFilter } = useFilters();
+	const { filters, filterItems, setFilter, categoryItems } = useFilters();
 	const [itemsPerPage, setItemsPerPage] = useState(
 		window.innerWidth <= 815 ? '8' : '12',
 	);
@@ -27,13 +27,20 @@ function Toolspage() {
 	const navigate = useNavigate();
 	const [searchParams, setSearchParams] = useSearchParams();
 
-	const changeItemsParams = (category, n) => {
+	const changeItemsParams = (category, n, subcategory) => {
 		const params = new URLSearchParams();
 		if (category !== 'all' && category !== '') {
 			params.set('category', category);
 		}
 		if (n !== 1) {
 			params.set('page', n);
+		}
+		if (
+			subcategory !== undefined &&
+			subcategory !== '' &&
+			subcategory !== 'all'
+		) {
+			params.set('subcategory', subcategory);
 		}
 		navigate(`?${params.toString()}`);
 	};
@@ -46,11 +53,13 @@ function Toolspage() {
 		setFilter(prevFilters => ({
 			...prevFilters,
 			category: urlParams.category || 'all',
+			subcategory: urlParams.subcategory || 'all',
 		}));
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [search]);
 
 	const filteredItems = filterItems(items);
+	const categoryItemsList = categoryItems(items);
 	const ItemsOriginal = items;
 
 	function alpSort(a, b) {
@@ -70,8 +79,8 @@ function Toolspage() {
 			<ItemsFilter
 				setFilter={setFilter}
 				filters={filters}
-				setCurrentPage={setCurrentPage}
 				changeItemsParams={changeItemsParams}
+				categoryItemsList={categoryItemsList}
 			/>
 			<ToolsBody
 				items={filteredItems}
