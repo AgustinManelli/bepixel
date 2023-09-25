@@ -16,7 +16,8 @@
 				"backgrounds",
 				"renders",
 				"sources"
-			]
+			],
+			"subcategory": ""
 		},
 		{
 			"category": "graphic-design",
@@ -34,7 +35,7 @@
 				"renders",
 				"sources"
 			],
-			"id": 1
+			"subcategory": "mockups"
 		},
 		{
 			"category": "web-dev",
@@ -45,7 +46,7 @@
 			"linkpage": "https://uiverse.io/",
 			"paid": "freemium",
 			"tag": ["ux", "ui", "style", "css"],
-			"id": 2
+			"subcategory": "uielements"
 		},
 		{
 			"category": "web-dev",
@@ -56,7 +57,7 @@
 			"linkpage": "https://sonner.emilkowal.ski/",
 			"paid": "free",
 			"tag": ["ux", "ui", "notifications"],
-			"id": 3
+			"subcategory": "libraries"
 		},
 		{
 			"category": "web-dev",
@@ -67,7 +68,7 @@
 			"linkpage": "https://floating-ui.com/",
 			"paid": "free",
 			"tag": ["ux", "ui", "develop"],
-			"id": 4
+			"subcategory": "libraries"
 		},
 		{
 			"category": "tools",
@@ -78,7 +79,7 @@
 			"linkpage": "https://www.prepostseo.com/",
 			"paid": "freemium",
 			"tag": ["tools", "text", "web"],
-			"id": 5
+			"subcategory": ""
 		},
 		{
 			"category": "graphic-design",
@@ -89,7 +90,7 @@
 			"linkpage": "https://letsenhance.io/",
 			"paid": "freemium",
 			"tag": ["tools", "photo"],
-			"id": 6
+			"subcategory": "tools"
 		},
 		{
 			"category": "graphic-design",
@@ -100,7 +101,7 @@
 			"linkpage": "https://thehappytoolbox.com/",
 			"paid": "freemium",
 			"tag": ["tools", "icons", "design"],
-			"id": 7
+			"subcategory": "resources"
 		},
 		{
 			"category": "web-dev",
@@ -111,7 +112,7 @@
 			"linkpage": "https://caniuse.com/",
 			"paid": "free",
 			"tag": ["support", "html", "css"],
-			"id": 8
+			"subcategory": "support"
 		},
 		{
 			"category": "web-dev",
@@ -122,7 +123,7 @@
 			"linkpage": "https://bundlephobia.com/",
 			"paid": "free",
 			"tag": ["support", "dependencies"],
-			"id": 9
+			"subcategory": "support"
 		},
 		{
 			"category": "web-dev",
@@ -133,7 +134,7 @@
 			"linkpage": "http://maxwellito.github.io/vivus/",
 			"paid": "free",
 			"tag": ["style", "svg"],
-			"id": 10
+			"subcategory": "tools"
 		},
 		{
 			"category": "web-dev",
@@ -144,7 +145,7 @@
 			"linkpage": "https://griddy.io/",
 			"paid": "free",
 			"tag": ["grid", "css", "style"],
-			"id": 11
+			"subcategory": "tools"
 		},
 		{
 			"category": "web-dev",
@@ -155,7 +156,7 @@
 			"linkpage": "https://gitmoji.dev/",
 			"paid": "free",
 			"tag": ["emoji", "style"],
-			"id": 12
+			"subcategory": "others"
 		},
 		{
 			"category": "graphic-design",
@@ -166,7 +167,7 @@
 			"linkpage": "https://resourceboy.com/",
 			"paid": "free",
 			"tag": ["design", "resources"],
-			"id": 13
+			"subcategory": "resources"
 		},
 		{
 			"category": "graphic-design",
@@ -177,7 +178,7 @@
 			"linkpage": "https://huemint.com/",
 			"paid": "free",
 			"tag": ["design", "color", "brand"],
-			"id": 14
+			"subcategory": "tools"
 		},
 		{
 			"category": "web-dev",
@@ -188,7 +189,7 @@
 			"linkpage": "https://blobanimation.com/",
 			"paid": "free",
 			"tag": ["css", "style", "animation"],
-			"id": 15
+			"subcategory": "tools"
 		},
 		{
 			"category": "web-dev",
@@ -199,7 +200,7 @@
 			"linkpage": "https://michalsnik.github.io/aos/",
 			"paid": "free",
 			"tag": ["css", "animation"],
-			"id": 16
+			"subcategory": "libraries"
 		},
 		{
 			"category": "web-dev",
@@ -210,7 +211,7 @@
 			"linkpage": "https://rapidapi.com/hub",
 			"paid": "free",
 			"tag": ["api", "develop"],
-			"id": 17
+			"subcategory": "others"
 		},
 		{
 			"category": "web-dev",
@@ -221,7 +222,7 @@
 			"linkpage": "https://lenguajehtml.com/html/introduccion/tabla-periodica-html5/",
 			"paid": "free",
 			"tag": ["tools", "develop", "HTML5"],
-			"id": 18
+			"subcategory": "support"
 		},
 		{
 			"category": "web-dev",
@@ -240,7 +241,7 @@
 				"best practices",
 				"developer"
 			],
-			"id": 19
+			"subcategory": "support"
 		},
 		{
 			"category": "graphic-design",
@@ -251,7 +252,7 @@
 			"linkpage": "https://excalidraw.com/",
 			"paid": "freemium",
 			"tag": ["tools", "draw", "board"],
-			"id": 20
+			"subcategory": "tools"
 		},
 		{
 			"category": "graphic-design",
@@ -262,7 +263,7 @@
 			"linkpage": "https://iconscout.com/",
 			"paid": "freemium",
 			"tag": ["icons", "3d", "design", "illustrations", "avatar", "assets"],
-			"id": 21
+			"subcategory": "resources"
 		},
 		{
 			"category": "graphic-design",
@@ -273,7 +274,7 @@
 			"linkpage": "https://www.upscale.media/es/upload",
 			"paid": "freemium",
 			"tag": ["photo", "media", "upscale", "tools"],
-			"id": 22
+			"subcategory": "ia"
 		},
 		{
 			"category": "graphic-design",
@@ -284,7 +285,7 @@
 			"linkpage": "https://texturelabs.org/",
 			"paid": "free",
 			"tag": ["textures", "assets", "media", "design"],
-			"id": 23
+			"subcategory": "resources"
 		},
 		{
 			"category": "web-dev",
@@ -295,7 +296,7 @@
 			"linkpage": "https://www.framer.com/motion/",
 			"paid": "free",
 			"tag": ["dev", "animation", "library", "react"],
-			"id": 24
+			"subcategory": "libraries"
 		},
 		{
 			"category": "graphic-design",
@@ -306,7 +307,7 @@
 			"linkpage": "https://goodmockups.com/",
 			"paid": "free",
 			"tag": ["mockups", "assets", "brand"],
-			"id": 25
+			"subcategory": "mockups"
 		},
 		{
 			"category": "graphic-design",
@@ -317,7 +318,7 @@
 			"linkpage": "https://brandingstyleguides.com/",
 			"paid": "free",
 			"tag": ["brand", "guides", "archive"],
-			"id": 26
+			"subcategory": "tools"
 		},
 		{
 			"category": "graphic-design",
@@ -328,7 +329,7 @@
 			"linkpage": "https://mockey.ai/",
 			"paid": "free",
 			"tag": ["mockups", "assets", "design"],
-			"id": 27
+			"subcategory": "mockups"
 		},
 		{
 			"category": "graphic-design",
@@ -339,7 +340,7 @@
 			"linkpage": "https://shots.so/",
 			"paid": "free",
 			"tag": ["mockups", "assets", "presentations"],
-			"id": 28
+			"subcategory": "tools"
 		},
 		{
 			"category": "graphic-design",
@@ -350,10 +351,10 @@
 			"linkpage": "https://smartmockups.com/es",
 			"paid": "freemium",
 			"tag": ["mockups", "assets", "design"],
-			"id": 29
+			"subcategory": "mockups"
 		},
 		{
-			"category": "graphic-design",
+			"category": "web-dev",
 			"title": "Can Include",
 			"description": "caninclude",
 			"thumbnail": "caninclude",
@@ -361,7 +362,7 @@
 			"linkpage": "https://caninclude.glitch.me/",
 			"paid": "free",
 			"tag": ["HTML5", "tools", "web"],
-			"id": 30
+			"subcategory": "support"
 		},
 		{
 			"category": "photostock",
@@ -372,7 +373,7 @@
 			"linkpage": "https://www.pexels.com/",
 			"paid": "free",
 			"tag": ["image", "photo", "wallpapers", "visuals"],
-			"id": 31
+			"subcategory": ""
 		},
 		{
 			"category": "graphic-design",
@@ -383,7 +384,7 @@
 			"linkpage": "https://www.craiyon.com/",
 			"paid": "freemium",
 			"tag": ["ia", "visuals", "image", "generator"],
-			"id": 32
+			"subcategory": "ia"
 		},
 		{
 			"category": "graphic-design",
@@ -394,7 +395,7 @@
 			"linkpage": "https://squoosh.app/",
 			"paid": "free",
 			"tag": ["compressor", "image", "svg", "png"],
-			"id": 33
+			"subcategory": "tools"
 		},
 		{
 			"category": "web-dev",
@@ -405,7 +406,7 @@
 			"linkpage": "https://codepen.io/",
 			"paid": "freemium",
 			"tag": ["components", "css", "frontend"],
-			"id": 34
+			"subcategory": "tools"
 		},
 		{
 			"category": "web-dev",
@@ -416,7 +417,7 @@
 			"linkpage": "https://react-hot-toast.com/",
 			"paid": "free",
 			"tag": ["ux", "ui", "notifications", "toast", "psddfss"],
-			"id": 35
+			"subcategory": "libraries"
 		},
 		{
 			"category": "photostock",
@@ -427,7 +428,7 @@
 			"linkpage": "https://thenounproject.com/",
 			"paid": "free",
 			"tag": ["photo", "image", "photostock", "psddfss"],
-			"id": 36
+			"subcategory": ""
 		},
 		{
 			"category": "web-dev",
@@ -438,7 +439,7 @@
 			"linkpage": "https://auto-animate.formkit.com/",
 			"paid": "free",
 			"tag": ["animation", "ux", "ui", "React"],
-			"id": 37
+			"subcategory": "libraries"
 		}
 	]
 }
