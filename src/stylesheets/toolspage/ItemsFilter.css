@@ -61,18 +61,12 @@
 	background-color: #fff;
 }
 
-.itemSearch button {
-	border: none;
-	background: none;
-	color: #8b8ba7;
-}
-
 .itemSearch {
 	--timing: 0.3s;
 	--width-of-input: 200px;
 	--height-of-input: 40px;
 	--border-height: 2px;
-	--input-bg: #e2e2e2;
+	--input-bg: #eeeeee;
 	--border-color: #2f2ee9;
 	--border-radius: 30px;
 	--after-border-radius: 1px;
@@ -85,6 +79,7 @@
 	border-radius: var(--border-radius);
 	transition: border-radius 0.5s ease;
 	background: var(--input-bg, #fff);
+	box-shadow: 5px 5px 20px 1px rgb(0, 0, 0, 0.1);
 }
 
 .itemInput {
@@ -109,8 +104,11 @@
 }
 
 .itemSearch svg {
-	width: 17px;
+	width: 25px;
 	margin-top: 3px;
+	color: #8b8ba7;
+	border: none;
+	background: none;
 }
 
 .itemInput:focus {

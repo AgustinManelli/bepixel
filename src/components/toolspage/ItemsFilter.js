@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../../stylesheets/toolspage/ItemsFilter.css';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import {
 	HiOutlinePaintBrush,
 	HiOutlineCodeBracket,
@@ -8,32 +9,31 @@ import {
 	HiOutlineHashtag,
 } from 'react-icons/hi2';
 
+function obtenerSubcategorias(datos) {
+	const subcategorias = [];
+
+	datos.forEach(objeto => {
+		if (!subcategorias.includes(objeto.subcategory)) {
+			subcategorias.push(objeto.subcategory);
+		}
+	});
+
+	return subcategorias;
+}
+
 function ItemsFilter({
 	setFilter,
 	filters,
 	changeItemsParams,
 	categoryItemsList,
 }) {
-	function obtenerSubcategorias(datos) {
-		const subcategorias = [];
-
-		datos.forEach(objeto => {
-			if (!subcategorias.includes(objeto.subcategory)) {
-				subcategorias.push(objeto.subcategory);
-			}
-		});
-
-		return subcategorias;
-	}
-
+	const [t] = useTranslation('global');
 	const subcategoryList = obtenerSubcategorias(categoryItemsList);
 
 	const [subcategoriesItems, setSubcategoriesItems] = useState(subcategoryList);
 	useEffect(() => {
 		setSubcategoriesItems(subcategoryList);
 	}, [filters.category]);
-
-	const [t] = useTranslation('global');
 
 	const handleChangeFilter = event => {
 		const category = event.target.value;
@@ -70,7 +70,15 @@ function ItemsFilter({
 	}, [filters]);
 
 	return (
-		<section className='itemsFilterContainer' id='itemsFilterContainer'>
+		<motion.section
+			className='itemsFilterContainer'
+			id='itemsFilterContainer'
+			initial={{ opacity: 0, scale: 0.5 }}
+			animate={{ opacity: 1, scale: 1 }}
+			transition={{
+				duration: 0.8,
+				ease: [0, 0.71, 0.2, 1.01],
+			}}>
 			<section className='radioInputsContainer'>
 				<div className='radio-inputs'>
 					<label className='radio'>
@@ -126,13 +134,21 @@ function ItemsFilter({
 			</section>
 
 			{filters.category !== 'all' && subcategoriesItems.length > 1 ? (
-				<section className='radioInputsContainer'>
-					<div className='radio-inputs'>
+				<motion.section
+					className='radioInputsContainer'
+					initial={{ opacity: 0, scale: 0.5 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{
+						duration: 0.3,
+						ease: [0, 0.71, 0.2, 1.01],
+					}}
+					id='filter_2'>
+					<div className='radio-inputs' id='filterContainer_2'>
 						{subcategoriesItems.map(subcategories => (
-							<label className='radio' key={subcategories}>
+							<label className='radio' key={subcategories} id={subcategories}>
 								<input
 									type='radio'
-									name='radio'
+									name='sub'
 									value={subcategories}
 									id={subcategories}
 									onClick={handleChangeSubfilter}></input>
@@ -140,29 +156,27 @@ function ItemsFilter({
 							</label>
 						))}
 					</div>
-				</section>
+				</motion.section>
 			) : (
 				''
 			)}
 
 			<div>
 				<form className='itemSearch'>
-					<button>
-						<svg
-							width='17'
-							height='16'
-							fill='none'
-							xmlns='http://www.w3.org/2000/svg'
-							role='img'
-							aria-labelledby='search'>
-							<path
-								d='M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9'
-								stroke='currentColor'
-								strokeWidth='1.333'
-								strokeLinecap='round'
-								strokeLinejoin='round'></path>
-						</svg>
-					</button>
+					<svg
+						width='17'
+						height='16'
+						fill='none'
+						xmlns='http://www.w3.org/2000/svg'
+						role='img'
+						aria-labelledby='search'>
+						<path
+							d='M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9'
+							stroke='currentColor'
+							strokeWidth='1.333'
+							strokeLinecap='round'
+							strokeLinejoin='round'></path>
+					</svg>
 					<input
 						className='itemInput'
 						placeholder='Type your text'
@@ -185,7 +199,7 @@ function ItemsFilter({
 					</button>
 				</form>
 			</div>
-		</section>
+		</motion.section>
 	);
 }
 
