@@ -8,7 +8,7 @@ function ToolsHeader() {
 					<h1>Herramientas</h1>
 					<p>
 						En esta sección encontrarás herramientas útiles de diseño gráfico y
-						programación
+						programación.
 					</p>
 				</div>
 			</section>
