@@ -90,7 +90,7 @@ function Toolspage() {
 						height='400%'
 						filterUnits='objectBoundingBox'
 						primitiveUnits='userSpaceOnUse'
-						color-interpolation-filters='sRGB'>
+						colorInterpolationFilters='sRGB'>
 						<feGaussianBlur
 							stdDeviation='130'
 							x='0%'

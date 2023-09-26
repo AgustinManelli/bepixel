@@ -27,6 +27,7 @@ const item = {
 		y: 0,
 		opacity: 1,
 	},
+	exit: { opacity: 0 },
 };
 
 const container = {
@@ -39,6 +40,7 @@ const container = {
 			staggerChildren: 0.05,
 		},
 	},
+	exit: { opacity: 0 },
 };
 
 function ItemsFilter({
@@ -157,19 +159,16 @@ function ItemsFilter({
 					variants={container}
 					className='subFiltersContainer'
 					initial='hidden'
-					animate='visible'
-					exit={{ opacity: 0 }}
-					id='filter_2'>
+					animate='visible'>
 					{subcategoriesItems.map(subcategories => (
 						<motion.label
 							className='subFilters'
-							key={subcategories}
+							key={`${subcategories}-${filters.category}`}
 							variants={item}>
 							<input
 								type='radio'
 								name='sub'
 								value={subcategories}
-								id={subcategories}
 								onClick={handleChangeSubfilter}
 								onChange={handleChangeSubfilter}
 								checked={

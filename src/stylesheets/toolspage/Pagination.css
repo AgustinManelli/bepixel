@@ -43,7 +43,7 @@
 	--margin: 5px;
 	margin: 0 var(--margin);
 	border-radius: 6px;
-	background: rgba(0, 0, 0, 0.05);
+	background: rgba(0, 0, 0, 0.03);
 	max-width: auto;
 	min-width: var(--size);
 	height: var(--size);
@@ -55,7 +55,7 @@
 }
 @media (hover: hover) {
 	.pagination\:number:hover {
-		background: rgba(0, 0, 0, 0.13);
+		background: rgba(0, 0, 0, 0.15);
 	}
 }
 .pagination\:number:active {
@@ -63,7 +63,7 @@
 }
 
 .pagination\:active {
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.12);
 	position: relative;
 	box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 0.05);
 }
