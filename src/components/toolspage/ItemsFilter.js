@@ -49,7 +49,6 @@ function ItemsFilter({
 }) {
 	const [t] = useTranslation('global');
 	const subcategoryList = obtenerSubcategorias(categoryItemsList);
-
 	const [subcategoriesItems, setSubcategoriesItems] = useState(subcategoryList);
 	useEffect(() => {
 		setSubcategoriesItems(subcategoryList);
@@ -71,7 +70,7 @@ function ItemsFilter({
 			...prevFilters,
 			tag: value.toLowerCase(),
 		}));
-		changeItemsParams(filters.category, 1);
+		changeItemsParams(filters.category, 1, 'all');
 	};
 
 	const resetSearch = () => {
@@ -172,6 +171,7 @@ function ItemsFilter({
 								value={subcategories}
 								id={subcategories}
 								onClick={handleChangeSubfilter}
+								onChange={handleChangeSubfilter}
 								checked={
 									filters.subcategory === subcategories ? true : false
 								}></input>
