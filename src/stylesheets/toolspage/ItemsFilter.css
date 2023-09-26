@@ -22,7 +22,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 	box-sizing: border-box;
 	width: 100%;
 	font-size: 12px;
@@ -67,8 +67,12 @@
 	margin-bottom: 20px;
 	margin-top: 5px;
 	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 	flex-direction: row;
 	gap: 10px;
+	row-gap: 20px;
 	font-size: 15px;
 }
 
