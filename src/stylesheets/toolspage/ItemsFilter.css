@@ -3,7 +3,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 20px;
+	gap: 5px;
 	margin-top: 20px;
 }
 .radioInputsContainer {
@@ -59,6 +59,35 @@
 
 .radio-inputs .radio input:checked + .name {
 	background-color: #fff;
+}
+
+.subFiltersContainer {
+	width: fit-content;
+	height: fit-content;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	font-size: 15px;
+}
+
+.subFilters input {
+	display: none;
+}
+
+.subFiltersContainer .subFilters .subFiltersName {
+	cursor: pointer;
+	border-radius: 0.5rem;
+	border: none;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #eaeaea;
+}
+
+.subFiltersContainer .subFilters input:checked + .subFiltersName {
+	background-color: #d4d4d4;
 }
 
 .itemSearch {

@@ -21,6 +21,26 @@ function obtenerSubcategorias(datos) {
 	return subcategorias;
 }
 
+const item = {
+	hidden: { y: 10, opacity: 0 },
+	visible: {
+		y: 0,
+		opacity: 1,
+	},
+};
+
+const container = {
+	hidden: { opacity: 1, scale: 0 },
+	visible: {
+		opacity: 1,
+		scale: 1,
+		transition: {
+			delayChildren: 0,
+			staggerChildren: 0.05,
+		},
+	},
+};
+
 function ItemsFilter({
 	setFilter,
 	filters,
@@ -65,7 +85,7 @@ function ItemsFilter({
 		try {
 			document.getElementById(`${filters.category}`).checked = true;
 		} catch {
-			changeItemsParams('all', 1);
+			changeItemsParams('all', 1, 'all');
 		}
 	}, [filters]);
 
@@ -135,27 +155,29 @@ function ItemsFilter({
 
 			{filters.category !== 'all' && subcategoriesItems.length > 1 ? (
 				<motion.section
-					className='radioInputsContainer'
-					initial={{ opacity: 0, scale: 0.5 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{
-						duration: 0.3,
-						ease: [0, 0.71, 0.2, 1.01],
-					}}
+					variants={container}
+					className='subFiltersContainer'
+					initial='hidden'
+					animate='visible'
+					exit={{ opacity: 0 }}
 					id='filter_2'>
-					<div className='radio-inputs' id='filterContainer_2'>
-						{subcategoriesItems.map(subcategories => (
-							<label className='radio' key={subcategories} id={subcategories}>
-								<input
-									type='radio'
-									name='sub'
-									value={subcategories}
-									id={subcategories}
-									onClick={handleChangeSubfilter}></input>
-								<span className='name'>{subcategories}</span>
-							</label>
-						))}
-					</div>
+					{subcategoriesItems.map(subcategories => (
+						<motion.label
+							className='subFilters'
+							key={subcategories}
+							variants={item}>
+							<input
+								type='radio'
+								name='sub'
+								value={subcategories}
+								id={subcategories}
+								onClick={handleChangeSubfilter}
+								checked={
+									filters.subcategory === subcategories ? true : false
+								}></input>
+							<span className='subFiltersName'>{subcategories}</span>
+						</motion.label>
+					))}
 				</motion.section>
 			) : (
 				''
