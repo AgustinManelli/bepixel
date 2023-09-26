@@ -134,7 +134,12 @@
 		"codepen": "Cree, pruebe y descubra código front-end.",
 		"reacthottoast": "Notificaciones ligeras y personalizables para React.",
 		"thenounproject": "Imágenes e iconos para tus proyectos.",
-		"autoanimate": "Añade movimiento a tus aplicaciones con una sola línea de código."
+		"autoanimate": "Añade movimiento a tus aplicaciones con una sola línea de código.",
+		"fffuel": "fffuel es una colección de herramientas de colores, generador de svg para degradados, patrones, texturas, formas y fondos.",
+		"cssmatic": "Herramientas CSS para diseñadores web.",
+		"smoothshadow": "Crea sombras suaves sorprendentes.",
+		"neumorphism": "Genera código CSS Soft-UI.",
+		"cssgridgenerator": "Crea Grids en CSS."
 	},
 	"toolsfilters": {
 		"graphicdesign": "Diseño gráfico",

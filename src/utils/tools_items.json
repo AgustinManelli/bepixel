@@ -477,6 +477,66 @@
 			"paid": "free",
 			"tag": ["animation", "ux", "ui", "React"],
 			"subcategory": "libraries"
+		},
+		{
+			"id": 38,
+			"category": "web-dev",
+			"title": "fffuel",
+			"description": "fffuel",
+			"thumbnail": "fffuel",
+			"name": "fffuel",
+			"linkpage": "https://fffuel.co/",
+			"paid": "free",
+			"tag": ["tools", "textures", "svg", "shapes", "background"],
+			"subcategory": "tools"
+		},
+		{
+			"id": 39,
+			"category": "web-dev",
+			"title": "CSSmatic",
+			"description": "cssmatic",
+			"thumbnail": "cssmatic",
+			"name": "cssmatic",
+			"linkpage": "https://www.cssmatic.com/",
+			"paid": "free",
+			"tag": ["tools", "gradient", "generator", "css"],
+			"subcategory": "tools"
+		},
+		{
+			"id": 40,
+			"category": "web-dev",
+			"title": "SmoothShadow",
+			"description": "smoothshadow",
+			"thumbnail": "smoothshadow",
+			"name": "smoothshadow",
+			"linkpage": "https://shadows.brumm.af/",
+			"paid": "free",
+			"tag": ["tools", "shadows", "css", "generator"],
+			"subcategory": "tools"
+		},
+		{
+			"id": 41,
+			"category": "web-dev",
+			"title": "Neumorphism.io",
+			"description": "neumorphism",
+			"thumbnail": "neumorphism",
+			"name": "neumorphism",
+			"linkpage": "https://neumorphism.io/#e0e0e0",
+			"paid": "free",
+			"tag": ["tools", "shadows", "css", "generator"],
+			"subcategory": "tools"
+		},
+		{
+			"id": 42,
+			"category": "web-dev",
+			"title": "CSS Grid Generator",
+			"description": "cssgridgenerator",
+			"thumbnail": "cssgridgenerator",
+			"name": "cssgridgenerator",
+			"linkpage": "https://cssgrid-generator.netlify.app/",
+			"paid": "free",
+			"tag": ["tools", "grid", "css", "generator"],
+			"subcategory": "tools"
 		}
 	]
 }

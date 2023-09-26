@@ -15,8 +15,10 @@
 	--shadow: rgba(0, 6, 39, 0.1);
 	--light-shadow: rgba(255, 255, 255, 0.8);
 	--light-shadow-2: rgba(255, 255, 255, 0.1);
-	font-size: 15px;
+	font-size: 13px;
 	margin-top: 50px;
+	color: var(--secondaryColor);
+	z-index: 10;
 }
 
 .hide {
@@ -33,7 +35,7 @@
 
 .arrow\:text {
 	display: block;
-	font-size: 13px;
+	font-size: 10px;
 }
 
 .pagination\:number {
@@ -41,7 +43,7 @@
 	--margin: 5px;
 	margin: 0 var(--margin);
 	border-radius: 6px;
-	background: #dfdfdf;
+	background: rgba(0, 0, 0, 0.05);
 	max-width: auto;
 	min-width: var(--size);
 	height: var(--size);
@@ -53,7 +55,7 @@
 }
 @media (hover: hover) {
 	.pagination\:number:hover {
-		background: #d6d6d6;
+		background: rgba(0, 0, 0, 0.13);
 	}
 }
 .pagination\:number:active {
@@ -61,8 +63,9 @@
 }
 
 .pagination\:active {
-	background: #a9a9a9;
+	background: rgba(0, 0, 0, 0.1);
 	position: relative;
+	box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 0.05);
 }
 
 .isPaginationDisable {

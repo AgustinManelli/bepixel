@@ -134,7 +134,12 @@
 		"codepen": "Build, test, and discover front-end code.",
 		"reacthottoast": "Lightweight, customizable and beautiful notifications for React.",
 		"thenounproject": "Icons and Photos For Everything.",
-		"autoanimate": "Add motion to your apps with a single line of code."
+		"autoanimate": "Add motion to your apps with a single line of code.",
+		"fffuel": "fffuel is a collection of color tools and free SVG generators for gradients, patterns, textures, shapes & backgrounds.",
+		"cssmatic": "CSS tools for web designers.",
+		"smoothshadow": "Make a beautiful smooth shadows.",
+		"neumorphism": "Generate Soft-UI CSS code.",
+		"cssgridgenerator": "Make CSS Grids."
 	},
 	"toolsfilters": {
 		"graphicdesign": "Graphic design",

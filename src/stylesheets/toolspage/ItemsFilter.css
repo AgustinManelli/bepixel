@@ -10,8 +10,7 @@
 .radioInputsContainer {
 	width: fit-content;
 	height: fit-content;
-	background-color: rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(50px), saturate(200%);
+	background-color: rgba(255, 255, 255, 0.3);
 	border-radius: 0.5rem;
 	padding: 10px;
 	margin-left: 20px;
@@ -98,7 +97,7 @@
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 .subFiltersContainer .subFilters input:checked + .subFiltersName {
@@ -124,7 +123,7 @@
 	transition:
 		background-color 0.2s ease-in-out,
 		box-shadow 0.2s ease-in-out;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.3);
 	box-shadow: 5px 5px 20px 1px rgb(0, 0, 0, 0.03);
 }
 
