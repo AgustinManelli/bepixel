@@ -201,7 +201,7 @@ function ItemsFilter({
 					</svg>
 					<input
 						className='itemInput'
-						placeholder='Type your text'
+						placeholder='filter by name or tag'
 						required=''
 						type='text'
 						onChange={handleChangeFilterSearch}></input>

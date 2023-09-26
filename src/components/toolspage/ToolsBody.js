@@ -10,8 +10,8 @@ function ToolsBody({ items, lastIndex, firstIndex }) {
 					.map(items => (
 						<motion.div
 							key={items.id}
-							whileHover={{ scale: 1.02 }}
-							transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
+							whileHover={{ scale: 1.01 }}
+							transition={{ type: 'spring', stiffness: 800, damping: 20 }}>
 							<ToolsItems items={items} />
 						</motion.div>
 					))

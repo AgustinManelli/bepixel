@@ -3,7 +3,6 @@ import '../../stylesheets/toolspage/Pagination.css';
 function Pagination({
 	itemsPerPage,
 	currentPage,
-	setCurrentPage,
 	filteredItems,
 	changeItemsParams,
 	filters,

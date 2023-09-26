@@ -5,13 +5,14 @@
 	justify-content: center;
 	gap: 5px;
 	margin-top: 20px;
+	z-index: 1;
 }
 .radioInputsContainer {
 	width: fit-content;
 	height: fit-content;
-	background-color: #e9e9e9;
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(50px), saturate(200%);
 	border-radius: 0.5rem;
-	box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
 	padding: 10px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -57,8 +58,18 @@
 	gap: 5px;
 }
 
+.radio-inputs .radio input:not(:checked) + .name {
+	transition:
+		background-color 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
 .radio-inputs .radio input:checked + .name {
-	background-color: #fff;
+	transition:
+		background-color 0.3s ease,
+		box-shadow 0.3s ease;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 0.05);
 }
 
 .subFiltersContainer {
@@ -87,11 +98,11 @@
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: #eaeaea;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .subFiltersContainer .subFilters input:checked + .subFiltersName {
-	background-color: #d4d4d4;
+	background-color: rgba(255, 255, 255, 1);
 }
 
 .itemSearch {
@@ -110,9 +121,11 @@
 	align-items: center;
 	padding-inline: 0.8em;
 	border-radius: var(--border-radius);
-	transition: border-radius 0.5s ease;
-	background: var(--input-bg, #fff);
-	box-shadow: 5px 5px 20px 1px rgb(0, 0, 0, 0.1);
+	transition:
+		background-color 0.2s ease-in-out,
+		box-shadow 0.2s ease-in-out;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 5px 5px 20px 1px rgb(0, 0, 0, 0.03);
 }
 
 .itemInput {
@@ -122,6 +135,10 @@
 	height: 100%;
 	padding-left: 10px;
 	border: none;
+}
+
+.itemInput::placeholder {
+	color: rgb(0, 0, 0, 0.2);
 }
 
 .itemReset {
@@ -139,13 +156,18 @@
 .itemSearch svg {
 	width: 25px;
 	margin-top: 3px;
-	color: #8b8ba7;
+	color: rgb(0, 0, 0, 0.2);
 	border: none;
 	background: none;
 }
 
 .itemInput:focus {
 	outline: none;
+}
+
+.itemSearch:focus-within {
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 5px 5px 20px 1px rgb(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 815px) {

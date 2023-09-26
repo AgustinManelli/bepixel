@@ -75,6 +75,48 @@ function Toolspage() {
 
 	return (
 		<>
+			<svg
+				style={{ position: 'absolute', top: '50vh', zIndex: '0' }}
+				xmlns='http://www.w3.org/2000/svg'
+				version='1.1'
+				viewBox='0 0 800 800'
+				opacity='0.58'>
+				<defs>
+					<filter
+						id='bbblurry-filter'
+						x='-100%'
+						y='-100%'
+						width='400%'
+						height='400%'
+						filterUnits='objectBoundingBox'
+						primitiveUnits='userSpaceOnUse'
+						color-interpolation-filters='sRGB'>
+						<feGaussianBlur
+							stdDeviation='130'
+							x='0%'
+							y='0%'
+							width='100%'
+							height='100%'
+							in='SourceGraphic'
+							edgeMode='none'
+							result='blur'></feGaussianBlur>
+					</filter>
+				</defs>
+				<g filter='url(#bbblurry-filter)'>
+					<ellipse
+						rx='81.5'
+						ry='248.5'
+						cx='646.860914939361'
+						cy='-0.21873881554728314'
+						fill='rgba(255, 0, 152, 1.00)'></ellipse>
+					<ellipse
+						rx='81.5'
+						ry='248.5'
+						cx='322.76899343760226'
+						cy='177.47098041953842'
+						fill='rgba(68, 0, 153, 1.00)'></ellipse>
+				</g>
+			</svg>
 			<ToolsHeader />
 			<ItemsFilter
 				setFilter={setFilter}
@@ -90,7 +132,6 @@ function Toolspage() {
 			<Pagination
 				itemsPerPage={itemsPerPage}
 				currentPage={currentPage}
-				setCurrentPage={setCurrentPage}
 				filteredItems={filteredItems}
 				changeItemsParams={changeItemsParams}
 				filters={filters}
