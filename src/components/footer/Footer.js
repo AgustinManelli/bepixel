@@ -9,18 +9,7 @@ import blurredbg from '../../assets/backgrounds/blurredbg2.jpg';
 function Footer() {
 	return (
 		<footer className='footerContainer'>
-			<img
-				alt='blurred bg'
-				src={blurredbg}
-				style={{
-					position: 'absolute',
-					bottom: '0',
-					zIndex: '-1',
-					transform: 'rotate(180deg)',
-					width: '150%',
-					opacity: '0.8',
-				}}
-			/>
+			<img className='blurredbg' alt='blurred bg' src={blurredbg} />
 			<section className='footer_mw'>
 				<img
 					src={logoh}

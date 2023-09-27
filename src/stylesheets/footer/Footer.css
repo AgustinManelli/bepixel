@@ -11,6 +11,16 @@
 	z-index: 10;
 }
 
+.blurredbg {
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	transform: rotate(180deg);
+	width: 150%;
+	opacity: 0.8;
+	max-width: 2080px;
+}
+
 .footer_mw {
 	display: flex;
 	flex-direction: column;
@@ -68,6 +78,10 @@
 }
 
 @media screen and (max-width: 815px) {
+	.blurredbg {
+		height: 100%;
+		width: initial;
+	}
 	.footerElements {
 		flex-direction: column;
 		align-items: center;
