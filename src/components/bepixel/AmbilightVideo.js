@@ -54,7 +54,6 @@ function AmbilightVideo() {
 			<div className='ambilightWrapper'>
 				<div className='aspectRatio'>
 					<video
-						className='clip-img'
 						id='video'
 						src={logovideo}
 						controls
