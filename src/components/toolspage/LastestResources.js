@@ -1,6 +1,7 @@
 import '../../stylesheets/toolspage/LastestResources.css';
 import ToolsItems from './ToolsItems';
 import Titles from '../Tittles';
+import { motion } from 'framer-motion';
 
 function LastestResources({ filteredItemsOriginal }) {
 	const lastList = filteredItemsOriginal.length;
@@ -12,9 +13,12 @@ function LastestResources({ filteredItemsOriginal }) {
 			<div className='lastestResourcesItems'>
 				{filteredItemsOriginal
 					.map(filteredItemsOriginal => (
-						<div key={filteredItemsOriginal.id}>
+						<motion.div
+							key={filteredItemsOriginal.id}
+							whileHover={{ scale: 1.01 }}
+							transition={{ type: 'spring', stiffness: 800, damping: 20 }}>
 							<ToolsItems items={filteredItemsOriginal} />
-						</div>
+						</motion.div>
 					))
 					.slice(lastList - 4, lastList)}
 			</div>
