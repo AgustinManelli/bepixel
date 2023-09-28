@@ -4,7 +4,7 @@ import '../../stylesheets/footer/Footer.css';
 import logoh from '../../assets/image/LOGOTIPO.svg';
 import { BsFillHeartFill } from 'react-icons/bs';
 import StarsNumber from '../api/StarsNumber';
-import blurredbg from '../../assets/backgrounds/blurredbg2.jpg';
+import blurredbg from '../../assets/backgrounds/blurredbg3.jpg';
 
 function Footer() {
 	return (

@@ -91,24 +91,26 @@
 	transform: scaleX(100%);
 }
 
+.responsivenavDropdown {
+	display: none;
+	width: 100%;
+	top: 100%;
+	z-index: 99999;
+	flex-direction: column;
+	margin-top: 10px;
+	gap: 10px;
+	padding: 20px;
+	background-color: rgb(0, 0, 0, 10%);
+}
+
 @media screen and (max-width: 815px) {
-	.responsivenavDropdown {
-		display: none;
-		width: 100%;
-		top: 100%;
-		z-index: 99999;
-		flex-direction: column;
-		margin-top: 10px;
-		gap: 10px;
-		padding: 20px;
-		background-color: rgb(0, 0, 0, 10%);
-	}
 	.navDropdownLinkResponsive {
 		white-space: nowrap;
 		margin: 0px;
 		text-decoration: none;
 		color: var(--mainColor);
 		font-size: 30px;
+		font-size: 20px;
 	}
 
 	.responsivenavDropdownOpened {
