@@ -47,5 +47,6 @@
 			contrast(80%);
 		-moz-filter: blur(80px) opacity(0.5) saturate(200%) brightness(0.7)
 			contrast(80%);
+		transform: translate3d(0, 0, 0);
 	}
 }
