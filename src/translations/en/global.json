@@ -146,5 +146,8 @@
 		"webdesign": "UX/UI Tools",
 		"photostock": "Photostock",
 		"all": "All"
+	},
+	"toolsbody": {
+		"ups": "Oops... no articles match the applied filter."
 	}
 }

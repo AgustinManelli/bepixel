@@ -146,5 +146,8 @@
 		"webdesign": "UX/UI Tools",
 		"photostock": "Imágenes stock",
 		"all": "Todos"
+	},
+	"toolsbody": {
+		"ups": "Upps... ningún artículo coincide con el filtro aplicado."
 	}
 }
