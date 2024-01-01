@@ -55,3 +55,9 @@
 	margin: 0;
 	padding: 7.5px;
 }
+
+@media screen and (max-width: 815px) {
+	.lngMenu ul {
+		top: 50px;
+	}
+}

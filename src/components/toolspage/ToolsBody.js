@@ -21,7 +21,7 @@ function ToolsBody({ items, lastIndex, firstIndex }) {
 						.slice(firstIndex, lastIndex)}
 				</div>
 			) : (
-				<p>{t('toolsbody.ups')}</p>
+				<p style={{ maxWidth: '80vw' }}>{t('toolsbody.ups')}</p>
 			)}
 		</section>
 	);
