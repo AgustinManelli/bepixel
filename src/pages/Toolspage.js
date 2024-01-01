@@ -76,7 +76,7 @@ function Toolspage() {
 	return (
 		<>
 			<svg
-				style={{ position: 'absolute', top: '50vh', zIndex: '-0' }}
+				style={{ position: 'absolute', top: '0', zIndex: '-0' }}
 				xmlns='http://www.w3.org/2000/svg'
 				version='1.1'
 				viewBox='0 0 800 800'
